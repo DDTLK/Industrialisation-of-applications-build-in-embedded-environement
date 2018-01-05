@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'install ........................'
         sh '''export DISTRO="openSUSE_Leap_42.3"
-if !sudo zypper ar http://download.opensuse.org/repositories/isv:/LinuxAutomotive:/app-Development/${DISTRO}/isv:LinuxAutomotive:app-Development.repo 
+if ! sudo zypper ar http://download.opensuse.org/repositories/isv:/LinuxAutomotive:/app-Development/${DISTRO}/isv:LinuxAutomotive:app-Development.repo 
 then
 echo "nothing to do"
 else
