@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'install ........................'
         sh '''export DISTRO="openSUSE_Leap_42.3"
-sudo zypper ar http://download.opensuse.org/repositories/isv:/LinuxAutomotive:/app-Development/${DISTRO}/isv:LinuxAutomotive:app-Development.repo
+# ADD condition sudo zypper ar http://download.opensuse.org/repositories/isv:/LinuxAutomotive:/app-Development/${DISTRO}/isv:LinuxAutomotive:app-Development.repo
 sudo zypper ref
 sudo zypper install -y agl-xds-agent agl-xds-cli agl-xds-gdb agl-xds-server
 systemctl --user enable xds-agent.service
