@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label '01-opensuse-42.3-tyrex'
+      label '04-opensuse-tumbleweed'
     }
     
   }
@@ -9,7 +9,7 @@ pipeline {
     stage('XDS-install') {
       steps {
         echo 'install ........................'
-        sh '''export DISTRO="openSUSE_Leap_42.3"
+        sh '''export DISTRO="04-opensuse-tumbleweed"
 if ! sudo zypper ar http://download.opensuse.org/repositories/isv:/LinuxAutomotive:/app-Development/${DISTRO}/isv:LinuxAutomotive:app-Development.repo 
 then
 echo "nothing to do"
