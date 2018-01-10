@@ -1,0 +1,20 @@
+#!/bin/bash
+
+CNAME=vm-jenkins
+CDIST=docker.iot.bzh/iotbzh/jenkins:latest
+
+DATADIR=/data/$CNAME
+
+mkdir -p $DATADIR
+
+# perms on volumes
+mkdir -p $DATADIR/jenkins 
+
+docker run --detach=true --net=none --hostname=$CNAME --name=$CNAME --privileged \
+	-v /sys/fs/cgroup:/sys/fs/cgroup:ro \
+	-i -t \
+	-v $DATADIR/jenkins:/var/lib/jenkins \
+	$CDIST /lib/systemd/systemd
+
+docker-netstart $CNAME
+

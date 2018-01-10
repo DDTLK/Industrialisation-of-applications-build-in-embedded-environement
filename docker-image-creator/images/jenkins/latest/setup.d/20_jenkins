@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# source: https://pkg.jenkins.io/debian
+
+# Install JENKINS and tools and setup initial home
+# directory structure.
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+
+echo "deb https://pkg.jenkins.io/debian binary/" >> /etc/apt/sources.list
+
+apt-get update -y
+apt-get upgrade -y
+apt-get install -y apt-transport-https haproxy 
+apt-get update -y
+apt-get install -y jenkins

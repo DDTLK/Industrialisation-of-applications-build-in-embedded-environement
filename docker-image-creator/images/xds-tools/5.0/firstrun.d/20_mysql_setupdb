@@ -1,0 +1,13 @@
+#!/bin/bash
+############################### database setup ###########################
+
+MYSQL_ADMIN_PASSWORD=${MYSQL_ADMIN_PASSWORD:-defaultpass}
+
+mysql -u root --password="$MYSQL_ROOT_PASSWORD" << EOF
+CREATE DATABASE $MYSQL_DBNAME;
+CREATE USER admin;
+use $MYSQL_DBNAME
+GRANT ALL PRIVILEGES ON $MYSQL_DBNAME.* to 'admin'@'localhost' IDENTIFIED BY '$MYSQL_ADMIN_PASSWORD' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EOF
+

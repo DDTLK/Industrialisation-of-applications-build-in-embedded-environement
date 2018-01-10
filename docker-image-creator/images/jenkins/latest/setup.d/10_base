@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# add backports and testing repositories
+echo "deb http://http.debian.net/debian stable-backports main contrib" >> /etc/apt/sources.list
+
+# setup network retries for apt
+echo "Acquire::Retries 5;" >/etc/apt/apt.conf.d/99NetRetries
+
+# upgrade distro
+apt-get update -y
+apt-get dist-upgrade -y
+
+apt-get install -y passwd sudo openssh-server openssh-client vim systemd logrotate ifupdown locales man
+apt-get remove -y exim4 exim4-base exim4-config exim4-daemon-light 
+apt-get autoremove -y
+
+# remove some useless systemd services
+for sysdir in /lib/systemd /etc/systemd; do
+	for pattern in tty udev; do
+		find $sysdir -name "*${pattern}*" -exec rm -rf {} \;  || :
+	done
+done
+rm -f /lib/systemd/system/sysinit.target.wants/proc-sys-fs-binfmt_misc.automount
+
+cp $INSTDIR/config/bashrc /etc/skel/.bash_aliases # sourced by .bashrc for new users
+
+# copy files for root account (already created)
+find /etc/skel -type f -exec cp -av {} /root \;
+
+# workaround bug on dbus if host runs selinux
+mkdir -p /etc/selinux/targeted/contexts/
+echo '<busconfig><selinux></selinux></busconfig>' >/etc/selinux/targeted/contexts/dbus_contexts
+
+# remount selinux ro to workaround bug in apt-get
+cat <<EOF >/etc/rc.local
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+if [ -d /sys/fs/selinux ]; then
+	mount -o remount,ro /sys/fs/selinux
+fi
+
+exit 0
+EOF
+
+# generate locale and set to default
+echo "en_US.UTF-8 UTF-8" >>/etc/locale.gen
+/usr/sbin/locale-gen
+echo "LANG=en_US.UTF-8" >>/etc/default/locale
+# workaround issue with locales
+cat <<EOF >/etc/profile.d/workaround_lang.sh
+# created by docker-worker-generator (script $BASH_SOURCE)
+export LC_ALL=en_US.UTF-8
+EOF
+
+# by default, /tmp is not mounted in tmpfs: solve this
+echo "tmpfs    /tmp    tmpfs    noatime,size=50%    0    0" >>/etc/fstab
+

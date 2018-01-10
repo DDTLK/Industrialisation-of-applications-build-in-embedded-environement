@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Install XDS tools and setup initial home
+# directory structure.
+
+# 'DISTRO' can be set to { xUbuntu_16.04, xUbuntu_16.10, xUbuntu_17.04, Debian_8.0, Debian_9.0 }
+export DISTRO="Debian_9.0"
+
+wget -O - http://download.opensuse.org/repositories/isv:/LinuxAutomotive:/app-Development/${DISTRO}/Release.key | sudo apt-key add -
+sudo bash -c "cat >> /etc/apt/sources.list.d/AGL.list <<EOF
+deb http://download.opensuse.org/repositories/isv:/LinuxAutomotive:/app-Development/${DISTRO}/ ./
+EOF"
+
+apt-get update -y
+apt-get upgrade -y
+apt-get install -y agl-xds-agent agl-xds-cli agl-xds-gdb
+
+systemctl --user enable xds-agent.service

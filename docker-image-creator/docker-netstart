@@ -1,0 +1,173 @@
+#!/bin/bash
+
+############################################################################
+# Copyright 2015 IoT.bzh
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+############################################################################
+
+# Author: Fulup Ar Foll
+# Date:   July-2015
+# Object:  Start a Docker container with IP addr deducted from hostname & DNS
+# Syntax: docker-start [brige=br0] [subnet=10.20.1.0] [netmask=24] [addr=auto] [gateway=auto] containerName/ID
+
+# Source:     https://gist.github.com/fulup-bzh
+# Reference:  http://blog.oddbit.com/2014/08/11/four-ways-to-connect-a-docker
+# Version: @VERSION@
+# Revision: @URL@ @REVISION@
+  
+# Default Values
+# ----------------
+  BRIDGE=br0
+  NETMASK=24
+  SUBNET=10.20.1.0  
+
+# Check if argument exist
+# --------------------------
+OPTCOUNT=0
+CheckArg() {
+  cmd=$(echo $1 | cut -f1 -d=)
+  val=$(echo $1 | cut -f2 -d=)
+  OPTCOUNT=`expr $OPTCOUNT + 1`
+
+  if test "$val" != "auto"; then
+    case "$cmd" in
+    bridge)   BRIDGE="$val"  ;;
+    addr)     CADDR="$val"   ;;
+    gateway)  GATEWAY="$val" ;;
+    subnet)   SUBNET="$val"  ;;
+    netmask)  NETMASK="$val" ;;
+	   
+    *) 
+      echo "Error: $cmd=xxxx unknown option"
+      exit 1
+      ;;
+    esac
+  fi
+}
+
+# Parse CLI arguments
+# -------------------
+EvalArgs() {
+  for arg in "$@"
+  do
+    if expr 'index' "$arg" '=' '>' '1' >/dev/null
+    then
+        CheckArg "${arg}"
+    fi
+  done
+}
+
+# Extract command line Argument
+EvalArgs "$@"
+
+# Conainer name is cli's last argement
+shift $OPTCOUNT; CNAME=$1
+if test -z "$CNAME"; then
+  echo "Syntaxe: docker-start [bridge=xx] [addr=x.x.x.x] [gateway=x.x.x.x] [subnet=x.x.x.0] [netmask=xx] MyContainerID/Name"
+  echo
+  echo "Initializing a new VM:"
+  cat <<'EOF'
+# CNAME=my-docker
+# CDIST=centos #|debian|opensuse
+
+# docker run --detach=true --net=none --hostname=$CNAME --name=$CNAME --privileged \
+	-v /sys/fs/cgroup:/sys/fs/cgroup:ro -i -t $CDIST:latest /lib/systemd/systemd
+
+# docker-start.sh $CNAME 
+EOF
+  exit
+fi
+ 
+ip link show "$BRIDGE" >/dev/null
+if test $? -ne 0
+then
+   echo "Error: bridge="$BRIDGE" does not exist"
+   exit 1
+fi
+
+
+if test -z "$GATEWAY"; then
+    GATEWAY=`ip route show 0.0.0.0/0 dev $BRIDGE | awk '{print $3}'`
+    if test -z "$GATEWAY"; then
+      GATEWAY=`ip route show  "$SUBNET/$NETMASK" dev $BRIDGE | awk '{print $7}'`
+    fi
+fi
+
+if test -z "$GATEWAY"; then
+  echo "Hoops no default gateway for $BRIDGE"
+  exit
+fi
+
+# check container exist and is stopped
+  DOCKID=`docker ps -a | grep $CNAME`
+  if test -z "$DOCKID"; then 
+    echo "Hoops: container=[$CNAME] not found => docker ps -a"
+    exit
+  fi
+
+# if no IP provided get one from DNS lookup
+if test -z "$CADDR"; then
+  CADDR=`getent hosts $CNAME | awk '{print $1}'`
+  if test -z "$CADDR"; then
+    echo "Hoops: host=$CNAME no IP found =>  docker-start.sh $CNAME x.x.x.x"
+    exit
+  fi
+fi
+
+echo "start docker container name=$CNAME addr=$CADDR/$NETMASK"
+# docker run  --detach=true --net=none --hostname=$CNAME --name=$CNAME --privileged  -i -t centos:latest /lib/systemd/systemd
+
+# if container is stopped let's start it now
+DOCKSTOP=`docker ps --filter "status=exited" | grep $CNAME`
+if test ! -z "$DOCKSTOP"; then 
+  docker start $CNAME >/dev/null
+fi
+
+# get container namespace PID
+CPID=`docker inspect --format {{.State.Pid}} $CNAME`  # get container namespace PID
+if test -z "$CPID"; then
+   echo "Hoops: failled to start container=[$CNAME]"
+   exit
+fi
+
+# if root ssh auth does not exist buit one from hypervisor
+sudo test -f  /root/.ssh/authorized_keys
+if test $? -eq 0; then
+  sudo nsenter -t $CPID --mount ls /root/.ssh/authorized_keys >/dev/null 2>/dev/null
+  if test $? -ne 0; then
+    echo "Setting container initial /root/.ssh/authorized_keys"
+    sudo nsenter -t $CPID --mount mkdir -p /root/.ssh 2>/dev/null
+    sudo cat /root/.ssh/authorized_keys | sudo nsenter -t $CPID --mount tee /root/.ssh/authorized_keys >/dev/null
+  fi
+fi
+
+ # make sure CNAME is not to long for an network interface name
+ CNETNAME=${CNAME:0:8}-veth0
+
+ sudo ip link add veth0 type veth peer name $CNETNAME       # create a new interface on hypervisor
+ sudo ip link set $CNETNAME  up                             # activate newly create interface on host
+ sudo brctl addif $BRIDGE $CNETNAME                         # add new interface to the bridge
+ sudo ip link set netns $CPID dev veth0                     # move veth0 interface into container name space
+ sudo nsenter -t $CPID --net ip link set veth0 up           # up veth0 within container
+ sudo nsenter -t $CPID --net ip addr add  $CADDR/$NETMASK dev veth0     # set IP addr within container
+ sudo nsenter -t $CPID --net ip route add default via $GATEWAY dev veth0
+
+echo "enter container => docker exec -it $CNAME bash"
+
+ping -W 10 -c 1 $CADDR >/dev/null
+if test $? -ne 0; then
+   echo "Hoops ping FAIL"
+else 
+   echo "OK: ping respond"
+fi
