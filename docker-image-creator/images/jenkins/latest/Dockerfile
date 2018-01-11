@@ -1,4 +1,4 @@
-FROM openjdk:9
+FROM openjdk:8
 
 COPY . /root/INSTALL
 RUN /root/INSTALL/setup_image.sh
