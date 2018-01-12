@@ -20,15 +20,14 @@ docker run \
 --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
 --detach=true \
 -v $HOME/workspace-agl/Industrialisation-of-applications-build-in-embedded-environement/.jenkins:/var/lib/jenkins \
--p 8070:8080 \
+-p 8080:8080 \
 -p 50500:50000 \
 -p 2224:22 \
 -it docker.iot.bzh/iotbzh/jenkins:latest
 ```
 
 ```shell
-docker exec -it jenkins bash
-sudo service jenkins start
+docker exec jenkins sudo service jenkins start
 ```
 
 ## install XDS
@@ -50,7 +49,7 @@ docker run \
 --detach=true \
 -v $HOME/Industrialisation-of-applications-build-in-embedded-environement/xds-workspace/:/home/devel/xds-workspace \
 -v $HOME/Industrialisation-of-applications-build-in-embedded-environement/xds-workspace/.xdt:/xdt \
--p 8090:8000 \
+-p 8000:8000 \
 -p 6969:69 \
 -p 2222:22 \
 -p 10809:10809 \
@@ -70,7 +69,7 @@ docker run \
 --hostname="XDS-tools" --name="XDS-tools" \
 --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
 --detach=true \
--p 8060:8080 \
+-p 8800:8800 \
 -p 50000:50000 \
 -p 69:69 \
 -p 2226:22 \

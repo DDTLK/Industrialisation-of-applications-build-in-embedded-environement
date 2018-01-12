@@ -12,3 +12,7 @@ cat secrets/initialAdminPassword
 exit
 sudo service jenkins start
 exit
+ip a
+exit
+ip a
+exit

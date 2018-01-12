@@ -7,8 +7,9 @@ RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 WORKDIR /home/jenkins
 
-VOLUME ["/var/lib/jenkins"]
-EXPOSE 50000 22 69
+COPY ./agent /home/jenkins
+
+EXPOSE 8800 50000 22 69
 
 ENTRYPOINT ["/usr/bin/wait_for_net.sh"]
 CMD ["/bin/systemd"]
