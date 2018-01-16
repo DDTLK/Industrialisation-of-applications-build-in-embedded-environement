@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CNAME=vm-jenkins
-CDIST=docker.iot.bzh/iotbzh/jenkins:latest
+CNAME=XDS-tools
+CDIST=docker.iot.bzh/iotbzh/XDS-tools:latest
 
 DATADIR=/data/$CNAME
 

@@ -8,6 +8,7 @@ RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 WORKDIR /home/jenkins
 
 COPY ./agent /home/jenkins
+COPY ./config /home/jenkins
 
 EXPOSE 8800 50000 22 69
 

@@ -89,3 +89,7 @@ must be in docker-image-creator
 mkdir $HOME/xds-workspace
 cd $HOME/xds-workspace
 git clone --recursive <https://github.com/iotbzh/helloworld-native-application.git>
+
+inspect docker bridge:
+
+docker network inspect bridge
