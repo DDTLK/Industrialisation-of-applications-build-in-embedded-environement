@@ -29,11 +29,12 @@
 #
 ##########################################
 
-REGISTRY=docker.automotivelinux.org
-REPO=agl
-NAME=worker
-FLAVOUR=xds
-VERSION=4.0
+REGISTRY=docker.iot.bzh
+REPO=iot.bzh
+NAME=xds
+FLAVOUR=tools
+VERSION=latest
+
 
 # ---------------------------------------------------
 # --- computed - don't touch !
@@ -50,7 +51,7 @@ function usage() {
     echo " $DEFIMAGE"
     echo ""
     echo "Options:"
-    echo " -fr | --force-restart   Force restart of xds-server service"
+    echo " -fr | --force-restart   Force restart of xds-agent service"
     echo " -id                     Instance ID used to build container name, a positive integer (0,1,2,...)"
     echo " -nuu | --no-uid-update  Don't update user/group id within docker"
     echo " -v | --volume           Additional docker volume to bind, syntax is -v /InDockerPath:/HostPath "
@@ -139,10 +140,8 @@ fi
 XDS_WKS=$HOME/xds-workspace
 XDTDIR=$XDS_WKS/.xdt_$ID
 
-SSH_PORT=$((2222 + ID))
-WWW_PORT=$((8000 + ID))
-BOOT_PORT=$((69 + ID))
-NBD_PORT=$((10809 + ID))
+SSH_PORT=$((2224 + ID))
+WWW_PORT=$((8800 + ID))
 
 # Delete container on error
 creation_done=false
@@ -156,19 +155,17 @@ cleanExit ()
 }
 
 ### Create the new container
-mkdir -p $XDS_WKS $XDTDIR  || exit 1
+mkdir -p "$XDS_WKS" "$XDTDIR"  || exit 1
 if ! docker run \
 	--publish=${SSH_PORT}:22 \
-	--publish=${WWW_PORT}:8000 \
-	--publish=${BOOT_PORT}:69/udp \
-	--publish=${NBD_PORT}:10809 \
+	--publish=${WWW_PORT}:8800 \
 	--detach=true \
 	--hostname="$NAME" --name="$NAME" \
 	--privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
-	-v $XDS_WKS:/home/$DOCKER_USER/xds-workspace \
-	-v $XDTDIR:/xdt \
-    $USER_VOLUME_OPTION \
-	-it $IMAGE;
+	-v "$XDS_WKS":/home/$DOCKER_USER/xds-workspace \
+	-v "$XDTDIR":/xdt \
+    "$USER_VOLUME_OPTION" \
+	-it "$IMAGE";
 then
     echo "An error was encountered while creating docker container."
     exit 1
@@ -240,17 +237,17 @@ if ($UPDATE_UID); then
     echo -n "."
     docker exec -t ${NAME} bash -c "systemctl start autologin"
     echo -n "."
-    ssh -n -p $SSH_PORT $DOCKER_USER@localhost "systemctl --user start xds-server" || exit 1
+    ssh -n -p $SSH_PORT $DOCKER_USER@localhost "systemctl --user start xds-agent" || exit 1
     echo "."
     docker restart ${NAME}
 fi
 
 creation_done=true
 
-### Force xds-server restart
+### Force xds-agent restart
 if ($FORCE_RESTART); then
-    echo "Restart xds-server..."
-    ssh -n -p $SSH_PORT $DOCKER_USER@localhost "systemctl --user restart xds-server" || exit 1
+    echo "Restart xds-agent..."
+    ssh -n -p $SSH_PORT $DOCKER_USER@localhost "systemctl --user restart xds-agent" || exit 1
 fi
 
 echo "Done, docker container $NAME is ready to be used."
