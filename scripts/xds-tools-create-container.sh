@@ -58,7 +58,7 @@ function usage() {
 	exit 1
 }
 
-ID=""
+ID="1"
 IMAGE=""
 FORCE_RESTART=false
 UPDATE_UID=true
