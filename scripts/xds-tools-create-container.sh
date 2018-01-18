@@ -30,7 +30,7 @@
 ##########################################
 
 REGISTRY=docker.iot.bzh
-REPO=iot.bzh
+REPO=iotbzh
 NAME=xds
 FLAVOUR=tools
 VERSION=latest
