@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# add some cool base tools
+apt-get install -y man tree curl screen 
+
+# add the build user
+useradd -c "Builder" -d $DEVUSER_HOME -G sudo -m -U -s /bin/bash -u $DEVUSER_UID $DEVUSER
+echo $DEVUSER:$DEVUSER_PASSWORD | chpasswd 
+
+# generate an extra environment file sourced by bashrc
+for k in	DEVUSER DEVUSER_UID DEVUSER_HOME \
+			XDT_DIR \
+			XDT_META XDT_DOWNLOADCACHE XDT_SSTATECACHE XDT_CCACHE XDT_BUILD XDT_WORKSPACE XDT_SOURCES XDT_SDK \
+			; do
+	v=${!k} # get value
+	[[ "${v:0:1}" == "/" ]] && mkdir -p $v # create dir only if value starts with "/"
+	echo "export $k=$v" >>/etc/xdtrc
+done
+
+mkdir -p $DEVUSER_HOME/bin
+cat <<'EOF' >>$DEVUSER_HOME/.bashrc
+
+# added by worker image creation script (docker-image-builder)
+export PATH=~/bin:$PATH
+[[ -f /etc/xdtrc ]] && . /etc/xdtrc
+
+EOF
+
+chown -R $DEVUSER:$DEVUSER $XDT_DIR
+chown -R $DEVUSER:$DEVUSER $DEVUSER_HOME
+

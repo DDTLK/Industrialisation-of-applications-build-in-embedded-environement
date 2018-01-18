@@ -43,17 +43,8 @@ wget -O - http://iot.bzh/download/public/XDS/docker/docker_agl_worker-xds-latest
 Run the container
 
 ```shell
-docker run \
---hostname="XDS-server" --name="XDS-server" \
---privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
---detach=true \
--v $HOME/Industrialisation-of-applications-build-in-embedded-environement/xds-workspace/:/home/devel/xds-workspace \
--v $HOME/Industrialisation-of-applications-build-in-embedded-environement/xds-workspace/.xdt:/xdt \
--p 8000:8000 \
--p 6969:69 \
--p 2222:22 \
--p 10809:10809 \
--it docker.automotivelinux.org/agl/worker-xds:5.0
+wget -O xds-docker-create-container.sh 'https://gerrit.automotivelinux.org/gerrit/gitweb?p=src/xds/xds-server.git;a=blob_plain;f=scripts/xds-docker-create-container.sh;hb=master'
+bash ./xds-docker-create-container.sh
 ```
 
 ## install XDS-tools

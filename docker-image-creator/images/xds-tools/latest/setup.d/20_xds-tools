@@ -16,9 +16,6 @@ apt-get upgrade -y
 apt-get install -y agl-xds-agent agl-xds-cli agl-xds-gdb
 
 systemctl --user enable xds-agent.service
-/usr/bin/ssh-keygen -A
-service ssh start
-useradd jenkins --uid 1000 --home /home/jenkins --create-home
 
 
 # devel user lingering service to be sure that devel user session is running
@@ -26,13 +23,16 @@ useradd jenkins --uid 1000 --home /home/jenkins --create-home
 mkdir -p /lib/systemd/system/ /lib/systemd/system/multi-user.target.wants/
 cat <<EOF >/lib/systemd/system/autologin.service
 [Unit]
-Description=Auto user lingering service for jenkins user
+Description=Auto user lingering service for devel user
 After=network.target
 
 [Service]
-ExecStart=-/bin/loginctl enable-linger jenkins
+ExecStart=-/bin/loginctl enable-linger devel
+
 RemainAfterExit=yes
 [Install]
 WantedBy=multi-user.target
 EOF
 ln -s ../autologin.service /lib/systemd/system/multi-user.target.wants/
+
+systemctl enable autologin.service

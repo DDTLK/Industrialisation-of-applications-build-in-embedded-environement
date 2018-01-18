@@ -1,7 +1,18 @@
 #!/bin/bash
 
+# set bash as default shell for /bin/sh
+diverter=$(dpkg-divert --listpackage /bin/sh)
+[[ "$diverter" == "dash" ]] && {
+	# inspired by dash postinstall
+	dpkg-divert --package dash --remove /bin/sh
+	dpkg-divert --package bash --divert /bin/sh.distrib --add /bin/sh
+	[[ -e /bin/sh ]] && cp -dp /bin/sh /bin/sh.distrib
+	ln -sf bash /bin/sh.tmp
+	mv -f /bin/sh.tmp /bin/sh
+}
+
 # add backports and testing repositories
-echo "deb http://http.debian.net/debian stable-backports main contrib" >> /etc/apt/sources.list
+echo "deb http://http.debian.net/debian stable-backports main contrib" >>/etc/apt/sources.list
 
 # setup network retries for apt
 echo "Acquire::Retries 5;" >/etc/apt/apt.conf.d/99NetRetries
@@ -10,19 +21,30 @@ echo "Acquire::Retries 5;" >/etc/apt/apt.conf.d/99NetRetries
 apt-get update -y
 apt-get dist-upgrade -y
 
-apt-get install -y passwd sudo openssh-server openssh-client vim systemd logrotate ifupdown locales man
-apt-get remove -y exim4 exim4-base exim4-config exim4-daemon-light 
+apt-get install -y passwd sudo openssh-server openssh-client vim systemd logrotate ifupdown locales
+apt-get remove -y exim4 exim4-base exim4-config exim4-daemon-light
 apt-get autoremove -y
 
+# gpg no longer installed and is requested by apt-key command (Debian Bug report logs - #830696)
+apt-get install gpg -y
+
 # remove some useless systemd services
-for sysdir in /lib/systemd /etc/systemd; do
-	for pattern in tty udev; do
-		find $sysdir -name "*${pattern}*" -exec rm -rf {} \;  || :
+if [[ "$CONTAINER_TYPE" = "docker" ]]; then
+	for sysdir in /lib/systemd /etc/systemd; do
+		for pattern in tty udev; do
+			find $sysdir -name "*${pattern}*" -exec rm -rf {} \;  || :
+		done
 	done
-done
-rm -f /lib/systemd/system/sysinit.target.wants/proc-sys-fs-binfmt_misc.automount
+	rm -f /lib/systemd/system/sysinit.target.wants/proc-sys-fs-binfmt_misc.automount
+fi
+
+# allow to use systemd as user (systemd --user)
+apt-get install -y libpam-systemd
+
 
 cp $INSTDIR/config/bashrc /etc/skel/.bash_aliases # sourced by .bashrc for new users
+
+cp $INSTDIR/config/sudo_devel /etc/sudoers.d/sudo_devel # Allow sudo without password
 
 # copy files for root account (already created)
 find /etc/skel -type f -exec cp -av {} /root \;
@@ -57,12 +79,13 @@ EOF
 echo "en_US.UTF-8 UTF-8" >>/etc/locale.gen
 /usr/sbin/locale-gen
 echo "LANG=en_US.UTF-8" >>/etc/default/locale
-# workaround issue with locales
-cat <<EOF >/etc/profile.d/workaround_lang.sh
-# created by docker-worker-generator (script $BASH_SOURCE)
-export LC_ALL=en_US.UTF-8
-EOF
 
 # by default, /tmp is not mounted in tmpfs: solve this
 echo "tmpfs    /tmp    tmpfs    noatime,size=50%    0    0" >>/etc/fstab
 
+# fix sshd issues with X11 forwarding (may happen if IPv6 is in use)
+cat <<EOF >>/etc/ssh/sshd_config
+
+# configuration options added from docker-worker-generator (script $BASH_SOURCE)
+AddressFamily inet
+EOF

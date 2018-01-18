@@ -1,1 +1,3 @@
 #!/bin/bash
+
+systemctl --user start xds-agent
