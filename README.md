@@ -55,19 +55,7 @@ sed -i "s/jenkins/xds-tools/g" Makefile
 make build
 ```
 
-```shell
-docker run \
---hostname="XDS-tools" --name="XDS-tools" \
---privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
---detach=true \
--p 8800:8800 \
--p 50000:50000 \
--p 69:69 \
--p 2226:22 \
--it docker.iot.bzh/iotbzh/xds-tools:latest
-```
-
-### install SDK TODO
+## install SDK TODO
 
 must be in docker-image-creator
 

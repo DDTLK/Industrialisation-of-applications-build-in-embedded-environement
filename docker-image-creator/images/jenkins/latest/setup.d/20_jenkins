@@ -12,6 +12,3 @@ apt-get upgrade -y
 apt-get install -y apt-transport-https haproxy 
 apt-get update -y
 apt-get install -y jenkins
-
-useradd jenkins --uid 1000 --home /home/jenkins --create-home
-echo "jenkins:jenkins" | chpasswd
