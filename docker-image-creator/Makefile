@@ -1,5 +1,5 @@
 DOCKREG=docker.iot.bzh
-NAME=jenkins
+NAME=xds-tools
 VERSION=$(shell ls -d images/$(NAME)/* | sort -rn | head -1 | xargs basename )
 REPO=iotbzh
 IMAGE_NAME=$(DOCKREG)/$(REPO)/$(NAME):$(VERSION)

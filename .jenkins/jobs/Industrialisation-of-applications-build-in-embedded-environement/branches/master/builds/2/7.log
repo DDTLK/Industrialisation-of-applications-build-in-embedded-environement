@@ -1,0 +1,8 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/DDTLK/Industrialisation-of-applications-build-in-embedded-environement.git
+ > git init /home/jenkins/workspace/mbedded-environement_master-B5OHTXTIBFJO3WKCWEFSHFVSMUBHKH5T5GQA7NWUSIUVBKV7UKDA # timeout=10
+Fetching upstream changes from https://github.com/DDTLK/Industrialisation-of-applications-build-in-embedded-environement.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/Industrialisation-of-applications-build-in-embedded-environement.git +refs/heads/master:refs/remotes/origin/master

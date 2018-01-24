@@ -39,7 +39,7 @@ VERSION=latest
 # ---------------------------------------------------
 # --- computed - don't touch !
 # ---------------------------------------------------
-DOCKER_USER=devel
+DOCKER_USER=jenkins
 
 DEFIMAGE=$REGISTRY/$REPO/$NAME-$FLAVOUR:$VERSION
 
@@ -58,7 +58,7 @@ function usage() {
 	exit 1
 }
 
-ID="1"
+ID=""
 IMAGE=""
 FORCE_RESTART=false
 UPDATE_UID=true
@@ -130,10 +130,10 @@ fi
 USER=$(id -un)
 echo "Using instance ID #$ID (user $(id -un))"
 
-NAME=agl-xds-$(hostname|cut -f1 -d'.')-$ID-$USER
+NAME=agl-xds-$FLAVOUR-$(hostname|cut -f1 -d'.')-$ID-$USER
 
 if docker ps -a |grep "$NAME" > /dev/null; then
-    echo "Image name already exist ! (use -h option to read help)"
+    echo "Image name already exist ! (use -h optio to read help)"
     exit 1
 fi
 
@@ -164,7 +164,7 @@ if ! docker run \
 	--privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
 	-v "$XDS_WKS":/home/$DOCKER_USER/xds-workspace \
 	-v "$XDTDIR":/xdt \
-    "$USER_VOLUME_OPTION" \
+    $USER_VOLUME_OPTION \
 	-it "$IMAGE";
 then
     echo "An error was encountered while creating docker container."
@@ -201,13 +201,13 @@ echo "   ssh -p $SSH_PORT $DOCKER_USER@localhost"
 if ($UPDATE_UID); then
     echo -n "Setup docker user and group id to match yours "
 
-    docker exec -t ${NAME} bash -c "/bin/loginctl kill-user devel"
+    docker exec -t ${NAME} bash -c "/bin/loginctl kill-user jenkins"
     res=3
     max=30
     count=0
     while [ $res -ne 1 ] && [ $count -le $max ]; do
         sleep 1
-        docker exec ${NAME} bash -c "loginctl user-status devel |grep sd-pam" 2>/dev/null 1>&2
+        docker exec ${NAME} bash -c "loginctl user-status jenkins |grep sd-pam" 2>/dev/null 1>&2
         res=$?
         echo -n "."
         count=$((count + 1));
@@ -217,7 +217,7 @@ if ($UPDATE_UID); then
 
      # Set uid
     if docker exec -t ${NAME} bash -c "id $(id -u)" > /dev/null 2>&1 && [ "$(id -u)" != "1664" ]; then
-        echo "Cannot set docker devel user id to your id: conflict id $(id -u) !"
+        echo "Cannot set docker jenkins user id to your id: conflict id $(id -u) !"
         exit 1
     fi
     docker exec -t ${NAME} bash -c "usermod -u $(id -u) $DOCKER_USER" || exit 1

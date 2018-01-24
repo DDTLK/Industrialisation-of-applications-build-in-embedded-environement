@@ -1,0 +1,103 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PYPLreUm2pwnu/h6MqROKp0IsKZxOfcvCKauvkwfFTMAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/YqUYt2S/PycYgDBYuHxyAAAAA==[0mxds-tools in workspace /home/jenkins/workspace/test
+[test] $ /bin/sh -xe /tmp/jenkins16549278579872388447.sh
++ pwd
+/home/jenkins/workspace/test
++ ls -al
+total 8
+drwxr-xr-x 2 jenkins users 4096 Jan 22 09:53 .
+drwxr-xr-x 3 jenkins users 4096 Jan 22 09:53 ..
++ env
+LC_ALL=en_US.UTF-8
+RUN_DISPLAY_URL=http://unconfigured-jenkins-location/job/test/14/display/redirect
+EXECUTOR_NUMBER=2
+SSH_CONNECTION=172.17.0.4 54834 172.17.0.3 22
+LANG=en_US.UTF-8
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_ID=14
+RUN_CHANGES_DISPLAY_URL=http://unconfigured-jenkins-location/job/test/14/display/redirect?page=changes
+JOB_BASE_NAME=test
+HUDSON_COOKIE=1dba643f-acc0-4bf5-bfce-049b45232f2b
+XDG_SESSION_ID=162
+USER=jenkins
+BUILD_NUMBER=14
+WORKSPACE=/home/jenkins/workspace/test
+PWD=/home/jenkins/workspace/test
+HOME=/home/jenkins
+NODE_NAME=xds-tools
+HUDSON_SERVER_COOKIE=0f93ef7ee837a19b
+SSH_CLIENT=172.17.0.4 54834 22
+JENKINS_HOME=/var/lib/jenkins
+JOB_NAME=test
+HUDSON_HOME=/var/lib/jenkins
+JOB_DISPLAY_URL=http://unconfigured-jenkins-location/job/test/display/redirect
+MAIL=/var/mail/jenkins
+SHELL=/bin/bash
+BUILD_DISPLAY_NAME=#14
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+SHLVL=2
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_TAG=jenkins-test-14
+NODE_LABELS=xds-tools
+LOGNAME=jenkins
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+XDG_RUNTIME_DIR=/run/user/1000
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/games
+BUILD_CAUSE_MANUALTRIGGER=true
+JENKINS_SERVER_COOKIE=0f93ef7ee837a19b
+_=/usr/bin/env
++ /opt/AGL/xds/cli/xds-cli
+NAME:
+   xds-cli - command line tool for X(cross) Development System.
+
+USAGE:
+   xds-cli [global options] command [command options] [arguments...]
+
+VERSION:
+   v1.0.0 (2018-01-08_202045)
+
+DESCRIPTION:
+   xds-cli utility for X(cross) Development System
+
+    Setting of global options is driven either by environment variables or by command
+    line options or using a config file knowning that the following priority order is used:
+      1. use option value (for example --url option),
+      2. else use variable 'XDS_xxx' (for example 'XDS_AGENT_URL' variable) when a
+         config file is specified with '--config|-c' option,
+      3. else use 'XDS_xxx' (for example 'XDS_AGENT_URL') environment variable.
+
+    Examples:
+    # Get help of 'projects' sub-command
+    xds-cli projects --help
+
+    # List all SDKs
+    xds-cli sdks ls
+
+    # Add a new project
+    xds-cli prj add --label="myProject" --type=cs --path=$HOME/xds-workspace/myProject
+
+ENVIRONMENT VARIABLES:
+
+AUTHOR:
+   Sebastien Douheret <sebastien@iot.bzh>
+
+COMMANDS:
+     exec           execute a command in XDS
+     misc           miscellaneous commands group
+     projects, prj  project commands group
+     sdks, sdk      SDKs commands group
+     help, h        Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --config value, -c value        env config file to source on startup [$XDS_CONFIG]
+   --log value, -l value           logging level (supported levels: panic, fatal, error, warn, info, debug) (default: "error") [$XDS_LOGLEVEL]
+   --timestamp, --ts               prefix output with timestamp [$XDS_TIMESTAMP]
+   --url value, -u value           local XDS agent url (default: "localhost:8800") [$XDS_AGENT_URL]
+   --url-server value, --us value  overwrite remote XDS server url (default value set in xds-agent-config.json file) [$XDS_SERVER_URL]
+   --help, -h                      show help
+   --version, -v                   print the version
+
+COPYRIGHT:
+   Copyright (C) 2017-2018 IoT.bzh - Apache-2.0
+Finished: SUCCESS

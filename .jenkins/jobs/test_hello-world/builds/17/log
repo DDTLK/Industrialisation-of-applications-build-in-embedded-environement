@@ -1,0 +1,13 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting contributions.
+Building remotely on [8mha:////4PYPLreUm2pwnu/h6MqROKp0IsKZxOfcvCKauvkwfFTMAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/YqUYt2S/PycYgDBYuHxyAAAAA==[0mxds-tools in workspace /home/jenkins/workspace/test
+[test] $ /bin/sh -xe /tmp/jenkins10445477073606809157.sh
++ echo /usr/local/bin:/usr/bin:/bin:/usr/games
+/usr/local/bin:/usr/bin:/bin:/usr/games
++ xds-cli sdks ls
+/tmp/jenkins10445477073606809157.sh: line 3: xds-cli: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

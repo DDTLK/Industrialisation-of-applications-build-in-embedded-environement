@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@2.24">
+    <parentIds>
+      <string>16</string>
+    </parentIds>
+    <id>17</id>
+    <startId>2</startId>
+    <result>
+      <name>ABORTED</name>
+      <ordinal>4</ordinal>
+      <color>ABORTED</color>
+      <completeBuild>false</completeBuild>
+    </result>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@2.24">
+      <error class="java.lang.InterruptedException">
+        <stackTrace>
+          <trace>java.lang.Object.wait(Native Method)</trace>
+          <trace>hudson.remoting.Request.call(Request.java:167)</trace>
+          <trace>hudson.remoting.Channel.call(Channel.java:908)</trace>
+          <trace>org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:146)</trace>
+          <trace>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</trace>
+          <trace>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</trace>
+          <trace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+          <trace>java.lang.reflect.Method.invoke(Method.java:498)</trace>
+          <trace>org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:132)</trace>
+          <trace>com.sun.proxy.$Proxy94.execute(Unknown Source)</trace>
+          <trace>hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1120)</trace>
+          <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1160)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:113)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:85)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:75)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.AbstractSynchronousNonBlockingStepExecution$1$1.call(AbstractSynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>hudson.security.ACL.impersonate(ACL.java:274)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.AbstractSynchronousNonBlockingStepExecution$1.run(AbstractSynchronousNonBlockingStepExecution.java:44)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+      </error>
+    </org.jenkinsci.plugins.workflow.actions.ErrorAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.24">
+      <startTime>1516628415020</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

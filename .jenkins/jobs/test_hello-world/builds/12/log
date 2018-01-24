@@ -1,0 +1,53 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PYPLreUm2pwnu/h6MqROKp0IsKZxOfcvCKauvkwfFTMAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/YqUYt2S/PycYgDBYuHxyAAAAA==[0mxds-tools in workspace /home/jenkins/workspace/test
+[test] $ /bin/sh -xe /tmp/jenkins2777122066766172685.sh
++ pwd
+/home/jenkins/workspace/test
++ ls -al
+total 8
+drwxr-xr-x 2 jenkins users 4096 Jan 22 09:53 .
+drwxr-xr-x 3 jenkins users 4096 Jan 22 09:53 ..
++ env
+LC_ALL=en_US.UTF-8
+RUN_DISPLAY_URL=http://unconfigured-jenkins-location/job/test/12/display/redirect
+EXECUTOR_NUMBER=2
+SSH_CONNECTION=172.17.0.4 54834 172.17.0.3 22
+LANG=en_US.UTF-8
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_ID=12
+RUN_CHANGES_DISPLAY_URL=http://unconfigured-jenkins-location/job/test/12/display/redirect?page=changes
+JOB_BASE_NAME=test
+HUDSON_COOKIE=e32d3ab1-d17a-43f1-b472-cd95f0557703
+XDG_SESSION_ID=162
+USER=jenkins
+BUILD_NUMBER=12
+WORKSPACE=/home/jenkins/workspace/test
+PWD=/home/jenkins/workspace/test
+HOME=/home/jenkins
+NODE_NAME=xds-tools
+HUDSON_SERVER_COOKIE=0f93ef7ee837a19b
+SSH_CLIENT=172.17.0.4 54834 22
+JENKINS_HOME=/var/lib/jenkins
+JOB_NAME=test
+HUDSON_HOME=/var/lib/jenkins
+JOB_DISPLAY_URL=http://unconfigured-jenkins-location/job/test/display/redirect
+MAIL=/var/mail/jenkins
+SHELL=/bin/bash
+BUILD_DISPLAY_NAME=#12
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+SHLVL=2
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_TAG=jenkins-test-12
+NODE_LABELS=xds-tools
+LOGNAME=jenkins
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+XDG_RUNTIME_DIR=/run/user/1000
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/games
+BUILD_CAUSE_MANUALTRIGGER=true
+JENKINS_SERVER_COOKIE=0f93ef7ee837a19b
+_=/usr/bin/env
++ xds-cli sdks ls
+/tmp/jenkins2777122066766172685.sh: line 5: xds-cli: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

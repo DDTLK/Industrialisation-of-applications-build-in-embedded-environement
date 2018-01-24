@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: ikedam
+Build-Jdk: 1.8.0_92
+Extension-Name: copyartifact
+Specification-Title: Adds a build step to copy artifacts from another 
+ project.
+Implementation-Title: copyartifact
+Implementation-Version: 1.39
+Plugin-Class: hudson.plugins.copyartifact.CopyArtifactPlugin
+Group-Id: org.jenkins-ci.plugins
+Short-Name: copyartifact
+Long-Name: Copy Artifact Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin
+Plugin-Version: 1.39
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Dependencies: maven-plugin:2.7.1;resolution:=optional,matrix-pr
+ oject:1.3,structs:1.6
+Plugin-Developers: 
+

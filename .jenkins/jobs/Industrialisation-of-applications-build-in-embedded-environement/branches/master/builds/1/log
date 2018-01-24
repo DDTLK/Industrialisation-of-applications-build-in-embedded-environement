@@ -1,0 +1,20 @@
+Branch indexing
+[8mha:////4AKpR+JJnoAy5nUCZ1IiBuIbUD9II6NOQ2nFsHaTX3SpAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSinDCvOgDRi3s7jgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+Obtained Jenkinsfile from 1f580fb942249a76146b1ed6be1ab1758c6af6d0
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Still waiting to schedule task
+There are no nodes with the label ‘04-opensuse-tumbleweed-tyrex’
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] deleteDir
+Required context class hudson.FilePath is missing
+Perhaps you forgot to surround the code with a step that provides this, such as: node
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+ERROR: Queue task was cancelled
+Finished: FAILURE

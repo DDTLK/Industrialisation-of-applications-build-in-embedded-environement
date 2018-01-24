@@ -1,0 +1,5 @@
+[IOABiEE_master-PK5TJ7PHEN6PYNC7PEQKMTKDANXQYR4BOUTT53QHJ3FC37P3523A] Running shell script
++ pwd
+/home/jenkins/workspace/IOABiEE_master-PK5TJ7PHEN6PYNC7PEQKMTKDANXQYR4BOUTT53QHJ3FC37P3523A
++ xds-cli exec --id= --sdkid= -- qmake
+/home/jenkins/workspace/IOABiEE_master-PK5TJ7PHEN6PYNC7PEQKMTKDANXQYR4BOUTT53QHJ3FC37P3523A@tmp/durable-a8c7fe7c/script.sh: line 3: xds-cli: command not found

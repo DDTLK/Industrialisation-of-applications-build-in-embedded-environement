@@ -1,0 +1,7 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[hvac] Running shell script
+++ xds-cli sdks ls
+++ tail -n1
+++ cut '-d ' -f1
++ def SDK_ID=080dd6ab
+/home/jenkins/workspace/IOABiEE_master-PK5TJ7PHEN6PYNC7PEQKMTKDANXQYR4BOUTT53QHJ3FC37P3523A/hvac@tmp/durable-f070864a/script.sh: line 2: def: command not found

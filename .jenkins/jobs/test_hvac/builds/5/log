@@ -1,0 +1,51 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PYPLreUm2pwnu/h6MqROKp0IsKZxOfcvCKauvkwfFTMAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/YqUYt2S/PycYgDBYuHxyAAAAA==[0mxds-tools (xds) in workspace /home/jenkins/workspace/test_hvac
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[test_hvac] $ /bin/sh -xe /tmp/jenkins8515827115117045139.sh
++ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/games:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin
++ PATH=/usr/local/bin:/usr/bin:/bin:/usr/games:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin
++ xds-cli sdks ls
+List of installed SDKs: 
+ID	 NAME					 STATUS		 VERSION ARCH
+080dd6ab AGL-release-eel-5.0.0-intel-corei7-64	 Installed	 5.0.0	 corei7-64
++ git clone https://gerrit.automotivelinux.org/gerrit/apps/hvac
+Cloning into 'hvac'...
++ cd hvac
+++ xds-cli sdks ls
+++ cut '-d ' -f1
+++ tail -n1
++ SDK_ID=080dd6ab
+++ cut '-d)' -f1
+++ xds-cli prj add --label=Project_hvac --type=pm --path=/home/jenkins/xds-workspace/hvac --server-path=/home/devel/xds-workspace/hvac
+++ cut '-d ' -f5
++ ID=93d05540-002b-11e8-aa7f-0242ac110002
++ echo prj_id=93d05540-002b-11e8-aa7f-0242ac110002
+prj_id=93d05540-002b-11e8-aa7f-0242ac110002
++ echo sdk-id=080dd6ab
+sdk-id=080dd6ab
++ xds-cli prj ls
+ID					 Label					 LocalPath
+640facd6-002b-11e8-aa7f-0242ac110002 	 Project_hvac 				 /home/jenkins/xds-workspace/hvac
+93d05540-002b-11e8-aa7f-0242ac110002 	 Project_hvac 				 /home/jenkins/xds-workspace/hvac
+5fc9e12a-ffb7-11e7-b7e1-0242ac110002 	 Project_helloworld-native-application 	 /home/jenkins/xds-workspace/helloworld-native-application
+290ab6ef-002b-11e8-aa7f-0242ac110002 	 Project_hvac 				 /home/jenkins/xds-workspace/hvac
++ xds-cli exec --id=93d05540-002b-11e8-aa7f-0242ac110002 --sdkid=080dd6ab -- qmake
++ xds-cli exec --id=93d05540-002b-11e8-aa7f-0242ac110002 --sdkid=080dd6ab -- make
+cd app/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/app/app.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/app'
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -o ../package/root/bin/hvac main.o translator.o qrc_hvac.o qrc_images.o moc_translator.o   -lhomescreen -L/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -lqtWindowmanagerWrapper -lwindowmanager -ljson-c -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/app'
+cd binding/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/binding/binding.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/binding'
+make[1]: Nothing to be done for 'first'.
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/binding'
+cd package/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/package/package.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/package'
+Makefile:607: warning: overriding recipe for target 'package'
+Makefile:231: warning: ignoring old recipe for target 'package'
+wgtpkg-pack -f -o hvac.wgt root
+<5> NOTICE: -- PACKING widget hvac.wgt from directory root [/w/workspace/release-jjb-eel-snapshot/MACHINE/qemux86-64/label/agl-test-slave/repoclone/output/tmp/work/x86_64-nativesdk-aglsdk-linux/nativesdk-af-main/eel+gitAUTOINC+35c33f24d3-r0/git/src/wgtpkg-pack.c:151]
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/package'
+Finished: SUCCESS

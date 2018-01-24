@@ -1,0 +1,18 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[hvac] Running shell script
++ systemctl --user restart xds-agent
+++ xds-cli sdks ls
+++ tail -n1
+++ cut '-d ' -f1
+ERROR: XDSAGENT: Cannot retrieve Client ID and/or CSRF: Get http://localhost:8800: dial tcp 127.0.0.1:8800: getsockopt: connection refused
+Cannot connection to http://localhost:8800 (connection refused)
++ SDK_ID=
+++ xds-cli prj add --label=Project_hvac --type=pm --path=/home/jenkins/xds-workspace/hvac --server-path=/home/devel/xds-workspace/hvac
+++ cut '-d)' -f1
+++ cut '-d ' -f5
+ERROR: XDSAGENT: Cannot retrieve Client ID and/or CSRF: Get http://localhost:8800: dial tcp 127.0.0.1:8800: getsockopt: connection refused
+Cannot connection to http://localhost:8800 (connection refused)
++ ID=
++ xds-cli exec --id= --sdkid= -- qmake
+ERROR: XDSAGENT: Cannot retrieve Client ID and/or CSRF: Get http://localhost:8800: dial tcp 127.0.0.1:8800: getsockopt: connection refused
+Cannot connection to http://localhost:8800 (connection refused)

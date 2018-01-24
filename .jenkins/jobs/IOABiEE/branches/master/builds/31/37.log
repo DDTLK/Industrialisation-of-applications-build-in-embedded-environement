@@ -1,0 +1,4 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABiEE_master-PK5TJ7PHEN6PYNC7PEQKMTKDANXQYR4BOUTT53QHJ3FC37P3523A] Running shell script
++ ID = cat env_ID.txt
+/home/jenkins/workspace/IOABiEE_master-PK5TJ7PHEN6PYNC7PEQKMTKDANXQYR4BOUTT53QHJ3FC37P3523A@tmp/durable-bcc688ec/script.sh: line 2: ID: command not found

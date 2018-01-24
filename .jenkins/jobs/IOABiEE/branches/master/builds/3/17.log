@@ -1,0 +1,16 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://gerrit.automotivelinux.org/gerrit/apps/hvac # timeout=10
+Fetching upstream changes from https://gerrit.automotivelinux.org/gerrit/apps/hvac
+ > git --version # timeout=10
+ > git fetch --tags --progress https://gerrit.automotivelinux.org/gerrit/apps/hvac +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision afee2b7f2409d0394d9254c96dd30fd4c35f73e7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+Commit message: "Merge "Languages changing depending on identity logged in""
+ > git rev-list --no-walk afee2b7f2409d0394d9254c96dd30fd4c35f73e7 # timeout=10

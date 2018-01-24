@@ -1,0 +1,28 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[Mon Jan 22 13:36:16 UTC 2018] Starting branch indexing...
+[8mha:////4OGIV9Bspn/vKv5etDmGlwEqXuzvyykHuTqCUVFEzRZuAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSinGjBBgA/9gzLjgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+[8mha:////4JuAkQHK9YcujuakLgP4DQ6JOUF6co3Pz02+gDf6MF/OAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHSinGhRAQANVl5ijgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+Examining [8mha:////4KgJqyrKiTkTF5seDijoyUBNAIZHILbK7DiEE1o4Se/JAAAAzh+LCAAAAAAAAP9djDFuAjEQRYdF5AApEVfwukuRiCoIsWJFQ5qUXjzZHfCOLXuM4BpcA5ocIsfJHbIJXX7z/yv+u33DJEWYddkmz+XOc/IOy9U5YHTEh40XfJpfP+eX8FVAUcGDQ26lq2GcoxN4rPfmaLQz3OqtROL25RRh+k/3eu9fGdwzKgBOYRhLgfdOJKRnrVuSLjfDq9eLxVu91hXbnAarcZSMkGflP5QJwdHuD5NqMjmriBX2DVqLViEfKXrGHll+AI6YKOLeAAAA[0mDDTLK/Industrialisation-of-applications-build-in-embedded-environement
+
+  Checking branches...
+
+  Getting remote branches...
+
+    Checking branch [8mha:////4DLRomrpL90TbvihUjxteo2rYY2G93FaONgPovbLIeyTAAAA0x+LCAAAAAAAAP9djDFywjAQRRcz+AApGa4g1KVIxhUuYOJJk1xAthZ7QV5ppBUD1+AaSZND5Di5Q5zQ8Zv/X/Hf5w8sUoTVkG3yvO48J+9wvb0EjI74+OoFH6uPr+oavgsodlA65F6GBuY5OoGH5mBORjvDvX6TSNw/nyMs73SbW//J4JZZAXAO0ygFcBAJ6UnrnmTI7fQadV2/Ny96xzanyWocJSPkWfm9MiE46v4xqTaTs4pY4diitWgV8omiZxyRRUtE1KNJgvEXMxvPVOoAAAA=[0mmaster
+      ‘Jenkinsfile’ found
+    Met criteria
+Changes detected: master (1f580fb942249a76146b1ed6be1ab1758c6af6d0 → 70937a81d827d441d695d52dbd76d12753137a04)
+Scheduled build for branch: master
+
+  1 branches were processed
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining DDTLK/Industrialisation-of-applications-build-in-embedded-environement
+
+[Mon Jan 22 13:36:18 UTC 2018] Finished branch indexing. Indexing took 1.9 sec
+Finished: SUCCESS

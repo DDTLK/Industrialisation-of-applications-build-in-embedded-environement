@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='jenkins-multijob-plugin' version='1.28'><l:dependency name='Jenkins Multijob plugin' groupId='org.jenkins-ci.plugins' artifactId='jenkins-multijob-plugin' version='1.28' url='http://wiki.jenkins-ci.org/display/JENKINS/Multijob+Plugin'><l:description>Enabling full hierarchy of Jenkins jobs</l:description></l:dependency></l:dependencies>

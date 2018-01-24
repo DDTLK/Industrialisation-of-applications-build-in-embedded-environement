@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.5"/>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.27"/>
+  </actions>
+  <queueId>4</queueId>
+  <timestamp>1516370333094</timestamp>
+  <startTime>1516370333099</startTime>
+  <result>FAILURE</result>
+  <duration>23</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>xds-tools</builtOn>
+  <workspace>/home/jenkins/workspace/test</workspace>
+  <hudsonVersion>2.102</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

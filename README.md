@@ -19,10 +19,10 @@ docker run \
 --hostname="jenkins" --name="jenkins" \
 --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
 --detach=true \
--v $HOME/workspace-agl/Industrialisation-of-applications-build-in-embedded-environement/.jenkins:/var/lib/jenkins \
+-v $HOME/Industrialisation-of-applications-build-in-embedded-environement/.jenkins:/var/lib/jenkins \
 -p 8080:8080 \
 -p 50500:50000 \
--p 2224:22 \
+-p 2226:22 \
 -it docker.iot.bzh/iotbzh/jenkins:latest
 ```
 
@@ -57,9 +57,6 @@ make build
 
 ## install SDK TODO
 
-must be in docker-image-creator
-
-sudo /opt/AGL/xds/server/xds-utils/install-agl-sdks.sh --arch aarch64
 
 ### clone hello world TODO
 
@@ -72,3 +69,16 @@ git clone --recursive <https://github.com/iotbzh/helloworld-native-application.g
 inspect docker bridge:
 
 docker network inspect bridge
+
+### replace sdk-id
+
+SDK_ID=$( xds-cli sdks ls | cut -d' ' -f1 | tail -n1 )
+
+sed -i s/"#export XDS_SDK_ID=???"/"export XDS_SDK_ID=$ID"/g *.conf
+
+source *.conf
+
+### create pipeline
+
+need ssh credential
+

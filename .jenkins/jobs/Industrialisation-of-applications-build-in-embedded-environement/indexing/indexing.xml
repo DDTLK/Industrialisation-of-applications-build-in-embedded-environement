@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jenkins.branch.MultiBranchProject_-BranchIndexing plugin="branch-api@2.0.18">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.4.0">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/pipelines/</mappedUrl>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+  </actions>
+  <result>
+    <name>SUCCESS</name>
+    <ordinal>0</ordinal>
+    <color>BLUE</color>
+    <completeBuild>true</completeBuild>
+  </result>
+  <durations>
+    <long>1970</long>
+  </durations>
+  <timestamp>1516628176590</timestamp>
+  <duration>1970</duration>
+</jenkins.branch.MultiBranchProject_-BranchIndexing>

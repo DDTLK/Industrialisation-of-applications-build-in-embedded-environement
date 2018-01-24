@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.jenkins.blueocean</groupId>
         <artifactId>blueocean-parent</artifactId>
-        <version>1.3.5</version>
+        <version>1.4.0</version>
     </parent>
 
     <artifactId>blueocean</artifactId>
@@ -20,6 +20,14 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jenkins-design-language</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>blueocean-core-js</artifactId>
+        </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>blueocean-web</artifactId>
@@ -162,11 +170,10 @@
                             if (theHpl.file) {
                                 workPluginsDir.mkdirs();
                                 ant.copy(file: theHpl, tofile: new File(workPluginsDir, pluginId + '.hpl'), overwrite: true, verbose: true);
-                                println('Automatically linking ' + pluginId)
                             } else {
                                 println('Warning: no such file ' + theHpl);
                             }
-                        }
+                        };
 
                         println('Automatically linking HPIs for submodules...')
 
