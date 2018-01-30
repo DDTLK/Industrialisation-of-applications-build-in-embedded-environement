@@ -4,11 +4,11 @@
 apt-get install -y man tree curl screen 
 
 # add the build user
-useradd -c "Builder" -d $AGENTUSER_HOME -G sudo -m -U -s /bin/bash -u $AGENTUSER_UID $AGENTUSER
-echo $AGENTUSER:$AGENTUSER_PASSWORD | chpasswd 
+useradd -c "Builder" -d $SLAVEUSER_HOME -G sudo -m -U -s /bin/bash -u $SLAVEUSER_UID $SLAVEUSER
+echo $SLAVEUSER:$SLAVEUSER_PASSWORD | chpasswd 
 
 # generate an extra environment file sourced by bashrc
-for k in	AGENTUSER AGENTUSER_UID AGENTUSER_HOME \
+for k in	SLAVEUSER SLAVEUSER_UID SLAVEUSER_HOME \
 			XDT_DIR \
 			XDT_META XDT_DOWNLOADCACHE XDT_SSTATECACHE XDT_CCACHE XDT_BUILD XDT_WORKSPACE XDT_SOURCES XDT_SDK \
 			; do
@@ -17,8 +17,8 @@ for k in	AGENTUSER AGENTUSER_UID AGENTUSER_HOME \
 	echo "export $k=$v" >>/etc/xdtrc
 done
 
-mkdir -p $AGENTUSER_HOME/bin
-cat <<'EOF' >>$AGENTUSER_HOME/.bashrc
+mkdir -p $SLAVEUSER_HOME/bin
+cat <<'EOF' >>$SLAVEUSER_HOME/.bashrc
 
 # added by worker image creation script (docker-image-builder)
 export PATH=~/bin:$PATH
@@ -26,6 +26,6 @@ export PATH=~/bin:$PATH
 
 EOF
 
-chown -R $AGENTUSER:$AGENTUSER $XDT_DIR
-chown -R $AGENTUSER:$AGENTUSER $AGENTUSER_HOME
+chown -R $SLAVEUSER:$SLAVEUSER $XDT_DIR
+chown -R $SLAVEUSER:$SLAVEUSER $SLAVEUSER_HOME
 
