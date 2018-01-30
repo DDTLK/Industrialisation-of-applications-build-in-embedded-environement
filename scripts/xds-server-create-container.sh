@@ -29,11 +29,11 @@
 #
 ##########################################
 
-REGISTRY=docker.automotivelinux.org
-REPO=agl
-NAME=worker
-FLAVOUR=xds
-VERSION=4.0
+REGISTRY=docker.iot.bzh
+REPO=iotbzh
+NAME=xds
+FLAVOUR=server
+VERSION=latest
 
 # ---------------------------------------------------
 # --- computed - don't touch !
@@ -129,7 +129,7 @@ fi
 USER=$(id -un)
 echo "Using instance ID #$ID (user $(id -un))"
 
-NAME=agl-xds-$(hostname|cut -f1 -d'.')-$ID-$USER
+NAME=agl-xds-$FLAVOUR-$(hostname|cut -f1 -d'.')-$ID-$USER
 
 if docker ps -a |grep "$NAME" > /dev/null; then
     echo "Image name already exist ! (use -h option to read help)"
