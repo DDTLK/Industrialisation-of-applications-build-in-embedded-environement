@@ -75,3 +75,6 @@ ssh 'tools'
 exit
 sudo service jenkins start
 exit
+ls
+ls
+exit

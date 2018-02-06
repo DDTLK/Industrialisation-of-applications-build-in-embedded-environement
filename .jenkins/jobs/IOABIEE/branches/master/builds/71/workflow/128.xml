@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@2.42">
+    <parentIds>
+      <string>125</string>
+    </parentIds>
+    <id>128</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>UTF-8</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl plugin="workflow-cps@2.42">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>script</string>
+          <string>
+
+#unstash variables
+ID_3=$(cat env_ID_3.txt)
+SDK_ID_3=$(cat env_SDK_ID_3.txt)
+SDK_ID_3_NAME=$(cat env_SDK_ID_3_NAME.txt)
+
+#Build
+xds-cli exec --id=&quot;$ID_3&quot; --sdkid=&quot;$SDK_ID_3&quot; -- &quot;qmake&quot;
+
+xds-cli exec --id=&quot;$ID_3&quot; --sdkid=&quot;$SDK_ID_3&quot; -- &quot;make&quot;
+
+#Copy widget
+cp ~/xds-workspace/hvac_&quot;$SDK_ID_3_NAME&quot;/package/hvac.wgt hvac_&quot;$SDK_ID_3_NAME&quot;.wgt</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.24">
+      <startTime>1517513421433</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

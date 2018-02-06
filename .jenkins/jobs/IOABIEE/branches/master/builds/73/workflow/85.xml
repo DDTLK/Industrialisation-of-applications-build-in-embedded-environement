@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepStartNode" plugin="workflow-cps@2.42">
+    <parentIds>
+      <string>79</string>
+    </parentIds>
+    <id>85</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.cps.steps.ParallelStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.actions.BodyInvocationAction plugin="workflow-api@2.24"/>
+    <org.jenkinsci.plugins.workflow.cps.steps.ParallelStepExecution_-ParallelLabelAction plugin="workflow-cps@2.42">
+      <branchName>Build  SDK_ID_3</branchName>
+    </org.jenkinsci.plugins.workflow.cps.steps.ParallelStepExecution_-ParallelLabelAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.24">
+      <startTime>1517513755562</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

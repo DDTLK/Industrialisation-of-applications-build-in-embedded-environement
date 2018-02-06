@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@2.42">
+    <parentIds>
+      <string>75</string>
+    </parentIds>
+    <id>79</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>UTF-8</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl plugin="workflow-cps@2.42">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>script</string>
+          <string>
+
+#unstash variables
+ID_4=$(cat env_ID_4.txt)
+SDK_ID_4=$(cat env_SDK_ID_4.txt)
+SDK_ID_4_NAME=$(cat env_SDK_ID_4_NAME.txt)
+
+#Build
+xds-cli exec --id=&quot;$ID_4&quot; --sdkid=&quot;$SDK_ID_4&quot; -- &quot;qmake&quot;
+
+xds-cli exec --id=&quot;$ID_4&quot; --sdkid=&quot;$SDK_ID_4&quot; -- &quot;make&quot;
+
+#Copy widget
+cp ~/xds-workspace/hvac_&quot;$SDK_ID_4_NAME&quot;/package/hvac.wgt hvac_&quot;$SDK_ID_4_NAME&quot;.wgt</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.24">
+      <startTime>1517510001946</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+    <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@2.24">
+      <error class="hudson.AbortException">
+        <detailMessage>script returned exit code 1</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.check(DurableTaskStep.java:335)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.run(DurableTaskStep.java:289)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)</trace>
+          <trace>java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+      </error>
+    </org.jenkinsci.plugins.workflow.actions.ErrorAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

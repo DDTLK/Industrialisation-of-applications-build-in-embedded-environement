@@ -1,0 +1,10 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_ID_1.txt
++ ID_1=18c88761-077a-11e8-b035-0242ac110002
+++ cat env_SDK_ID_1.txt
++ SDK_ID_1=e54e6333
+++ cat env_SDK_ID_1_NAME.txt
++ SDK_ID_1_NAME=armv7ahf-neon
++ xds-cli exec --id=18c88761-077a-11e8-b035-0242ac110002 --sdkid=e54e6333 -- qmake
+Websocket not established

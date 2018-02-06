@@ -1,0 +1,18 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_ID_1.txt
++ ID_1=3ba681f6-0795-11e8-b035-0242ac110002
+++ cat env_ID_2.txt
++ ID_2=3bad96a0-0795-11e8-b035-0242ac110002
+++ cat env_ID_3.txt
++ ID_3=3bb3d140-0795-11e8-b035-0242ac110002
++ echo yes
++ xds-cli prj rm --id=3ba681f6-0795-11e8-b035-0242ac110002
+Do you permanently remove project id '3ba681f6-0795-11e8-b035-0242ac110002' [yes/No] ? Project ID 3ba681f6-0795-11e8-b035-0242ac110002 successfully deleted.
++ xds-cli prj rm --id=3bad96a0-0795-11e8-b035-0242ac110002
++ echo yes
+Do you permanently remove project id '3bad96a0-0795-11e8-b035-0242ac110002' [yes/No] ? Project ID 3bad96a0-0795-11e8-b035-0242ac110002 successfully deleted.
++ echo yes
++ xds-cli prj rm --id=3bb3d140-0795-11e8-b035-0242ac110002
+Do you permanently remove project id '3bb3d140-0795-11e8-b035-0242ac110002' [yes/No] ? Project ID 3bb3d140-0795-11e8-b035-0242ac110002 successfully deleted.
++ rm -rf /home/jenkins/xds-workspace/hvac_armv7ahf-neon /home/jenkins/xds-workspace/hvac_corei7-64 /home/jenkins/xds-workspace/hvac_qemux86-64

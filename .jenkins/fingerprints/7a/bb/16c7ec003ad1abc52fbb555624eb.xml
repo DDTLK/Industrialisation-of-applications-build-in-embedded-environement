@@ -5,8 +5,8 @@
   <fileName>Credential id=github name=jenkins/****** (GitHub Access Token)</fileName>
   <usages>
     <entry>
-      <string>IOABiEE/master</string>
-      <ranges>1-37</ranges>
+      <string>IOABIEE/master</string>
+      <ranges>1-9,11,13-26,28-87</ranges>
     </entry>
     <entry>
       <string>Industrialisation-of-applications-build-in-embedded-environement/master</string>

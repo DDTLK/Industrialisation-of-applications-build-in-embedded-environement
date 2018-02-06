@@ -1,0 +1,147 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+ERROR: Could not determine exact tip revision of master; falling back to nondeterministic checkout
+Checking out git https://github.com/DDTLK/IOABIEE.git into /var/lib/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ@script to read Jenkinsfile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision e52ea3680a0db02de405e723862268e64114337b (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e52ea3680a0db02de405e723862268e64114337b
+Commit message: "Added Jenkinsfile"
+ > git rev-list --no-walk e52ea3680a0db02de405e723862268e64114337b # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4N9AUrweVO/FQVBVCWk2ltsBgKrvQLoV0kL8Jm3acQYxAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYR/eT83ILSktQi/YqUYt2S/PycYn0AyEem/MkAAAA=[0mxds-tools in /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Setup)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Setup project
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
++ cd /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
++ pwd
+/home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+Cloning the remote Git repository
+Cloning repository https://gerrit.automotivelinux.org/gerrit/apps/hvac
+ > git init /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ # timeout=10
+Fetching upstream changes from https://gerrit.automotivelinux.org/gerrit/apps/hvac
+ > git --version # timeout=10
+ > git fetch --tags --progress https://gerrit.automotivelinux.org/gerrit/apps/hvac +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://gerrit.automotivelinux.org/gerrit/apps/hvac # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://gerrit.automotivelinux.org/gerrit/apps/hvac # timeout=10
+Fetching upstream changes from https://gerrit.automotivelinux.org/gerrit/apps/hvac
+ > git fetch --tags --progress https://gerrit.automotivelinux.org/gerrit/apps/hvac +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision afee2b7f2409d0394d9254c96dd30fd4c35f73e7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+Commit message: "Merge "Languages changing depending on identity logged in""
+ > git rev-list --no-walk afee2b7f2409d0394d9254c96dd30fd4c35f73e7 # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] dir
+Running in /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ/hvac
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+set ID & SDK_ID
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[hvac] Running shell script
++ pwd
+/home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ/hvac
+++ xds-cli sdks ls
+++ cut '-d ' -f1
+++ tail -n1
++ export SDK_ID=944d2d5a
++ SDK_ID=944d2d5a
+++ xds-cli prj add --label=Project_hvac --type=pm --path=/home/jenkins/xds-workspace/hvac --server-path=/home/devel/xds-workspace/hvac
+++ cut '-d)' -f1
+++ cut '-d ' -f5
++ export ID=ccfbba3b-0761-11e8-b035-0242ac110002
++ ID=ccfbba3b-0761-11e8-b035-0242ac110002
++ echo ccfbba3b-0761-11e8-b035-0242ac110002
++ echo 944d2d5a
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // dir
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Build)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Build ....
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_ID.txt
++ ID=ccfbba3b-0761-11e8-b035-0242ac110002
+++ cat env_SDK_ID.txt
++ SDK_ID=944d2d5a
++ xds-cli exec --id=ccfbba3b-0761-11e8-b035-0242ac110002 --sdkid=944d2d5a -- qmake
++ xds-cli exec --id=ccfbba3b-0761-11e8-b035-0242ac110002 --sdkid=944d2d5a -- make
+cd app/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/app/app.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/app'
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -o ../package/root/bin/hvac main.o translator.o qrc_hvac.o qrc_images.o moc_translator.o   -lhomescreen -L/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -lqtWindowmanagerWrapper -lwindowmanager -ljson-c -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/app'
+cd binding/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/binding/binding.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/binding'
+make[1]: Nothing to be done for 'first'.
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/binding'
+cd package/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/package/package.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/package'
+Makefile:607: warning: overriding recipe for target 'package'
+Makefile:231: warning: ignoring old recipe for target 'package'
+wgtpkg-pack -f -o hvac.wgt root
+<5> NOTICE: -- PACKING widget hvac.wgt from directory root [/w/workspace/sandbox-build-machines-sstate-mirror/AGLBRANCH/master/MACHINE/intel-corei7-64/label/agl-test-slave/sstate-build/build-intel-corei7-64/tmp/work/x86_64-nativesdk-aglsdk-linux/nativesdk-af-main/master+gitAUTOINC+1bec325ee8-r0/git/src/wgtpkg-pack.c:151]
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/package'
++ cp /home/jenkins/xds-workspace/hvac/package/hvac.wgt .
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Publish)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Publish
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+ERROR: No artifacts found that match the file pattern "~/xds_workspace/hvac/hvac.wgt". Configuration error?
+ERROR: ‘~’ is only supported in a Unix shell and nowhere else.
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] deleteDir
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: FAILURE

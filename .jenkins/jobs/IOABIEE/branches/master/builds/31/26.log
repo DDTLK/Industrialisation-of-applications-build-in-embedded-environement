@@ -1,0 +1,4 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
++ cp hvac /home/jenkins/xds-workspace/
+cp: -r not specified; omitting directory 'hvac'

@@ -1,0 +1,3 @@
+Archiving artifacts
+ERROR: No artifacts found that match the file pattern "~/xds_workspace/hvac/hvac.wgt". Configuration error?
+ERROR: ‘~’ is only supported in a Unix shell and nowhere else.

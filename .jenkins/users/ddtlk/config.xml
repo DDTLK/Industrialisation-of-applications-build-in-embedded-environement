@@ -17,6 +17,10 @@
     <hudson.plugins.favorite.user.FavoriteUserProperty plugin="favorite@2.3.1">
       <data class="concurrent-hash-map">
         <entry>
+          <string>IOABIEE/master</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>IOABiEE/master</string>
           <boolean>true</boolean>
         </entry>

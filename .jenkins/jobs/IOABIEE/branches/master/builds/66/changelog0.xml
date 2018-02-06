@@ -1,0 +1,11 @@
+commit 57517373b37a71ec66fea45c928ad7b3a8b1aa4a
+tree b9b0290c6788a8eab6b8274e5241bfdf0e432a27
+parent df1bc88e61dd1f5791ad55ccf19d5ba2e940149b
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:27:06 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:27:06 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 d6c9dc6319819c6dc62f464d4c09a690b719b40c d873190b10c6a8ae283bbf701b34ce57c32bae24 M	Jenkinsfile

@@ -1,0 +1,21 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ xds-cli sdks ls
+++ cut '-d ' -f1
+++ tail -n1
++ export SDK_ID_1=e54e6333
++ SDK_ID_1=e54e6333
+++ xds-cli sdks ls
+++ cut '-d ' -f5
+++ grep e54e6333
++ SDK_ID_1_NAME=armv7ahf-neon
++ mkdir -p /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
+++ cut '-d ' -f5
+++ cut '-d)' -f1
+++ xds-cli prj add --label=Project_hvac_armv7ahf-neon --type=pm --path=/home/jenkins/xds-workspace/hvac_armv7ahf-neon --server-path=/home/devel/xds-workspace/hvac_armv7ahf-neon
++ export ID_1=d681d495-0770-11e8-b035-0242ac110002
++ ID_1=d681d495-0770-11e8-b035-0242ac110002
++ echo d681d495-0770-11e8-b035-0242ac110002
++ echo armv7ahf-neon
++ echo e54e6333

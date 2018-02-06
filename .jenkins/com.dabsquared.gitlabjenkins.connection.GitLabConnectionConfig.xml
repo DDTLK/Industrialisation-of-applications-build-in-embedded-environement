@@ -5,6 +5,7 @@
     <com.dabsquared.gitlabjenkins.connection.GitLabConnection>
       <name></name>
       <url></url>
+      <apiTokenId></apiTokenId>
       <clientBuilder class="com.dabsquared.gitlabjenkins.gitlab.api.impl.AutodetectGitLabClientBuilder">
         <id>autodetect</id>
         <ordinal>0</ordinal>
