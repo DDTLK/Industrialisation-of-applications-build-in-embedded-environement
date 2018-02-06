@@ -39,7 +39,7 @@ VERSION=latest
 # ---------------------------------------------------
 # --- computed - don't touch !
 # ---------------------------------------------------
-DOCKER_USER=jenkins
+DOCKER_USER=slave
 
 DEFIMAGE=$REGISTRY/$REPO/$NAME-$FLAVOUR:$VERSION
 

@@ -43,8 +43,8 @@ wget -O - http://iot.bzh/download/public/XDS/docker/docker_agl_worker-xds-latest
 Run the container
 
 ```shell
-wget -O xds-docker-create-container.sh 'https://gerrit.automotivelinux.org/gerrit/gitweb?p=src/xds/xds-server.git;a=blob_plain;f=scripts/xds-docker-create-container.sh;hb=master'
-bash ./xds-docker-create-container.sh
+cd scripts
+bash ./xds-server-create-container.sh
 ```
 
 ## install XDS-tools
@@ -55,30 +55,30 @@ sed -i "s/jenkins/xds-tools/g" Makefile
 make build
 ```
 
-## install SDK TODO
+Run the container
 
+```shell
+cd scripts
+bash ./xds-tools-create-container.sh
+```
 
-### clone hello world TODO
+Start xds-agent
 
-must be in docker-image-creator
+```shell
+ssh -p 2224 slave@localhost
+systemctl --user start xds-agent
+```
 
-mkdir $HOME/xds-workspace
-cd $HOME/xds-workspace
-git clone --recursive <https://github.com/iotbzh/helloworld-native-application.git>
+## install SDK
 
-inspect docker bridge:
+In the xds-tools container
 
-docker network inspect bridge
+```shell
+xds-cli sdks ls a
+```
 
-### replace sdk-id
+Choose an sdk and install
 
-SDK_ID=$( xds-cli sdks ls | cut -d' ' -f1 | tail -n1 )
-
-sed -i s/"#export XDS_SDK_ID=???"/"export XDS_SDK_ID=$ID"/g *.conf
-
-source *.conf
-
-### create pipeline
-
-need ssh credential
-
+```shell
+xds-cli sdks install "sdk_id"
+```

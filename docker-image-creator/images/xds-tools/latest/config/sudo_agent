@@ -1,1 +1,1 @@
-agent    ALL=NOPASSWD: ALL
+slave    ALL=NOPASSWD: ALL
