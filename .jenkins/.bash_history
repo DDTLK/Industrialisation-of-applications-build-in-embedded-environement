@@ -78,3 +78,10 @@ exit
 ls
 ls
 exit
+vi /var/lib/jenkins/.ssh/config 
+ssh-copy-id xds-tools
+rm /var/lib/jenkins/.ssh/config
+vi /var/lib/jenkins/.ssh/config
+ssh-copy-id xds-tools
+ssh 'xds-tools'
+exit

@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.33</version>
+    <version>2.37</version>
     <relativePath />
   </parent>
 
   <artifactId>jira</artifactId>
-  <version>2.5</version>
+  <version>2.5.1</version>
   <packaging>hpi</packaging>
   <name>Jenkins JIRA plugin</name>
   <description>Integrates Jenkins to JIRA</description>
@@ -34,7 +34,7 @@
     <groovy.version>2.4.5</groovy.version>
     <cobertura.version>2.7</cobertura.version>
     <surefire.version>2.20</surefire.version>
-    <jackson.version>2.8.9</jackson.version>
+    <jackson.version>2.8.10</jackson.version>
   </properties>
 
   <profiles>
@@ -61,7 +61,7 @@
     <connection>scm:git:git://github.com/jenkinsci/jira-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/jira-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/jira-plugin</url>
-    <tag>jira-2.5</tag>
+    <tag>jira-2.5.1</tag>
   </scm>
 
   <licenses>
@@ -112,17 +112,6 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>${surefire.version}</version>
-        <configuration>
-          <forkCount>3</forkCount>
-          <!-- cobertura reports 0% when this is false -->
-          <reuseForks>true</reuseForks>
-          <argLine>-Xms128m -Xmx2048m</argLine>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.eluder.coveralls</groupId>
         <artifactId>coveralls-maven-plugin</artifactId>
@@ -224,6 +213,10 @@
           <groupId>javax.activation</groupId>
           <artifactId>activation</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpmime</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -233,25 +226,9 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpmime</artifactId>
-      <version>4.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-      <version>4.5.3</version>
-      <exclusions>
-        <exclusion>
-          <groupId>commons-codec</groupId>
-          <artifactId>commons-codec</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>fluent-hc</artifactId>
-      <version>4.5.3</version>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>apache-httpcomponents-client-4-api</artifactId>
+      <version>4.5.3-2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -271,6 +248,7 @@
       <artifactId>mailer</artifactId>
       <version>1.20</version>
     </dependency>
+    <!-- TODO: Use Jackson 2 API Plugin once the target baseline is above 2.60 -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>

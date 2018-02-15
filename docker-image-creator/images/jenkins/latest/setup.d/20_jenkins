@@ -12,3 +12,5 @@ apt-get upgrade -y
 apt-get install -y apt-transport-https haproxy 
 apt-get update -y
 apt-get install -y jenkins
+
+echo "jenkins:jenkins" | chpasswd

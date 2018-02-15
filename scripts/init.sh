@@ -40,13 +40,16 @@ fi
 #Run jenkins container
 if ! docker ps | grep jenkins
 then
-    cp -rf ../.jenkins $HOME/.jenkins
+    sudo cp -rf ../.jenkins "$HOME"
+    sudo chmod -R 777 "$HOME"/.jenkins
+    sudo chmod 600 "$HOME"/.jenkins/.ssh/config
+    sudo chown jenkins "$HOME"/.jenkins/.ssh/config
     docker run \
         --network=Jenkins-XDS \
         --hostname="jenkins" --name="jenkins" \
         --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
         --detach=true \
-        -v $HOME/.jenkins:/var/lib/jenkins \
+        -v "$HOME"/.jenkins:/var/lib/jenkins \
         -p 8080:8080 \
         -p 50500:50000 \
         -p 2226:22 \
@@ -54,7 +57,6 @@ then
 
     docker exec jenkins sudo service jenkins start || exit 1
     docker exec jenkins sudo service ssh start
-    docker exec jenkins sudo chown jenkins $HOME/.jenkins/.ssh/config
 else
     echo "jenkins container already started"
 fi
