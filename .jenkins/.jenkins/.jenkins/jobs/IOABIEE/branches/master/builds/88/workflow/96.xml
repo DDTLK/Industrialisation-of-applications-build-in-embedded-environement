@@ -1,0 +1,16 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.18">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.45">
+    <parentIds>
+      <string>86</string>
+    </parentIds>
+    <id>96</id>
+    <descriptorId>org.jenkins.plugins.lockableresources.LockStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.BodyInvocationAction plugin="workflow-api@2.25"/>
+    <wf.a.TimingAction plugin="workflow-api@2.25">
+      <startTime>1518694962908</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

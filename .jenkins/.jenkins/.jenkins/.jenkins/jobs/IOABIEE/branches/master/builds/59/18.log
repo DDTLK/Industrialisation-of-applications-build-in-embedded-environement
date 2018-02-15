@@ -1,0 +1,76 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ xds-cli sdks ls
+++ tail -n1
+++ cut '-d ' -f1
++ SDKS_LIST=64ad88a1
+++ xds-cli sdks ls
+++ grep
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+++ cut '-d ' -f5
++ SDKS_LIST_NAME=
+++ echo 64ad88a1
+++ cut -d ' ' -f3
++ SDK_ID_1=64ad88a1
+++ echo 64ad88a1
+++ cut -d ' ' -f4
++ SDK_ID_2=64ad88a1
+++ echo 64ad88a1
+++ cut -d ' ' -f5
++ SDK_ID_3=64ad88a1
+++ echo 64ad88a1
+++ cut -d ' ' -f6
++ SDK_ID_4=64ad88a1
+++ xds-cli sdks ls
+++ grep 64ad88a1
+++ cut '-d ' -f5
++ SDK_ID_1_NAME=qemux86-64
+++ xds-cli sdks ls
+++ grep 64ad88a1
+++ cut '-d ' -f5
++ SDK_ID_2_NAME=qemux86-64
+++ xds-cli sdks ls
+++ grep 64ad88a1
+++ cut '-d ' -f5
++ SDK_ID_3_NAME=qemux86-64
+++ xds-cli sdks ls
+++ cut '-d ' -f5
+++ grep 64ad88a1
++ SDK_ID_4_NAME=qemux86-64
++ mkdir -p /home/jenkins/xds-workspace/hvac_qemux86-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_qemux86-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_qemux86-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_qemux86-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_qemux86-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_qemux86-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_qemux86-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_qemux86-64/
+++ xds-cli prj add --label=Project_hvac_qemux86-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_qemux86-64 --server-path=/home/devel/xds-workspace/hvac_qemux86-64
+++ cut '-d)' -f1
+++ cut '-d ' -f5
++ ID_1=af56d2f9-0778-11e8-b035-0242ac110002
+++ xds-cli prj add --label=Project_hvac_qemux86-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_qemux86-64 --server-path=/home/devel/xds-workspace/hvac_qemux86-64
+++ cut '-d)' -f1
+++ cut '-d ' -f5
++ ID_2=af58ec0e-0778-11e8-b035-0242ac110002
+++ xds-cli prj add --label=Project_hvac_qemux86-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_qemux86-64 --server-path=/home/devel/xds-workspace/hvac_qemux86-64
+++ cut '-d)' -f1
+++ cut '-d ' -f5
++ ID_3=af5aedc8-0778-11e8-b035-0242ac110002
+++ xds-cli prj add --label=Project_hvac_qemux86-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_qemux86-64 --server-path=/home/devel/xds-workspace/hvac_qemux86-64
+++ cut '-d)' -f1
+++ cut '-d ' -f5
++ ID_4=af5d1dc6-0778-11e8-b035-0242ac110002
++ echo af56d2f9-0778-11e8-b035-0242ac110002
++ echo af58ec0e-0778-11e8-b035-0242ac110002
++ echo af5aedc8-0778-11e8-b035-0242ac110002
++ echo af5d1dc6-0778-11e8-b035-0242ac110002
++ echo qemux86-64
++ echo qemux86-64
++ echo qemux86-64
++ echo qemux86-64
++ echo 64ad88a1
++ echo 64ad88a1
++ echo 64ad88a1
++ echo 64ad88a1

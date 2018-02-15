@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Jenkins creation
-cd docker-image-creator
+cd docker-image-creator || exit 1
 if ! docker images | grep "docker.iot.bzh/iotbzh/jenkins"
 then 
     sed -i "s/xds-tools/jenkins/g" Makefile || exit 1 ; 
@@ -41,8 +41,6 @@ fi
 if ! docker ps | grep jenkins
 then
     cp -rf ../.jenkins $HOME/.jenkins
-    sudo chmod -R 755 $HOME/.jenkins
-    chmod 700 $HOME/.jenkins/.ssh/id_rsa
     docker run \
         --network=Jenkins-XDS \
         --hostname="jenkins" --name="jenkins" \
@@ -56,6 +54,7 @@ then
 
     docker exec jenkins sudo service jenkins start || exit 1
     docker exec jenkins sudo service ssh start
+    docker exec jenkins sudo chown jenkins $HOME/.jenkins/.ssh/config
 else
     echo "jenkins container already started"
 fi

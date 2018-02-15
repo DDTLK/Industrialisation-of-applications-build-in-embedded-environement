@@ -29,17 +29,18 @@ THE SOFTWARE.
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.35</version>
+    <version>3.2</version>
+    <relativePath />
   </parent>
 
   <groupId>org.jenkins-ci.main</groupId><!-- for historical reason, this plugin has a different groupId -->
   <artifactId>maven-plugin</artifactId><!-- for the same reason, artifactId is against the convention -->
-  <version>3.0</version>
+  <version>3.1</version>
   <packaging>hpi</packaging>
 
   <name>Maven Integration plugin</name>
   <description>This plug-in provides, for better and for worse, a deep integration of Jenkins and Maven: Automatic triggers between projects depending on SNAPSHOTs, automated configuration of various Jenkins publishers (Junit, ...).</description>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin</url>
+  <url>https://wiki.jenkins.io/display/JENKINS/Maven+Project+Plugin</url>
 
   <properties>
     <jenkins.version>1.625.3</jenkins.version>
@@ -70,7 +71,7 @@ THE SOFTWARE.
   <licenses>
     <license>
       <name>MIT License</name>
-      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <url>https://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
   
@@ -104,6 +105,10 @@ THE SOFTWARE.
           <!-- Embedded in Maven, Provided by Maven Embedder Library on the Jenkins side -->
           <groupId>org.apache.maven</groupId>
           <artifactId>maven-embedder</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.ant</groupId>
+          <artifactId>ant</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -473,7 +478,7 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>apache-httpcomponents-client-4-api</artifactId>
-      <version>4.5.3-1.0</version>
+      <version>4.5.3-2.1</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
@@ -489,6 +494,12 @@ THE SOFTWARE.
       <groupId>org.apache.maven.wagon</groupId>
       <artifactId>wagon-ftp</artifactId>
       <version>${wagonVersion}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>commons-io</groupId>
+          <artifactId>commons-io</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.wagon</groupId>
@@ -544,9 +555,10 @@ THE SOFTWARE.
       <version>1.2</version>
     </dependency>
     <dependency>
+      <!-- TODO: fix exclusion once updated to the 3.5.0 baseline -->
       <groupId>org.jenkins-ci.lib</groupId>
       <artifactId>lib-jenkins-maven-embedder</artifactId>
-      <version>3.12.1</version>
+      <version>3.13</version>
       <exclusions>
         <exclusion><!-- we'll add our own patched version. see https://issues.jenkins-ci.org/browse/JENKINS-1680 -->
           <groupId>jtidy</groupId>
@@ -616,7 +628,7 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>token-macro</artifactId>
-      <version>1.1</version>
+      <version>1.10</version>
       <optional>true</optional>
     </dependency>
 
@@ -667,12 +679,6 @@ THE SOFTWARE.
           <artifactId>mail</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-jdk14</artifactId>
-      <version>1.7.7</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.test</groupId>
@@ -786,13 +792,13 @@ THE SOFTWARE.
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -800,7 +806,7 @@ THE SOFTWARE.
     <connection>scm:git:git://github.com/jenkinsci/maven-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/maven-plugin.git</developerConnection>
     <url>http://github.com/jenkinsci/maven-plugin</url>
-    <tag>maven-plugin-3.0</tag>
+    <tag>maven-plugin-3.1</tag>
   </scm>
 
 </project>

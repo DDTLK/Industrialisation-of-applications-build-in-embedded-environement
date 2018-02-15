@@ -1,0 +1,385 @@
+Branch indexing
+[8mha:////4CMu1Uezg6LqvVYbbX3F8Ch+ITKgihDyMcddF9G0wuTBAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRi0PUndgCtssiXjgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+Obtained Jenkinsfile from 2a5bac3d6e9af2cf8b57bc837b81204da32ca2a9
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4N9AUrweVO/FQVBVCWk2ltsBgKrvQLoV0kL8Jm3acQYxAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYR/eT83ILSktQi/YqUYt2S/PycYn0AyEem/MkAAAA=[0mxds-tools in /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/DDTLK/IOABIEE.git
+ > git init /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ # timeout=10
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/master:refs/remotes/origin/master # timeout=10
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+Checking out Revision 2a5bac3d6e9af2cf8b57bc837b81204da32ca2a9 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2a5bac3d6e9af2cf8b57bc837b81204da32ca2a9
+Commit message: "Added Jenkinsfile"
+ > git rev-list --no-walk b3275036441e49c6e9122318cd73db7ad4b210ff # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Setup)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Setup project
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://gerrit.automotivelinux.org/gerrit/apps/hvac # timeout=10
+Fetching upstream changes from https://gerrit.automotivelinux.org/gerrit/apps/hvac
+ > git --version # timeout=10
+ > git fetch --tags --progress https://gerrit.automotivelinux.org/gerrit/apps/hvac +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision afee2b7f2409d0394d9254c96dd30fd4c35f73e7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+Commit message: "Merge "Languages changing depending on identity logged in""
+ > git rev-list --no-walk afee2b7f2409d0394d9254c96dd30fd4c35f73e7 # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cut '-d ' -f1
+++ xds-cli sdks ls
++ SDKS_LIST='List
+ID	
+64ad88a1
+e54e6333
+944d2d5a
+5199b394'
+++ echo List ID 64ad88a1 e54e6333 944d2d5a 5199b394
+++ cut -d ' ' -f3
++ SDK_ID_1=64ad88a1
+++ echo List ID 64ad88a1 e54e6333 944d2d5a 5199b394
+++ cut -d ' ' -f4
++ SDK_ID_2=e54e6333
+++ echo List ID 64ad88a1 e54e6333 944d2d5a 5199b394
+++ cut -d ' ' -f5
++ SDK_ID_3=944d2d5a
+++ echo List ID 64ad88a1 e54e6333 944d2d5a 5199b394
+++ cut -d ' ' -f6
++ SDK_ID_4=5199b394
+++ xds-cli sdks ls
+++ cut '-d ' -f5
+++ grep 64ad88a1
++ SDK_ID_1_NAME=qemux86-64
+++ grep e54e6333
+++ cut '-d ' -f5
+++ xds-cli sdks ls
++ SDK_ID_2_NAME=armv7ahf-neon
+++ xds-cli sdks ls
+++ grep 944d2d5a
+++ cut '-d ' -f5
++ SDK_ID_3_NAME=corei7-64
+++ xds-cli sdks ls
+++ grep 5199b394
+++ cut '-d ' -f5
++ SDK_ID_4_NAME=aarch64
++ mkdir -p /home/jenkins/xds-workspace/hvac_qemux86-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
++ mkdir -p /home/jenkins/xds-workspace/hvac_corei7-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_aarch64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_qemux86-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_corei7-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_aarch64/
++ echo qemux86-64
++ echo armv7ahf-neon
++ echo corei7-64
++ echo aarch64
++ echo 64ad88a1
++ echo e54e6333
++ echo 944d2d5a
++ echo 5199b394
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Create project)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] { (Branch: Create project 1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] { (Branch: Create project 2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] { (Branch: Create project 3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] { (Branch: Create project 4)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] { (Create project 1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] { (Create project 2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] { (Create project 3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] { (Create project 4)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] echo
+[Create project 2] project...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] echo
+[Create project 3] project...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] echo
+[Create project 4] project...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] sh
+[Create project 1] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Create project 1] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[Create project 1] ++ cat env_SDK_ID_1_NAME.txt
+[Create project 1] + SDK_ID_1_NAME=qemux86-64
+[Create project 1] ++ xds-cli prj add --label=Project_hvac_qemux86-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_qemux86-64 --server-path=/home/devel/xds-workspace/hvac_qemux86-64
+[Create project 1] ++ cut '-d)' -f1
+[Create project 1] ++ cut '-d ' -f5
+[Create project 1] + ID_1=33076f4f-0786-11e8-b035-0242ac110002
+[Create project 1] + echo 33076f4f-0786-11e8-b035-0242ac110002
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] sh
+[Create project 2] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Create project 2] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[Create project 2] ++ cat env_SDK_ID_2_NAME.txt
+[Create project 2] + SDK_ID_2_NAME=armv7ahf-neon
+[Create project 2] ++ cut '-d)' -f1
+[Create project 2] ++ xds-cli prj add --label=Project_hvac_armv7ahf-neon --type=pm --path=/home/jenkins/xds-workspace/hvac_armv7ahf-neon --server-path=/home/devel/xds-workspace/hvac_armv7ahf-neon
+[Create project 2] ++ cut '-d ' -f5
+[Create project 2] + ID_2=330eaad0-0786-11e8-b035-0242ac110002
+[Create project 2] + echo 330eaad0-0786-11e8-b035-0242ac110002
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] sh
+[Create project 3] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Create project 3] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] sh
+[Create project 3] ++ cat env_SDK_ID_3_NAME.txt
+[Create project 3] + SDK_ID_3_NAME=corei7-64
+[Create project 3] ++ xds-cli prj add --label=Project_hvac_corei7-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_corei7-64 --server-path=/home/devel/xds-workspace/hvac_corei7-64
+[Create project 3] ++ cut '-d ' -f5
+[Create project 3] ++ cut '-d)' -f1
+[Create project 3] + ID_3=332789e7-0786-11e8-b035-0242ac110002
+[Create project 3] + echo 332789e7-0786-11e8-b035-0242ac110002
+[Create project 4] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Create project 4] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] stash
+[Create project 1] Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] stash
+[Create project 4] ++ cat env_SDK_ID_4_NAME.txt
+[Create project 4] + SDK_ID_4_NAME=aarch64
+[Create project 4] ++ xds-cli prj add --label=Project_hvac_aarch64 --type=pm --path=/home/jenkins/xds-workspace/hvac_aarch64 --server-path=/home/devel/xds-workspace/hvac_aarch64
+[Create project 4] ++ cut '-d)' -f1
+[Create project 4] ++ cut '-d ' -f5
+[Create project 4] + ID_4=33375e94-0786-11e8-b035-0242ac110002
+[Create project 4] + echo 33375e94-0786-11e8-b035-0242ac110002
+[Create project 2] Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] stash
+[Create project 3] Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] stash
+[Create project 4] Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 4] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Build)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] { (Branch: Build SDK_ID_1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] { (Branch: Build  SDK_ID_2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] { (Branch: Build  SDK_ID_3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] { (Branch: Build  SDK_ID_4)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] { (Build SDK_ID_1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] { (Build  SDK_ID_2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] { (Build  SDK_ID_3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] { (Build  SDK_ID_4)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] echo
+[Build SDK_ID_1] Build ....
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] echo
+[Build  SDK_ID_2] Build ...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] echo
+[Build  SDK_ID_3] Build ...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] echo
+[Build  SDK_ID_4] Build ...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] lock
+[Build SDK_ID_1] Trying to acquire lock on [server]
+[Build SDK_ID_1] Resource [server] did not exist. Created.
+[Build SDK_ID_1] Lock acquired on [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] lock
+[Build  SDK_ID_2] Trying to acquire lock on [server]
+[Build  SDK_ID_2] Found 0 available resource(s). Waiting for correct amount: 1.
+[Build  SDK_ID_2] [server] is locked, waiting...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] lock
+[Build  SDK_ID_3] Trying to acquire lock on [server]
+[Build  SDK_ID_3] Found 0 available resource(s). Waiting for correct amount: 1.
+[Build  SDK_ID_3] [server] is locked, waiting...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] lock
+[Build  SDK_ID_4] Trying to acquire lock on [server]
+[Build  SDK_ID_4] Found 0 available resource(s). Waiting for correct amount: 1.
+[Build  SDK_ID_4] [server] is locked, waiting...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] sh
+[Build  SDK_ID_2] Lock acquired on [server]
+[Build SDK_ID_1] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Build SDK_ID_1] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[Build SDK_ID_1] ++ cat env_ID_1.txt
+[Build SDK_ID_1] + ID_1=33076f4f-0786-11e8-b035-0242ac110002
+[Build SDK_ID_1] ++ cat env_SDK_ID_1.txt
+[Build SDK_ID_1] + SDK_ID_1=64ad88a1
+[Build SDK_ID_1] ++ cat env_SDK_ID_1_NAME.txt
+[Build SDK_ID_1] + SDK_ID_1_NAME=qemux86-64
+[Build SDK_ID_1] + xds-cli exec --id=33076f4f-0786-11e8-b035-0242ac110002 --sdkid=64ad88a1 -- qmake
+[Build SDK_ID_1] Websocket not established
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] }
+[Build SDK_ID_1] Lock released on resource [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] // lock
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] sh
+[Build  SDK_ID_2] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Build  SDK_ID_2] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] }
+[Build  SDK_ID_3] Lock acquired on [server]
+[Build  SDK_ID_2] ++ cat env_ID_2.txt
+[Build  SDK_ID_2] + ID_2=330eaad0-0786-11e8-b035-0242ac110002
+[Build  SDK_ID_2] ++ cat env_SDK_ID_2.txt
+[Build  SDK_ID_2] + SDK_ID_2=e54e6333
+[Build  SDK_ID_2] ++ cat env_SDK_ID_2_NAME.txt
+[Build  SDK_ID_2] + SDK_ID_2_NAME=armv7ahf-neon
+[Build  SDK_ID_2] + xds-cli exec --id=330eaad0-0786-11e8-b035-0242ac110002 --sdkid=e54e6333 -- qmake
+[Build  SDK_ID_2] Websocket not established
+[Build SDK_ID_1] Failed in branch Build SDK_ID_1
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] }
+[Build  SDK_ID_2] Lock released on resource [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] // lock
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] sh
+[Build  SDK_ID_3] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Build  SDK_ID_3] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] }
+[Build  SDK_ID_4] Lock acquired on [server]
+[Build  SDK_ID_3] ++ cat env_ID_3.txt
+[Build  SDK_ID_3] + ID_3=332789e7-0786-11e8-b035-0242ac110002
+[Build  SDK_ID_3] ++ cat env_SDK_ID_3.txt
+[Build  SDK_ID_3] + SDK_ID_3=944d2d5a
+[Build  SDK_ID_3] ++ cat env_SDK_ID_3_NAME.txt
+[Build  SDK_ID_3] + SDK_ID_3_NAME=corei7-64
+[Build  SDK_ID_3] + xds-cli exec --id=332789e7-0786-11e8-b035-0242ac110002 --sdkid=944d2d5a -- qmake
+[Build  SDK_ID_3] Websocket not established
+[Build  SDK_ID_2] Failed in branch Build  SDK_ID_2
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] }
+[Build  SDK_ID_3] Lock released on resource [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] // lock
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] sh
+[Build  SDK_ID_4] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Build  SDK_ID_4] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] }
+[Build  SDK_ID_3] Failed in branch Build  SDK_ID_3
+[Build  SDK_ID_4] ++ cat env_ID_4.txt
+[Build  SDK_ID_4] + ID_4=33375e94-0786-11e8-b035-0242ac110002
+[Build  SDK_ID_4] ++ cat env_SDK_ID_4.txt
+[Build  SDK_ID_4] + SDK_ID_4=5199b394
+[Build  SDK_ID_4] ++ cat env_SDK_ID_4_NAME.txt
+[Build  SDK_ID_4] + SDK_ID_4_NAME=aarch64
+[Build  SDK_ID_4] + xds-cli exec --id=33375e94-0786-11e8-b035-0242ac110002 --sdkid=5199b394 -- qmake
+[Build  SDK_ID_4] Websocket not established
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] }
+[Build  SDK_ID_4] Lock released on resource [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] // lock
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_4] }
+[Build  SDK_ID_4] Failed in branch Build  SDK_ID_4
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Publish)
+Stage 'Publish' skipped due to earlier failure(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Clean)
+Stage 'Clean' skipped due to earlier failure(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] deleteDir
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+ERROR: script returned exit code 1
+Finished: FAILURE

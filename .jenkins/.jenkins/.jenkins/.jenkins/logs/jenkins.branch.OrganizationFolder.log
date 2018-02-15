@@ -1,0 +1,2 @@
+[Tue Jan 23 09:52:26 UTC 2018] Received io.jenkins.blueocean.blueocean_github_pipeline.GithubPipelineCreateRequest$1 CREATED event from https://api.github.com with timestamp Tue Jan 23 09:52:26 UTC 2018
+[Tue Jan 23 09:52:26 UTC 2018] Finished processing io.jenkins.blueocean.blueocean_github_pipeline.GithubPipelineCreateRequest$1 CREATED event from https://api.github.com with timestamp Tue Jan 23 09:52:26 UTC 2018. Matched 0.

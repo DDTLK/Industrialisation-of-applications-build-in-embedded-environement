@@ -1,16 +1,16 @@
-<?xml version='1.1' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <fingerprint>
   <timestamp>2018-01-22 13:36:24.539 UTC</timestamp>
   <md5sum>7abb16c7ec003ad1abc52fbb555624eb</md5sum>
   <fileName>Credential id=github name=jenkins/****** (GitHub Access Token)</fileName>
   <usages>
     <entry>
-      <string>Industrialisation-of-applications-build-in-embedded-environement/master</string>
-      <ranges>2</ranges>
+      <string>IOABIEE/master</string>
+      <ranges>1-9,11,13-26,28-87</ranges>
     </entry>
     <entry>
-      <string>IOABIEE/master</string>
-      <ranges>1-9,11,13-26,28-89</ranges>
+      <string>Industrialisation-of-applications-build-in-embedded-environement/master</string>
+      <ranges>2</ranges>
     </entry>
   </usages>
   <facets/>

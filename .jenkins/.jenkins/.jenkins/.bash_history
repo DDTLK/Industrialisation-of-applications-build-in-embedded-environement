@@ -78,3 +78,38 @@ exit
 ls
 ls
 exit
+ssh-copy-id xds-tools
+ssh-copy-id xds-tools
+ssh-copy-id -f xds-tools
+ssh-copy-id xds-tools
+ssh-copy-id -f .ssh/id_rsa.pub xds-tools
+ssh-copy-id -f xds-tools
+ssh-copy-id -f xds-tools -i .ssh/id_rsa.pub 
+ssh-copy-id -i .ssh/id_rsa.pub xds-tools
+ls -alR .ssh/
+cd .ssh/
+ls -al
+cd .ssh/
+chmod 777 .ssh/
+sudo chmod 777 .ssh/
+cd .ssh/
+ls -al
+ssh-copy-id -i .ssh/id_rsa.pub xds-tools
+ssh-copy-id xds-tools
+ls
+cd ..
+chown -R .ssh/
+chown -R .ssh/ jenkins
+chown -R jenkins .ssh/
+sudo chown -R jenkins .ssh/
+ssh-copy-id xds-tools
+cd .ssh/
+ls -al
+exit
+cd /var/lib/jenkins/
+sudo rm -rf .ssh/
+ssh-keygen -t rsa
+vi .ssh/config
+ssh-copy-id xds-tools
+ssh 'xds-tools'
+exit

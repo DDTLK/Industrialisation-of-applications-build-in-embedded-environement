@@ -1,0 +1,7 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[hvac] Running shell script
+++ cat env_ID.txt
++ ID=1606f510-0758-11e8-b035-0242ac110002
+++ cat env_SDK_ID.txt
++ SDK_ID=5199b394
++ xds-cli exec --id=1606f510-0758-11e8-b035-0242ac110002 --sdkid=5199b394 -- qmake

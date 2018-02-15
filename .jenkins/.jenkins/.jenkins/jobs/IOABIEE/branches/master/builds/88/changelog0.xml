@@ -1,0 +1,440 @@
+commit 573c3b159df363296fdd51e9c13b67fc57b6f01b
+tree 3df5a89f9dc3fd899f3bddae680b10ad6a87b010
+parent 1bda51b231eb69fc0424794ceb9a7cb954c145dd
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:46:56 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:46:56 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 433f7e31c30e9a17c36871222a0d69aa3411af31 d58dcf19b2eae36c62fae0aed6e864bedcc915a7 M	Jenkinsfile
+commit 1bda51b231eb69fc0424794ceb9a7cb954c145dd
+tree 430359aef95cf9e4fe1523cbbdd4eba3ff8f7041
+parent 36f6419efd8048156466572db1a78afe00fbd9b3
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:45:27 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:45:27 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 6e818c60a35652adcf789ad81906855553f209d3 433f7e31c30e9a17c36871222a0d69aa3411af31 M	Jenkinsfile
+commit 36f6419efd8048156466572db1a78afe00fbd9b3
+tree 8aab1df91f21ac145d59cd6733b9168e3c0c96ea
+parent 074961caa6d831a855e80af98ef3ed64f0639b89
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:40:53 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:40:53 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 a8f2985acdee691ef1edd76dd46ae912057cb0a3 6e818c60a35652adcf789ad81906855553f209d3 M	Jenkinsfile
+commit 074961caa6d831a855e80af98ef3ed64f0639b89
+tree d6cb0dc187d30ecc212e1fbd58151b22c6078772
+parent 645257435414cca75057b0de532d3d67c17f88b3
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:38:52 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:38:52 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 dc3298a99a8ea7474db0846c50b04e57fe2d54f9 a8f2985acdee691ef1edd76dd46ae912057cb0a3 M	Jenkinsfile
+commit 645257435414cca75057b0de532d3d67c17f88b3
+tree e081c0bab87c703866c7e015c77c375ae7c9bc4f
+parent 21af70637bf13e56a53c22700d2ea0661e925e3e
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:35:32 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:35:32 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 4c7cdc5ba673e254b0e940bbc8e805bb78b8c0c6 dc3298a99a8ea7474db0846c50b04e57fe2d54f9 M	Jenkinsfile
+commit 21af70637bf13e56a53c22700d2ea0661e925e3e
+tree 68c4747aaab69ed62d4fe0247fad37e70dfdb5b4
+parent 2a5bac3d6e9af2cf8b57bc837b81204da32ca2a9
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:32:18 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:32:18 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 75a5c3d5a7c7907a704cf90e6b77cf940df3acb2 4c7cdc5ba673e254b0e940bbc8e805bb78b8c0c6 M	Jenkinsfile
+commit 2a5bac3d6e9af2cf8b57bc837b81204da32ca2a9
+tree cc624c2d675d2d90ea3294a8eb624f3deb37b3d5
+parent b3275036441e49c6e9122318cd73db7ad4b210ff
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:28:51 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 20:28:51 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 9aa6e7bb426e3d92a12e0e65af18197a79ac8ea2 75a5c3d5a7c7907a704cf90e6b77cf940df3acb2 M	Jenkinsfile
+commit b3275036441e49c6e9122318cd73db7ad4b210ff
+tree e65a1db03510f3ddad12439b1a235e5abb8ced58
+parent 5e354cf3fad189d10c61ed3660174bbd2affe51c
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:43:12 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:43:12 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 7dfb8661a7c998ca6d68deb74e4bb927e439e294 9aa6e7bb426e3d92a12e0e65af18197a79ac8ea2 M	Jenkinsfile
+commit 5e354cf3fad189d10c61ed3660174bbd2affe51c
+tree 80cf9a6f81854def954345fd00926c6e2cbc9861
+parent 1fb4c20ef06f13a70ea73fd67afb70ec1b244dbf
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:33:05 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:33:05 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 84c0ca9230720219f7c2a7c573e4ab5279eb7ca1 7dfb8661a7c998ca6d68deb74e4bb927e439e294 M	Jenkinsfile
+commit 1fb4c20ef06f13a70ea73fd67afb70ec1b244dbf
+tree a9551197726456e712fdc6b87e19aa3360a32dbf
+parent 57517373b37a71ec66fea45c928ad7b3a8b1aa4a
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:31:05 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:31:05 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 d873190b10c6a8ae283bbf701b34ce57c32bae24 84c0ca9230720219f7c2a7c573e4ab5279eb7ca1 M	Jenkinsfile
+commit 57517373b37a71ec66fea45c928ad7b3a8b1aa4a
+tree b9b0290c6788a8eab6b8274e5241bfdf0e432a27
+parent df1bc88e61dd1f5791ad55ccf19d5ba2e940149b
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:27:06 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:27:06 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 d6c9dc6319819c6dc62f464d4c09a690b719b40c d873190b10c6a8ae283bbf701b34ce57c32bae24 M	Jenkinsfile
+commit df1bc88e61dd1f5791ad55ccf19d5ba2e940149b
+tree e20a51bfbe1f81945b3ae84a71d994b643fb1782
+parent 0648c8d57b969d2f77cbfcc3a973d0d6b19b8d16
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:24:34 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:24:34 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 0ff101a6f79db3ee266044847afa2b321b18808e d6c9dc6319819c6dc62f464d4c09a690b719b40c M	Jenkinsfile
+commit 0648c8d57b969d2f77cbfcc3a973d0d6b19b8d16
+tree 78d96194f491c65f3f1f0fbc0aa6bfaaca05c08b
+parent bec47198127c5873f5185380fe0f6d7ae19c9eb5
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:14:31 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:14:31 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 ff79a482a7e706588e6d989eaca31d5e477f8913 0ff101a6f79db3ee266044847afa2b321b18808e M	Jenkinsfile
+commit bec47198127c5873f5185380fe0f6d7ae19c9eb5
+tree a8e49e2e80f70bb14ad8361e79968c14099a79d9
+parent 99980885580d2fbe49405c98c7e6c74f8fb3819c
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:02:27 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:02:27 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 59eea33601783134be7b6da94d3cfe440df2546c ff79a482a7e706588e6d989eaca31d5e477f8913 M	Jenkinsfile
+commit 99980885580d2fbe49405c98c7e6c74f8fb3819c
+tree 668f38e1a4f160521349b27ab7840ea03b22271e
+parent d8278c849da711cac9528ab0302ac4e906ee2c80
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:00:00 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 19:00:00 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 48efc98be641b57f0c9c33b497fa2ee778918178 59eea33601783134be7b6da94d3cfe440df2546c M	Jenkinsfile
+commit d8278c849da711cac9528ab0302ac4e906ee2c80
+tree c2573208062e96b6858618042d7e398278742ec4
+parent 36af2096500157d9382532be1b7c610c79380115
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 18:52:16 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 18:52:16 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 d44c9ef264a8505b02696dd6a5e333a496148e65 48efc98be641b57f0c9c33b497fa2ee778918178 M	Jenkinsfile
+commit 36af2096500157d9382532be1b7c610c79380115
+tree c6d969436835bfc70733f0177f19ad96e6ef9012
+parent 77dc9185653d353d8e0019ba13126e90524cb66f
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 18:02:45 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 18:02:45 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 9916fe8ac3d6a55df43572f16fe7f629d7cb20ed d44c9ef264a8505b02696dd6a5e333a496148e65 M	Jenkinsfile
+commit 77dc9185653d353d8e0019ba13126e90524cb66f
+tree fec7e0e1851aebcd951db7fc081ab35605ee009c
+parent 1c525ec00dd3e5997c9ee52052d3020e6bad1918
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 18:00:55 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 18:00:55 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 6c517407ac892a0a0e328408672fcb01ab8c8281 9916fe8ac3d6a55df43572f16fe7f629d7cb20ed M	Jenkinsfile
+commit 1c525ec00dd3e5997c9ee52052d3020e6bad1918
+tree 6372ff4f17db2d2b01c9ab38581661dd6c93079f
+parent 4812829a4ef0716990df898c1d7cb19f85bdaa75
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:59:31 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:59:31 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 a7c1522fe8e07450eeac6495b3b31ec19bb668cd 6c517407ac892a0a0e328408672fcb01ab8c8281 M	Jenkinsfile
+commit 4812829a4ef0716990df898c1d7cb19f85bdaa75
+tree c4c7ea214237859544d2057ac7c5293c837f2f08
+parent 67c5382846f28e63e4ba1ec2cbd3b7e5db1e314c
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:56:15 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:56:15 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 e292fdcfda7fc7095b08b1e96859565c861f534c a7c1522fe8e07450eeac6495b3b31ec19bb668cd M	Jenkinsfile
+commit 67c5382846f28e63e4ba1ec2cbd3b7e5db1e314c
+tree 31f4d754b5da0202a0459c45081d6a4dcf7f597d
+parent 7c51c4d109af303fa120ee71080de1b5540093b0
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:30:07 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:30:07 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 bc5eb47e9b04d96cc5a953bacd983d644e18a99d e292fdcfda7fc7095b08b1e96859565c861f534c M	Jenkinsfile
+commit 7c51c4d109af303fa120ee71080de1b5540093b0
+tree 0f41c660553b15e06f305dc5d91418209ff91068
+parent 1c9f857751ff5d977dda9f239cf0477313cbbc94
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:20:08 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:20:08 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 8813f95cc74969f6cc82faf34407c7d7bbda5f52 bc5eb47e9b04d96cc5a953bacd983d644e18a99d M	Jenkinsfile
+commit 1c9f857751ff5d977dda9f239cf0477313cbbc94
+tree 105098cbe89d3475e2689503953317d508519d2e
+parent 9d3d9a92f13ed622ff05bc3e457b7dec91010fcc
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:00:05 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 17:00:05 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 97250397bcacaf91d93bd8d996192d30e10aa193 8813f95cc74969f6cc82faf34407c7d7bbda5f52 M	Jenkinsfile
+commit 9d3d9a92f13ed622ff05bc3e457b7dec91010fcc
+tree 3da22d318ab030377a886c50a73126bdecddeed9
+parent cd9298147b554393931203d8db96bd0539141e37
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:56:58 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:56:58 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 c571231bb50b430da381403cc318ce3e0d29a846 97250397bcacaf91d93bd8d996192d30e10aa193 M	Jenkinsfile
+commit cd9298147b554393931203d8db96bd0539141e37
+tree 0273ef1d419f97aaca596f3c8a39084e34ab57f4
+parent 3cd3a841ef0d3eb3d98de5bac86b80b4b5abc0b6
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:55:51 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:55:51 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 4faac65f947dfb42bf721baa1375167f99e25d5c c571231bb50b430da381403cc318ce3e0d29a846 M	Jenkinsfile
+commit 3cd3a841ef0d3eb3d98de5bac86b80b4b5abc0b6
+tree 2a31dc8be6d7f4e96adc26c40ff21fa0bd20dd2d
+parent 71b644ecabc394156ced2f9bcf6e431b7552c22b
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:53:58 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:53:58 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 db1d203d09d3c275c24a74a2fbff741069435e6f 4faac65f947dfb42bf721baa1375167f99e25d5c M	Jenkinsfile
+commit 71b644ecabc394156ced2f9bcf6e431b7552c22b
+tree f5be85b6155be8f2411e4b0ad0f443f71948e0b5
+parent 1c42272b20d90d25bfcc80472c7469826f394cc4
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:42:16 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:42:16 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 3b29b96861e7445e58a79f6e94e70f9a5370fca6 db1d203d09d3c275c24a74a2fbff741069435e6f M	Jenkinsfile
+commit 1c42272b20d90d25bfcc80472c7469826f394cc4
+tree 2297c433368282264100424d1d636702e9d2a5a9
+parent 401e0752bc64aef441f7d1c4eefe77663ade4f0a
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:37:55 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:37:55 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 e2a5e1bc9a35f7b267a3c12c0c4d574b9cf5d553 3b29b96861e7445e58a79f6e94e70f9a5370fca6 M	Jenkinsfile
+commit 401e0752bc64aef441f7d1c4eefe77663ade4f0a
+tree 232542d7027f27e91777b6fe7e2d14bcd3389d68
+parent ac7107f773b8f775c712097be2dd8d0d6d287c91
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:34:30 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:34:30 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 7bd6375ffe1e8619c66cd1e594eb20e0c989335f e2a5e1bc9a35f7b267a3c12c0c4d574b9cf5d553 M	Jenkinsfile
+commit ac7107f773b8f775c712097be2dd8d0d6d287c91
+tree 532da7bfd5ff1d1f56ad0446dce17853e82a31eb
+parent a85d785c4ced5692607700bc42644b2a6745c7a2
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:29:41 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:29:41 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 16e8307900aaebaaa98971e873cb4dd013eb3183 7bd6375ffe1e8619c66cd1e594eb20e0c989335f M	Jenkinsfile
+commit a85d785c4ced5692607700bc42644b2a6745c7a2
+tree 93220942f8c120be391e8add6668d3d4cf02e73a
+parent 3b2c2087f113f60440d1e894a153b080cf332d94
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:27:44 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:27:44 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 b1a48f5d32996dbbfa438d3d37a48fb360210315 16e8307900aaebaaa98971e873cb4dd013eb3183 M	Jenkinsfile
+commit 3b2c2087f113f60440d1e894a153b080cf332d94
+tree 8ebfcc2c863d8ae640cb22ddd90e70ca39d74555
+parent 011b8f3af1fcefdab682c28c026933c5b4b15842
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:26:11 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:26:11 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 86e0b8306976502767390a5bfbd882e8473976ff b1a48f5d32996dbbfa438d3d37a48fb360210315 M	Jenkinsfile
+commit 011b8f3af1fcefdab682c28c026933c5b4b15842
+tree ab2b1070294a0779f25e15a44569a972f584a450
+parent 34f371dfb64faf714bfc09ff193258be128fa2d1
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:22:42 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:22:42 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 1df518fb2613f721dbdb65c43120109859f6f592 86e0b8306976502767390a5bfbd882e8473976ff M	Jenkinsfile
+commit 34f371dfb64faf714bfc09ff193258be128fa2d1
+tree 46b23ea96ba3750a38b522d77eb72329f609addc
+parent 4a71b21ecbb9930d96ad0050e538f4ebd045516e
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:20:23 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:20:23 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 f7361bc107bdbcaad66a332f8edcdd81fe59e45b 1df518fb2613f721dbdb65c43120109859f6f592 M	Jenkinsfile
+commit 4a71b21ecbb9930d96ad0050e538f4ebd045516e
+tree d50c7aacab141f8dc194ed3964ad4a696bf65af2
+parent 4fd80436b09e11d5726466e3e43b14cb99d3d49b
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:16:30 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:16:30 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 411bb6419f7658b7089b85e80616553aff24e51f f7361bc107bdbcaad66a332f8edcdd81fe59e45b M	Jenkinsfile
+commit 4fd80436b09e11d5726466e3e43b14cb99d3d49b
+tree d7198e3eab69ab7e2a16a810ae60db91622f9098
+parent cc528268a836c38f5d4448403c262ac825dfde29
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:16:03 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:16:03 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 59d9da5bed5054867b9dc022588f1d85eb803f38 411bb6419f7658b7089b85e80616553aff24e51f M	Jenkinsfile
+commit cc528268a836c38f5d4448403c262ac825dfde29
+tree cf2811dae7de0881c0f4797d5545f1dec7cc91a0
+parent 6a8651684dcd70c07880e048249effce2fbf5ed9
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:14:48 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:14:48 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 4e850bc17e7d4b51b09b7fc9c32f458b9a362644 59d9da5bed5054867b9dc022588f1d85eb803f38 M	Jenkinsfile
+commit 6a8651684dcd70c07880e048249effce2fbf5ed9
+tree f335207f878d0c2496d662795511efa4b9902fa8
+parent 1b7cd35aa8139ae11f32f3adabee8d549d3e48fd
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:14:08 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:14:08 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 ac3c793d075b32045a49668e4eda50f38adbf68a 4e850bc17e7d4b51b09b7fc9c32f458b9a362644 M	Jenkinsfile
+commit 1b7cd35aa8139ae11f32f3adabee8d549d3e48fd
+tree d510439bf2d0298fa2190d98a0c1b64110576944
+parent 3ba628809750ba9207a15f7c1af9257241ba3986
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:13:15 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:13:15 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 7b1f6ffdc591c93a33bae1e2b1d69675aec7899b ac3c793d075b32045a49668e4eda50f38adbf68a M	Jenkinsfile
+commit 3ba628809750ba9207a15f7c1af9257241ba3986
+tree c9da0efb6d3e75da97d26c38d1dc5a9f2066a306
+parent e52ea3680a0db02de405e723862268e64114337b
+author Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:10:08 +0100
+committer Marec Frédéric <DDTLK@users.noreply.github.com> 2018-02-01 16:10:08 +0100
+
+    Added Jenkinsfile
+
+
+
+:100644 100644 2a4f562b2a6b74c939513fdbfd3dbaaf0900658a 7b1f6ffdc591c93a33bae1e2b1d69675aec7899b M	Jenkinsfile

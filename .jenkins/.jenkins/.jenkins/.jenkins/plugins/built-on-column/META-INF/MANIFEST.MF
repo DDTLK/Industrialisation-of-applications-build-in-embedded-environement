@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: voorth
+Build-Jdk: 1.6.0_26
+Extension-Name: built-on-column
+Implementation-Title: built-on-column
+Implementation-Version: 1.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: built-on-column
+Long-Name: built-on-column
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Built-on+Column
+Plugin-Version: 1.1
+Hudson-Version: 1.399
+Plugin-Developers: Henk van Voorthuijsen:voorth:voorth@xs4all.nl
+
