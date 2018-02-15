@@ -15,16 +15,12 @@ apt-get update -y
 apt-get upgrade -y
 apt-get install -y agl-xds-agent agl-xds-cli agl-xds-gdb
 
-systemctl enable autologin.service
-
-systemctl --user enable xds-agent.service
-
-# slave user lingering service to be sure that slave user session is running
+# jenkins user lingering service to be sure that jenkins user session is running
 # and consequently xds-server is running as a user systemd service
 mkdir -p /lib/systemd/system/ /lib/systemd/system/multi-user.target.wants/
 cat <<EOF >/lib/systemd/system/autologin.service
 [Unit]
-Description=Auto user lingering service for slave user
+Description=Auto user lingering service for jenkins user
 After=network.target
 
 [Service]
@@ -36,5 +32,7 @@ WantedBy=multi-user.target
 EOF
 ln -s ../autologin.service /lib/systemd/system/multi-user.target.wants/
 
+systemctl enable autologin.service
+systemctl --user enable xds-agent.service
 
-sudo sed -i s/"localhost:8000"/"172.17.0.2:8000"/g /etc/xds/agent/agent-config.json
+sudo sed -i s/"localhost:8000"/"172.42.0.3:8000"/g /etc/xds/agent/agent-config.json

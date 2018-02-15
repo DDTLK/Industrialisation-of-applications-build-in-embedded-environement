@@ -4,11 +4,11 @@
 apt-get install -y man tree curl screen 
 
 # add the build user
-useradd -c "Builder" -d $SLAVEUSER_HOME -G sudo -m -U -s /bin/bash -u $SLAVEUSER_UID $SLAVEUSER
-echo $SLAVEUSER:$SLAVEUSER_PASSWORD | chpasswd 
+useradd -c "Builder" -d $JENKINSUSER_HOME -G sudo -m -U -s /bin/bash -u $JENKINSUSER_UID $JENKINSUSER
+echo $JENKINSUSER:$JENKINSUSER_PASSWORD | chpasswd 
 
 # generate an extra environment file sourced by bashrc
-for k in	SLAVEUSER SLAVEUSER_UID SLAVEUSER_HOME \
+for k in	JENKINSUSER JENKINSUSER_UID JENKINSUSER_HOME \
 			XDT_DIR \
 			XDT_META XDT_DOWNLOADCACHE XDT_SSTATECACHE XDT_CCACHE XDT_BUILD XDT_WORKSPACE XDT_SOURCES XDT_SDK \
 			; do
@@ -17,8 +17,8 @@ for k in	SLAVEUSER SLAVEUSER_UID SLAVEUSER_HOME \
 	echo "export $k=$v" >>/etc/xdtrc
 done
 
-mkdir -p $SLAVEUSER_HOME/bin
-cat <<'EOF' >>$SLAVEUSER_HOME/.bashrc
+mkdir -p $JENKINSUSER_HOME/bin
+cat <<'EOF' >>$JENKINSUSER_HOME/.bashrc
 
 # added by worker image creation script (docker-image-builder)
 export PATH=~/bin:$PATH
@@ -26,6 +26,6 @@ export PATH=~/bin:$PATH
 
 EOF
 
-chown -R $SLAVEUSER:$SLAVEUSER $XDT_DIR
-chown -R $SLAVEUSER:$SLAVEUSER $SLAVEUSER_HOME
+chown -R $JENKINSUSER:$JENKINSUSER $XDT_DIR
+chown -R $JENKINSUSER:$JENKINSUSER $JENKINSUSER_HOME
 

@@ -3,12 +3,12 @@ FROM openjdk:9
 COPY . /root/INSTALL
 RUN /root/INSTALL/setup_image.sh
 
-RUN echo "agent ALL=NOPASSWD: ALL" >> /etc/sudoers
+RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
-WORKDIR /home/agent
+WORKDIR /home/jenkins
 
-COPY ./agent /home/agent
-COPY ./config /home/agent
+COPY ./agent /home/jenkins
+COPY ./config /home/jenkins
 
 EXPOSE 8800 50000 22 69
 

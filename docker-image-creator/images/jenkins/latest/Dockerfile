@@ -9,6 +9,7 @@ USER jenkins:jenkins
 WORKDIR /home/jenkins
 
 VOLUME ["/var/lib/jenkins"]
+RUN chmod 777 /var/lib/jenkins
 
 ENTRYPOINT ["/usr/bin/wait_for_net.sh"]
 CMD ["/bin/systemd"]
