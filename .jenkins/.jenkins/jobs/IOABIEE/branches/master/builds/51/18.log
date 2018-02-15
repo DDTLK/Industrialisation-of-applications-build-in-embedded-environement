@@ -1,0 +1,13 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cut '-d ' -f1
+++ tail -n1
+++ xds-cli sdks ls
++ export SDK_ID_1=944d2d5a
++ SDK_ID_1=944d2d5a
+++ grep 944d2d5a
+++ cut '-d ' -f5
+++ xds-cli sdks ls
++ SDK_ID_1_NAME=corei7-64
++ mkdir -p /home/jenkins/xds-workspace/hvac_corei7-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_corei7-64/

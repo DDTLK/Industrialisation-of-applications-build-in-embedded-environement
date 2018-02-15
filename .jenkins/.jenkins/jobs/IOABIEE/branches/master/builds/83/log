@@ -1,0 +1,510 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[8mha:////4LMMIddfTam8zzscnVlkW54dzPUCloxknadblmPIc5qMAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRisP3GswBnXv1rjgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+Obtained Jenkinsfile from 573c3b159df363296fdd51e9c13b67fc57b6f01b
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4N9AUrweVO/FQVBVCWk2ltsBgKrvQLoV0kL8Jm3acQYxAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYR/eT83ILSktQi/YqUYt2S/PycYn0AyEem/MkAAAA=[0mxds-tools in /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/DDTLK/IOABIEE.git
+ > git init /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ # timeout=10
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/master:refs/remotes/origin/master # timeout=10
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+Checking out Revision 573c3b159df363296fdd51e9c13b67fc57b6f01b (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 573c3b159df363296fdd51e9c13b67fc57b6f01b
+Commit message: "Added Jenkinsfile"
+ > git rev-list --no-walk 573c3b159df363296fdd51e9c13b67fc57b6f01b # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Setup)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Setup project
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://gerrit.automotivelinux.org/gerrit/apps/hvac # timeout=10
+Fetching upstream changes from https://gerrit.automotivelinux.org/gerrit/apps/hvac
+ > git --version # timeout=10
+ > git fetch --tags --progress https://gerrit.automotivelinux.org/gerrit/apps/hvac +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision afee2b7f2409d0394d9254c96dd30fd4c35f73e7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+Commit message: "Merge "Languages changing depending on identity logged in""
+ > git rev-list --no-walk afee2b7f2409d0394d9254c96dd30fd4c35f73e7 # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ xds-cli sdks ls
+++ cut '-d ' -f1
++ SDKS_LIST='List
+ID	
+944d2d5a
+9489339c
+64ad88a1'
+++ cut -d ' ' -f3
+++ echo List ID 944d2d5a 9489339c 64ad88a1
++ SDK_ID_1=944d2d5a
+++ echo List ID 944d2d5a 9489339c 64ad88a1
+++ cut -d ' ' -f4
++ SDK_ID_2=9489339c
+++ echo List ID 944d2d5a 9489339c 64ad88a1
+++ cut -d ' ' -f5
++ SDK_ID_3=64ad88a1
+++ xds-cli sdks ls
+++ grep 944d2d5a
+++ cut '-d ' -f5
++ SDK_ID_1_NAME=corei7-64
+++ xds-cli sdks ls
+++ cut '-d ' -f5
+++ grep 9489339c
++ SDK_ID_2_NAME=armv7ahf-neon
+++ xds-cli sdks ls
+++ cut '-d ' -f5
+++ grep 64ad88a1
++ SDK_ID_3_NAME=qemux86-64
++ mkdir -p /home/jenkins/xds-workspace/hvac_corei7-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
++ mkdir -p /home/jenkins/xds-workspace/hvac_qemux86-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_corei7-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_qemux86-64/
++ echo corei7-64
++ echo armv7ahf-neon
++ echo qemux86-64
++ echo 944d2d5a
++ echo 9489339c
++ echo 64ad88a1
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Create project)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] { (Branch: Create project 1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] { (Branch: Create project 2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] { (Branch: Create project 3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] { (Create project 1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] { (Create project 2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] { (Create project 3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] echo
+[Create project 2] project...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] echo
+[Create project 3] project...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] sh
+[Create project 1] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Create project 1] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] sh
+[Create project 2] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Create project 2] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] sh
+[Create project 1] ++ cat env_SDK_ID_1_NAME.txt
+[Create project 1] + SDK_ID_1_NAME=corei7-64
+[Create project 1] ++ cut '-d)' -f1
+[Create project 1] ++ cut '-d ' -f5
+[Create project 1] ++ xds-cli prj add --label=Project_hvac_corei7-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_corei7-64 --server-path=/home/devel/xds-workspace/hvac_corei7-64
+[Create project 1] + ID_1=0112abca-0796-11e8-b035-0242ac110002
+[Create project 1] + echo 0112abca-0796-11e8-b035-0242ac110002
+[Create project 3] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Create project 3] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[Create project 2] ++ cat env_SDK_ID_2_NAME.txt
+[Create project 2] + SDK_ID_2_NAME=armv7ahf-neon
+[Create project 2] ++ xds-cli prj add --label=Project_hvac_armv7ahf-neon --type=pm --path=/home/jenkins/xds-workspace/hvac_armv7ahf-neon --server-path=/home/devel/xds-workspace/hvac_armv7ahf-neon
+[Create project 2] ++ cut '-d)' -f1
+[Create project 2] ++ cut '-d ' -f5
+[Create project 2] + ID_2=011df6de-0796-11e8-b035-0242ac110002
+[Create project 2] + echo 011df6de-0796-11e8-b035-0242ac110002
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] stash
+[Create project 3] ++ cat env_SDK_ID_3_NAME.txt
+[Create project 3] + SDK_ID_3_NAME=qemux86-64
+[Create project 3] ++ xds-cli prj add --label=Project_hvac_qemux86-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_qemux86-64 --server-path=/home/devel/xds-workspace/hvac_qemux86-64
+[Create project 3] ++ cut '-d)' -f1
+[Create project 3] ++ cut '-d ' -f5
+[Create project 3] + ID_3=0128a80a-0796-11e8-b035-0242ac110002
+[Create project 3] + echo 0128a80a-0796-11e8-b035-0242ac110002
+[Create project 1] Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] stash
+[Create project 2] Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] stash
+[Create project 3] Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 1] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 2] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Create project 3] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Build)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] { (Branch: Build SDK_ID_1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] { (Branch: Build  SDK_ID_2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] { (Branch: Build  SDK_ID_3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] { (Build SDK_ID_1)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] { (Build  SDK_ID_2)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] { (Build  SDK_ID_3)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] echo
+[Build SDK_ID_1] Build ....
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] echo
+[Build  SDK_ID_2] Build ...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] echo
+[Build  SDK_ID_3] Build ...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] lock
+[Build SDK_ID_1] Trying to acquire lock on [server]
+[Build SDK_ID_1] Lock acquired on [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] lock
+[Build  SDK_ID_2] Trying to acquire lock on [server]
+[Build  SDK_ID_2] Found 0 available resource(s). Waiting for correct amount: 1.
+[Build  SDK_ID_2] [server] is locked, waiting...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] lock
+[Build  SDK_ID_3] Trying to acquire lock on [server]
+[Build  SDK_ID_3] Found 0 available resource(s). Waiting for correct amount: 1.
+[Build  SDK_ID_3] [server] is locked, waiting...
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] sh
+[Build SDK_ID_1] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Build SDK_ID_1] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[Build SDK_ID_1] ++ cat env_ID_1.txt
+[Build SDK_ID_1] + ID_1=0112abca-0796-11e8-b035-0242ac110002
+[Build SDK_ID_1] ++ cat env_SDK_ID_1.txt
+[Build SDK_ID_1] + SDK_ID_1=944d2d5a
+[Build SDK_ID_1] ++ cat env_SDK_ID_1_NAME.txt
+[Build SDK_ID_1] + SDK_ID_1_NAME=corei7-64
+[Build SDK_ID_1] + xds-cli exec --id=0112abca-0796-11e8-b035-0242ac110002 --sdkid=944d2d5a -- qmake
+[Build SDK_ID_1] Info: creating stash file /home/jenkins/xds-workspace/hvac_corei7-64/.qmake.stash
+[Build SDK_ID_1] + xds-cli exec --id=0112abca-0796-11e8-b035-0242ac110002 --sdkid=944d2d5a -- make
+[Build SDK_ID_1] cd app/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_corei7-64/app/app.pro ) && make -f Makefile 
+[Build SDK_ID_1] Info: creating cache file /home/jenkins/xds-workspace/hvac_corei7-64/app/.qmake.cache
+[Build SDK_ID_1] Checking for libhomescreen... yes
+[Build SDK_ID_1] Checking for qlibwindowmanager... yes
+[Build SDK_ID_1] Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/share/pkgconfig
+[Build SDK_ID_1] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_corei7-64/app'
+[Build SDK_ID_1] /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_ja_JP.ts -qm ../package/root/translations/hvac_ja_JP.qm
+[Build SDK_ID_1] Updating '../package/root/translations/hvac_ja_JP.qm'...
+[Build SDK_ID_1]     Generated 8 translation(s) (8 finished and 0 unfinished)
+[Build SDK_ID_1] /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_fr_FR.ts -qm ../package/root/translations/hvac_fr_FR.qm
+[Build SDK_ID_1] Updating '../package/root/translations/hvac_fr_FR.qm'...
+[Build SDK_ID_1]     Generated 8 translation(s) (8 finished and 0 unfinished)
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o main.o main.cpp
+[Build SDK_ID_1] main.cpp: In lambda function:
+[Build SDK_ID_1] main.cpp:83:90: warning: unused parameter ‘object’ [-Wunused-parameter]
+[Build SDK_ID_1]      qwm->set_event_handler(QLibWindowmanager::Event_SyncDraw, [qwm, myname](json_object *object) {
+[Build SDK_ID_1]                                                                                           ^~~~~~
+[Build SDK_ID_1] main.cpp: In function ‘int main(int, char**)’:
+[Build SDK_ID_1] main.cpp:94:34: warning: ‘port’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+[Build SDK_ID_1]      hs->init(port, token.c_str());
+[Build SDK_ID_1]                                   ^
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o translator.o translator.cpp
+[Build SDK_ID_1] /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name hvac hvac.qrc -o qrc_hvac.cpp
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_hvac.o qrc_hvac.cpp
+[Build SDK_ID_1] /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name images images/images.qrc -o qrc_images.cpp
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_images.o qrc_images.cpp
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -dM -E -o moc_predefs.h /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/features/data/dummy.cpp
+[Build SDK_ID_1] /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/moc -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB --include ./moc_predefs.h -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -I/home/jenkins/xds-workspace/hvac_corei7-64/app -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0 -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0/x86_64-agl-linux -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0/backward -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/lib/x86_64-agl-linux/gcc/x86_64-agl-linux/6.3.0/include -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/gcc/x86_64-agl-linux/6.3.0/include -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/lib/x86_64-agl-linux/gcc/x86_64-agl-linux/6.3.0/include-fixed -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include translator.h -o moc_translator.cpp
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o moc_translator.o moc_translator.cpp
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -o ../package/root/bin/hvac main.o translator.o qrc_hvac.o qrc_images.o moc_translator.o   -lhomescreen -L/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -lqtWindowmanagerWrapper -lwindowmanager -ljson-c -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
+[Build SDK_ID_1] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_corei7-64/app'
+[Build SDK_ID_1] cd binding/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_corei7-64/binding/binding.pro ) && make -f Makefile 
+[Build SDK_ID_1] Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/share/pkgconfig
+[Build SDK_ID_1] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_corei7-64/binding'
+[Build SDK_ID_1] x86_64-agl-linux-gcc  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -c -pipe  -O2 -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -Wextra -Wconversion -Wno-unused-parameter -Werror=maybe-uninitialized -Werror=implicit-function-declaration -ffunction-sections -fdata-sections -Wl,--as-needed -Wl,--gc-sections -O2 -Wall -W -fPIC  -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o hvac-demo-binding.o hvac-demo-binding.c
+[Build SDK_ID_1] hvac-demo-binding.c: In function ‘onEvent’:
+[Build SDK_ID_1] hvac-demo-binding.c:426:15: warning: unused variable ‘args’ [-Wunused-variable]
+[Build SDK_ID_1]   json_object *args, *language = json_object_new_object();
+[Build SDK_ID_1]                ^~~~
+[Build SDK_ID_1] At top level:
+[Build SDK_ID_1] hvac-demo-binding.c:43:44: warning: ‘interface’ defined but not used [-Wunused-variable]
+[Build SDK_ID_1]  static const struct afb_binding_interface *interface;
+[Build SDK_ID_1]                                             ^~~~~~~~~
+[Build SDK_ID_1] rm -f libhvac-demo-binding.so
+[Build SDK_ID_1] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -shared -o libhvac-demo-binding.so hvac-demo-binding.o  -Wl,--version-script=/home/jenkins/xds-workspace/hvac_corei7-64/binding/export.map -ljson-c  
+[Build SDK_ID_1] mv -f libhvac-demo-binding.so ../package/root/lib/ 
+[Build SDK_ID_1] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_corei7-64/binding'
+[Build SDK_ID_1] cd package/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_corei7-64/package/package.pro ) && make -f Makefile 
+[Build SDK_ID_1] Makefile:607: warning: overriding recipe for target 'package'
+[Build SDK_ID_1] Makefile:231: warning: ignoring old recipe for target 'package'
+[Build SDK_ID_1] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_corei7-64/package'
+[Build  SDK_ID_2] Lock acquired on [server]
+[Build SDK_ID_1] cp -f "/home/jenkins/xds-workspace/hvac_corei7-64/package/icon.svg" "/home/jenkins/xds-workspace/hvac_corei7-64/package/root/icon.svg"
+[Build SDK_ID_1] cp -f "/home/jenkins/xds-workspace/hvac_corei7-64/package/config.xml" "/home/jenkins/xds-workspace/hvac_corei7-64/package/root/config.xml"
+[Build SDK_ID_1] wgtpkg-pack -f -o hvac.wgt root
+[Build SDK_ID_1] <5> NOTICE: -- PACKING widget hvac.wgt from directory root [/w/workspace/sandbox-build-machines-sstate-mirror/AGLBRANCH/master/MACHINE/intel-corei7-64/label/agl-test-slave/sstate-build/build-intel-corei7-64/tmp/work/x86_64-nativesdk-aglsdk-linux/nativesdk-af-main/master+gitAUTOINC+1bec325ee8-r0/git/src/wgtpkg-pack.c:151]
+[Build SDK_ID_1] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_corei7-64/package'
+[Build SDK_ID_1] + cp /home/jenkins/xds-workspace/hvac_corei7-64/package/hvac.wgt hvac_corei7-64.wgt
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] }
+[Build SDK_ID_1] Lock released on resource [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] // lock
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] sh
+[Build  SDK_ID_2] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Build  SDK_ID_2] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build SDK_ID_1] }
+[Build  SDK_ID_2] ++ cat env_ID_2.txt
+[Build  SDK_ID_2] + ID_2=011df6de-0796-11e8-b035-0242ac110002
+[Build  SDK_ID_2] ++ cat env_SDK_ID_2.txt
+[Build  SDK_ID_2] + SDK_ID_2=9489339c
+[Build  SDK_ID_2] ++ cat env_SDK_ID_2_NAME.txt
+[Build  SDK_ID_2] + SDK_ID_2_NAME=armv7ahf-neon
+[Build  SDK_ID_2] + xds-cli exec --id=011df6de-0796-11e8-b035-0242ac110002 --sdkid=9489339c -- qmake
+[Build  SDK_ID_2] Info: creating stash file /home/jenkins/xds-workspace/hvac_armv7ahf-neon/.qmake.stash
+[Build  SDK_ID_2] + xds-cli exec --id=011df6de-0796-11e8-b035-0242ac110002 --sdkid=9489339c -- make
+[Build  SDK_ID_2] cd app/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_armv7ahf-neon/app/app.pro ) && make -f Makefile 
+[Build  SDK_ID_2] Info: creating cache file /home/jenkins/xds-workspace/hvac_armv7ahf-neon/app/.qmake.cache
+[Build  SDK_ID_2] Checking for libhomescreen... yes
+[Build  SDK_ID_2] Checking for qlibwindowmanager... yes
+[Build  SDK_ID_2] Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/share/pkgconfig
+[Build  SDK_ID_2] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_armv7ahf-neon/app'
+[Build  SDK_ID_2] /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_ja_JP.ts -qm ../package/root/translations/hvac_ja_JP.qm
+[Build  SDK_ID_2] Updating '../package/root/translations/hvac_ja_JP.qm'...
+[Build  SDK_ID_2]     Generated 8 translation(s) (8 finished and 0 unfinished)
+[Build  SDK_ID_2] /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_fr_FR.ts -qm ../package/root/translations/hvac_fr_FR.qm
+[Build  SDK_ID_2] Updating '../package/root/translations/hvac_fr_FR.qm'...
+[Build  SDK_ID_2]     Generated 8 translation(s) (8 finished and 0 unfinished)
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -o main.o main.cpp
+[Build  SDK_ID_2] main.cpp: In lambda function:
+[Build  SDK_ID_2] main.cpp:83:90: warning: unused parameter ‘object’ [-Wunused-parameter]
+[Build  SDK_ID_2]      qwm->set_event_handler(QLibWindowmanager::Event_SyncDraw, [qwm, myname](json_object *object) {
+[Build  SDK_ID_2]                                                                                           ^~~~~~
+[Build  SDK_ID_2] main.cpp: In function ‘int main(int, char**)’:
+[Build  SDK_ID_2] main.cpp:94:34: warning: ‘port’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+[Build  SDK_ID_2]      hs->init(port, token.c_str());
+[Build  SDK_ID_2]                                   ^
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -o translator.o translator.cpp
+[Build  SDK_ID_2] /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name hvac hvac.qrc -o qrc_hvac.cpp
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_hvac.o qrc_hvac.cpp
+[Build  SDK_ID_2] /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name images images/images.qrc -o qrc_images.cpp
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_images.o qrc_images.cpp
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -O2 -Wall -W -dM -E -o moc_predefs.h /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/features/data/dummy.cpp
+[Build  SDK_ID_2] /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/moc -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB --include ./moc_predefs.h -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -I/home/jenkins/xds-workspace/hvac_armv7ahf-neon/app -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5 -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQuick -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtGui -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQml -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtNetwork -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtCore -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/c++/6.3.0 -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/c++/6.3.0/arm-agl-linux-gnueabi -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/c++/6.3.0/backward -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/lib/arm-agl-linux-gnueabi/gcc/arm-agl-linux-gnueabi/6.3.0/include -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/gcc/arm-agl-linux-gnueabi/6.3.0/include -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/lib/arm-agl-linux-gnueabi/gcc/arm-agl-linux-gnueabi/6.3.0/include-fixed -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include translator.h -o moc_translator.cpp
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -c -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -o moc_translator.o moc_translator.cpp
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -Wl,-O1 -o ../package/root/bin/hvac main.o translator.o qrc_hvac.o qrc_images.o moc_translator.o   -lhomescreen -L/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -lqtWindowmanagerWrapper -lwindowmanager -ljson-c -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
+[Build  SDK_ID_2] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_armv7ahf-neon/app'
+[Build  SDK_ID_2] cd binding/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_armv7ahf-neon/binding/binding.pro ) && make -f Makefile 
+[Build  SDK_ID_2] Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/share/pkgconfig
+[Build  SDK_ID_2] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_armv7ahf-neon/binding'
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-gcc  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -c -pipe  -O2 -pipe --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -Wextra -Wconversion -Wno-unused-parameter -Werror=maybe-uninitialized -Werror=implicit-function-declaration -ffunction-sections -fdata-sections -Wl,--as-needed -Wl,--gc-sections -O2 -Wall -W -fPIC  -I. -isystem /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/include/json-c -I/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -o hvac-demo-binding.o hvac-demo-binding.c
+[Build  SDK_ID_2] hvac-demo-binding.c: In function ‘onEvent’:
+[Build  SDK_ID_2] hvac-demo-binding.c:426:15: warning: unused variable ‘args’ [-Wunused-variable]
+[Build  SDK_ID_2]   json_object *args, *language = json_object_new_object();
+[Build  SDK_ID_2]                ^~~~
+[Build  SDK_ID_2] At top level:
+[Build  SDK_ID_2] hvac-demo-binding.c:43:44: warning: ‘interface’ defined but not used [-Wunused-variable]
+[Build  SDK_ID_2]  static const struct afb_binding_interface *interface;
+[Build  SDK_ID_2]                                             ^~~~~~~~~
+[Build  SDK_ID_2] rm -f libhvac-demo-binding.so
+[Build  SDK_ID_2] arm-agl-linux-gnueabi-g++  -march=armv7-a -marm -mfpu=neon  -mfloat-abi=hard --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/armv7ahf-neon-agl-linux-gnueabi -Wl,-O1 -shared -o libhvac-demo-binding.so hvac-demo-binding.o  -Wl,--version-script=/home/jenkins/xds-workspace/hvac_armv7ahf-neon/binding/export.map -ljson-c  
+[Build  SDK_ID_2] mv -f libhvac-demo-binding.so ../package/root/lib/ 
+[Build  SDK_ID_2] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_armv7ahf-neon/binding'
+[Build  SDK_ID_2] cd package/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.90.0+snapshot/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_armv7ahf-neon/package/package.pro ) && make -f Makefile 
+[Build  SDK_ID_2] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_armv7ahf-neon/package'
+[Build  SDK_ID_2] Makefile:607: warning: overriding recipe for target 'package'
+[Build  SDK_ID_2] Makefile:231: warning: ignoring old recipe for target 'package'
+[Build  SDK_ID_3] Lock acquired on [server]
+[Build  SDK_ID_2] cp -f "/home/jenkins/xds-workspace/hvac_armv7ahf-neon/package/icon.svg" "/home/jenkins/xds-workspace/hvac_armv7ahf-neon/package/root/icon.svg"
+[Build  SDK_ID_2] cp -f "/home/jenkins/xds-workspace/hvac_armv7ahf-neon/package/config.xml" "/home/jenkins/xds-workspace/hvac_armv7ahf-neon/package/root/config.xml"
+[Build  SDK_ID_2] wgtpkg-pack -f -o hvac.wgt root
+[Build  SDK_ID_2] <5> NOTICE: -- PACKING widget hvac.wgt from directory root [/w/workspace/sandbox-build-machines-sstate-mirror/AGLBRANCH/master/MACHINE/cyclone5/label/agl-test-slave/sstate-build/build-cyclone5/tmp/work/x86_64-nativesdk-aglsdk-linux/nativesdk-af-main/master+gitAUTOINC+1bec325ee8-r0/git/src/wgtpkg-pack.c:151]
+[Build  SDK_ID_2] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_armv7ahf-neon/package'
+[Build  SDK_ID_2] + cp /home/jenkins/xds-workspace/hvac_armv7ahf-neon/package/hvac.wgt hvac_armv7ahf-neon.wgt
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] }
+[Build  SDK_ID_2] Lock released on resource [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] // lock
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] sh
+[Build  SDK_ID_3] Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[Build  SDK_ID_3] [IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_2] }
+[Build  SDK_ID_3] ++ cat env_ID_3.txt
+[Build  SDK_ID_3] + ID_3=0128a80a-0796-11e8-b035-0242ac110002
+[Build  SDK_ID_3] ++ cat env_SDK_ID_3.txt
+[Build  SDK_ID_3] + SDK_ID_3=64ad88a1
+[Build  SDK_ID_3] ++ cat env_SDK_ID_3_NAME.txt
+[Build  SDK_ID_3] + SDK_ID_3_NAME=qemux86-64
+[Build  SDK_ID_3] + xds-cli exec --id=0128a80a-0796-11e8-b035-0242ac110002 --sdkid=64ad88a1 -- qmake
+[Build  SDK_ID_3] Info: creating stash file /home/jenkins/xds-workspace/hvac_qemux86-64/.qmake.stash
+[Build  SDK_ID_3] + xds-cli exec --id=0128a80a-0796-11e8-b035-0242ac110002 --sdkid=64ad88a1 -- make
+[Build  SDK_ID_3] cd app/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_qemux86-64/app/app.pro ) && make -f Makefile 
+[Build  SDK_ID_3] Info: creating cache file /home/jenkins/xds-workspace/hvac_qemux86-64/app/.qmake.cache
+[Build  SDK_ID_3] Checking for libhomescreen... yes
+[Build  SDK_ID_3] Checking for qlibwindowmanager... yes
+[Build  SDK_ID_3] Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/share/pkgconfig
+[Build  SDK_ID_3] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_qemux86-64/app'
+[Build  SDK_ID_3] /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_ja_JP.ts -qm ../package/root/translations/hvac_ja_JP.qm
+[Build  SDK_ID_3] Updating '../package/root/translations/hvac_ja_JP.qm'...
+[Build  SDK_ID_3]     Generated 8 translation(s) (8 finished and 0 unfinished)
+[Build  SDK_ID_3] /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_fr_FR.ts -qm ../package/root/translations/hvac_fr_FR.qm
+[Build  SDK_ID_3] Updating '../package/root/translations/hvac_fr_FR.qm'...
+[Build  SDK_ID_3]     Generated 8 translation(s) (8 finished and 0 unfinished)
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o main.o main.cpp
+[Build  SDK_ID_3] main.cpp: In lambda function:
+[Build  SDK_ID_3] main.cpp:83:90: warning: unused parameter ‘object’ [-Wunused-parameter]
+[Build  SDK_ID_3]      qwm->set_event_handler(QLibWindowmanager::Event_SyncDraw, [qwm, myname](json_object *object) {
+[Build  SDK_ID_3]                                                                                           ^~~~~~
+[Build  SDK_ID_3] main.cpp: In function ‘int main(int, char**)’:
+[Build  SDK_ID_3] main.cpp:94:34: warning: ‘port’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+[Build  SDK_ID_3]      hs->init(port, token.c_str());
+[Build  SDK_ID_3]                                   ^
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o translator.o translator.cpp
+[Build  SDK_ID_3] /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name hvac hvac.qrc -o qrc_hvac.cpp
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_hvac.o qrc_hvac.cpp
+[Build  SDK_ID_3] /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name images images/images.qrc -o qrc_images.cpp
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_images.o qrc_images.cpp
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -dM -E -o moc_predefs.h /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/features/data/dummy.cpp
+[Build  SDK_ID_3] /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/moc -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB --include ./moc_predefs.h -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -I/home/jenkins/xds-workspace/hvac_qemux86-64/app -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0 -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0/x86_64-agl-linux -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0/backward -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/lib/x86_64-agl-linux/gcc/x86_64-agl-linux/6.3.0/include -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/gcc/x86_64-agl-linux/6.3.0/include -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/lib/x86_64-agl-linux/gcc/x86_64-agl-linux/6.3.0/include-fixed -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include translator.h -o moc_translator.cpp
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o moc_translator.o moc_translator.cpp
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -o ../package/root/bin/hvac main.o translator.o qrc_hvac.o qrc_images.o moc_translator.o   -lhomescreen -L/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -lqtWindowmanagerWrapper -lwindowmanager -ljson-c -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
+[Build  SDK_ID_3] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_qemux86-64/app'
+[Build  SDK_ID_3] cd binding/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_qemux86-64/binding/binding.pro ) && make -f Makefile 
+[Build  SDK_ID_3] Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/share/pkgconfig
+[Build  SDK_ID_3] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_qemux86-64/binding'
+[Build  SDK_ID_3] x86_64-agl-linux-gcc  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe  -O2 -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wextra -Wconversion -Wno-unused-parameter -Werror=maybe-uninitialized -Werror=implicit-function-declaration -ffunction-sections -fdata-sections -Wl,--as-needed -Wl,--gc-sections -O2 -Wall -W -fPIC  -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o hvac-demo-binding.o hvac-demo-binding.c
+[Build  SDK_ID_3] hvac-demo-binding.c: In function ‘onEvent’:
+[Build  SDK_ID_3] hvac-demo-binding.c:426:15: warning: unused variable ‘args’ [-Wunused-variable]
+[Build  SDK_ID_3]   json_object *args, *language = json_object_new_object();
+[Build  SDK_ID_3]                ^~~~
+[Build  SDK_ID_3] At top level:
+[Build  SDK_ID_3] hvac-demo-binding.c:43:44: warning: ‘interface’ defined but not used [-Wunused-variable]
+[Build  SDK_ID_3]  static const struct afb_binding_interface *interface;
+[Build  SDK_ID_3]                                             ^~~~~~~~~
+[Build  SDK_ID_3] rm -f libhvac-demo-binding.so
+[Build  SDK_ID_3] x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -shared -o libhvac-demo-binding.so hvac-demo-binding.o  -Wl,--version-script=/home/jenkins/xds-workspace/hvac_qemux86-64/binding/export.map -ljson-c  
+[Build  SDK_ID_3] mv -f libhvac-demo-binding.so ../package/root/lib/ 
+[Build  SDK_ID_3] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_qemux86-64/binding'
+[Build  SDK_ID_3] cd package/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_qemux86-64/package/package.pro ) && make -f Makefile 
+[Build  SDK_ID_3] Makefile:607: warning: overriding recipe for target 'package'
+[Build  SDK_ID_3] Makefile:231: warning: ignoring old recipe for target 'package'
+[Build  SDK_ID_3] make[1]: Entering directory '/home/jenkins/xds-workspace/hvac_qemux86-64/package'
+[Build  SDK_ID_3] cp -f "/home/jenkins/xds-workspace/hvac_qemux86-64/package/icon.svg" "/home/jenkins/xds-workspace/hvac_qemux86-64/package/root/icon.svg"
+[Build  SDK_ID_3] cp -f "/home/jenkins/xds-workspace/hvac_qemux86-64/package/config.xml" "/home/jenkins/xds-workspace/hvac_qemux86-64/package/root/config.xml"
+[Build  SDK_ID_3] wgtpkg-pack -f -o hvac.wgt root
+[Build  SDK_ID_3] <5> NOTICE: -- PACKING widget hvac.wgt from directory root [/w/workspace/release-jjb-eel-snapshot/MACHINE/qemux86-64/label/agl-test-slave/repoclone/output/tmp/work/x86_64-nativesdk-aglsdk-linux/nativesdk-af-main/eel+gitAUTOINC+35c33f24d3-r0/git/src/wgtpkg-pack.c:151]
+[Build  SDK_ID_3] make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac_qemux86-64/package'
+[Build  SDK_ID_3] + cp /home/jenkins/xds-workspace/hvac_qemux86-64/package/hvac.wgt hvac_qemux86-64.wgt
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] }
+[Build  SDK_ID_3] Lock released on resource [server]
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] // lock
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Build  SDK_ID_3] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // parallel
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Publish)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Publish
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] deleteDir
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Clean)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_ID_1.txt
++ ID_1=0112abca-0796-11e8-b035-0242ac110002
+++ cat env_ID_2.txt
++ ID_2=011df6de-0796-11e8-b035-0242ac110002
+++ cat env_ID_3.txt
++ ID_3=0128a80a-0796-11e8-b035-0242ac110002
++ echo yes
++ xds-cli prj rm --id=0112abca-0796-11e8-b035-0242ac110002
+Do you permanently remove project id '0112abca-0796-11e8-b035-0242ac110002' [yes/No] ? Project ID 0112abca-0796-11e8-b035-0242ac110002 successfully deleted.
++ echo yes
++ xds-cli prj rm --id=011df6de-0796-11e8-b035-0242ac110002
+Do you permanently remove project id '011df6de-0796-11e8-b035-0242ac110002' [yes/No] ? Project ID 011df6de-0796-11e8-b035-0242ac110002 successfully deleted.
++ echo yes
++ xds-cli prj rm --id=0128a80a-0796-11e8-b035-0242ac110002
+Do you permanently remove project id '0128a80a-0796-11e8-b035-0242ac110002' [yes/No] ? Project ID 0128a80a-0796-11e8-b035-0242ac110002 successfully deleted.
++ rm -rf /home/jenkins/xds-workspace/hvac_armv7ahf-neon /home/jenkins/xds-workspace/hvac_corei7-64 /home/jenkins/xds-workspace/hvac_qemux86-64
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] deleteDir
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+Finished: SUCCESS

@@ -1,0 +1,14 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[hvac] Running shell script
+++ xds-cli sdks ls
+++ tail -n1
+++ cut '-d ' -f1
++ export SDK_ID=64ad88a1
++ SDK_ID=64ad88a1
+++ cut '-d)' -f1
+++ cut '-d ' -f5
+++ xds-cli prj add --label=Project_hvac --type=pm --path=/home/jenkins/xds-workspace/hvac --server-path=/home/devel/xds-workspace/hvac
++ export ID=905be50a-0757-11e8-b035-0242ac110002
++ ID=905be50a-0757-11e8-b035-0242ac110002
++ echo 905be50a-0757-11e8-b035-0242ac110002
++ echo 64ad88a1

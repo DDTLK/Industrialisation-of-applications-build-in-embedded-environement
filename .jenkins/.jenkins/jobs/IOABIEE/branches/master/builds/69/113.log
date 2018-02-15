@@ -1,0 +1,13 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_ID_3.txt
++ ID_3=c9da62e4-077f-11e8-b035-0242ac110002
+++ cat env_SDK_ID_3.txt
++ SDK_ID_3=e54e6333
+++ cat env_SDK_ID_3_NAME.txt
++ SDK_ID_3_NAME=armv7ahf-neon
++ xds-cli exec --id=c9da62e4-077f-11e8-b035-0242ac110002 --sdkid=e54e6333 -- qmake
++ xds-cli exec --id=c9da62e4-077f-11e8-b035-0242ac110002 --sdkid=e54e6333 -- make
+cd app/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/armv7ahf-neon/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac_armv7ahf-neon/app/app.pro ) && make -f Makefile 
+Info: creating stash file /home/jenkins/xds-workspace/hvac_qemux86-64/.qmake.stash
++ cp /home/jenkins/xds-workspace/hvac_armv7ahf-neon/package/hvac.wgt hvac_armv7ahf-neon.wgt

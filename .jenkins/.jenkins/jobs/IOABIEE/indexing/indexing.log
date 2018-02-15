@@ -1,0 +1,27 @@
+Started by user [8mha:////4H5zV0T/9bbr16ZyX3nu9/BuW3x+fiaWZQMWTYLPGUyIAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[Thu Feb 01 20:35:44 UTC 2018] Starting branch indexing...
+[8mha:////4P0ePbZzZBmRfBilq3JUmtbAVlLAPFeJUJWK4Zn49fS3AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRisKhIBAA2sjINjgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+[8mha:////4N8e4g5Fipl1xV1vCvNywADfa/AXJelxjGvd+s2b4V82AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRisKhYPgC7dbmHjgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+Examining [8mha:////4GQWwFhgqSVZUyLoN+W5OjDZgDzbGsD1dCEetXzLWFyHAAAAoB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgLWFQyCgpKSi20tdPzyzJKE0C6srVd3EJ8fHW9/R3dPJ0dQUA0Spj3qUAAAA=[0mDDTLK/IOABIEE
+
+  Checking branches...
+
+  Getting remote branches...
+
+    Checking branch [8mha:////4N5cjvqOfK+kTbqRzNz2BZoHMpxQOMVE82LYf0MjhE+yAAAArB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgK2HQySgpKSi20tdPzyzJKE0C6srVd3EJ8fHW9/R3dPJ0ddUvKUpN1c9NLC5JLQIAn/PITLEAAAA=[0mmaster
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: master (still at 573c3b159df363296fdd51e9c13b67fc57b6f01b)
+
+  1 branches were processed
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining DDTLK/IOABIEE
+
+[Thu Feb 01 20:35:47 UTC 2018] Finished branch indexing. Indexing took 2.2 sec
+Finished: SUCCESS

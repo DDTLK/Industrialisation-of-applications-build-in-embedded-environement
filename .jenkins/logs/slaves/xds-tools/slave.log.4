@@ -1,0 +1,36 @@
+[02/15/18 11:29:18] Launching agent
+$ ssh xds-tools java -jar /home/jenkins/slave.jar
+Bad owner or permissions on /var/lib/jenkins/.ssh/config
+ERROR: Unable to launch the agent for xds-tools
+Also:   java.io.IOException: Broken pipe
+		at java.io.FileOutputStream.writeBytes(Native Method)
+		at java.io.FileOutputStream.write(FileOutputStream.java:326)
+		at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+		at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+		at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+		at hudson.remoting.BinarySafeStream$2.flush(BinarySafeStream.java:305)
+		at java.io.ObjectOutputStream$BlockDataOutputStream.flush(ObjectOutputStream.java:1823)
+		at java.io.ObjectOutputStream.flush(ObjectOutputStream.java:719)
+		at hudson.remoting.Capability$1.close(Capability.java:122)
+		at hudson.remoting.Capability.writePreamble(Capability.java:129)
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+	at hudson.remoting.BinarySafeStream$2.flush(BinarySafeStream.java:305)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.flush(ObjectOutputStream.java:1823)
+	at java.io.ObjectOutputStream.flush(ObjectOutputStream.java:719)
+	at hudson.remoting.Capability.writePreamble(Capability.java:128)
+	at hudson.remoting.ChannelBuilder.negotiate(ChannelBuilder.java:387)
+	at hudson.remoting.ChannelBuilder.build(ChannelBuilder.java:353)
+	at hudson.slaves.SlaveComputer.setChannel(SlaveComputer.java:415)
+	at hudson.slaves.CommandLauncher.launch(CommandLauncher.java:153)
+	at hudson.slaves.SlaveComputer$1.call(SlaveComputer.java:288)
+	at jenkins.util.ContextResettingExecutorService$2.call(ContextResettingExecutorService.java:46)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR: Process terminated with exit code 255

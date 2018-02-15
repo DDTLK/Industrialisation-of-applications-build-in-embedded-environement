@@ -1,0 +1,197 @@
+Branch indexing
+[8mha:////4EErfZKzy/CHZTfQadj41CF19ld6Uoy81mAi6cW9VWgSAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRi4IfLkwFHMh+AjgAAAA==[0mConnecting to https://api.github.com using jenkins/****** (GitHub Access Token)
+Obtained Jenkinsfile from 4a71b21ecbb9930d96ad0050e538f4ebd045516e
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4N9AUrweVO/FQVBVCWk2ltsBgKrvQLoV0kL8Jm3acQYxAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYR/eT83ILSktQi/YqUYt2S/PycYn0AyEem/MkAAAA=[0mxds-tools in /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/DDTLK/IOABIEE.git
+ > git init /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ # timeout=10
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/master:refs/remotes/origin/master # timeout=10
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+Checking out Revision 4a71b21ecbb9930d96ad0050e538f4ebd045516e (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4a71b21ecbb9930d96ad0050e538f4ebd045516e
+Commit message: "Added Jenkinsfile"
+ > git rev-list --no-walk 4fd80436b09e11d5726466e3e43b14cb99d3d49b # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Setup)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Setup project
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://gerrit.automotivelinux.org/gerrit/apps/hvac # timeout=10
+Fetching upstream changes from https://gerrit.automotivelinux.org/gerrit/apps/hvac
+ > git --version # timeout=10
+ > git fetch --tags --progress https://gerrit.automotivelinux.org/gerrit/apps/hvac +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision afee2b7f2409d0394d9254c96dd30fd4c35f73e7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master afee2b7f2409d0394d9254c96dd30fd4c35f73e7
+Commit message: "Merge "Languages changing depending on identity logged in""
+ > git rev-list --no-walk afee2b7f2409d0394d9254c96dd30fd4c35f73e7 # timeout=10
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac/
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] dir
+Running in /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ/hvac
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+set ID & SDK_ID
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[hvac] Running shell script
+++ xds-cli sdks ls
+++ cut '-d ' -f1
+++ tail -n1
++ export SDK_ID=64ad88a1
++ SDK_ID=64ad88a1
+++ xds-cli prj add --label=Project_hvac --type=pm --path=/home/jenkins/xds-workspace/hvac --server-path=/home/devel/xds-workspace/hvac
+++ cut '-d)' -f1
+++ cut '-d ' -f5
++ export ID=e7680ccf-0762-11e8-b035-0242ac110002
++ ID=e7680ccf-0762-11e8-b035-0242ac110002
++ echo e7680ccf-0762-11e8-b035-0242ac110002
++ echo 64ad88a1
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 1 file(s)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // dir
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Build)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Build ....
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_ID.txt
++ ID=e7680ccf-0762-11e8-b035-0242ac110002
+++ cat env_SDK_ID.txt
++ SDK_ID=64ad88a1
++ xds-cli exec --id=e7680ccf-0762-11e8-b035-0242ac110002 --sdkid=64ad88a1 -- qmake
+Info: creating stash file /home/jenkins/xds-workspace/hvac/.qmake.stash
++ xds-cli exec --id=e7680ccf-0762-11e8-b035-0242ac110002 --sdkid=64ad88a1 -- make
+cd app/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/app/app.pro ) && make -f Makefile 
+Info: creating cache file /home/jenkins/xds-workspace/hvac/app/.qmake.cache
+Checking for libhomescreen... yes
+Checking for qlibwindowmanager... yes
+Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/share/pkgconfig
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/app'
+/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_ja_JP.ts -qm ../package/root/translations/hvac_ja_JP.qm
+Updating '../package/root/translations/hvac_ja_JP.qm'...
+    Generated 8 translation(s) (8 finished and 0 unfinished)
+/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/lrelease translations/hvac_fr_FR.ts -qm ../package/root/translations/hvac_fr_FR.qm
+Updating '../package/root/translations/hvac_fr_FR.qm'...
+    Generated 8 translation(s) (8 finished and 0 unfinished)
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o main.o main.cpp
+main.cpp: In lambda function:
+main.cpp:83:90: warning: unused parameter ‘object’ [-Wunused-parameter]
+     qwm->set_event_handler(QLibWindowmanager::Event_SyncDraw, [qwm, myname](json_object *object) {
+                                                                                          ^~~~~~
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:94:34: warning: ‘port’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     hs->init(port, token.c_str());
+                                  ^
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o translator.o translator.cpp
+/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name hvac hvac.qrc -o qrc_hvac.cpp
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_hvac.o qrc_hvac.cpp
+/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/rcc -name images images/images.qrc -o qrc_images.cpp
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o qrc_images.o qrc_images.cpp
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -dM -E -o moc_predefs.h /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/features/data/dummy.cpp
+/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/moc -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB --include ./moc_predefs.h -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -I/home/jenkins/xds-workspace/hvac/app -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0 -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0/x86_64-agl-linux -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/c++/6.3.0/backward -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/lib/x86_64-agl-linux/gcc/x86_64-agl-linux/6.3.0/include -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/gcc/x86_64-agl-linux/6.3.0/include -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/lib/x86_64-agl-linux/gcc/x86_64-agl-linux/6.3.0/include-fixed -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include translator.h -o moc_translator.cpp
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -O2 -Wall -W -D_REENTRANT -fPIC -DHAVE_LIBHOMESCREEN -DHAVE_QLIBWINDOWMANAGER -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NO_QML_DEBUGGER -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5 -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQuick -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtGui -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtQml -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtNetwork -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/qt5/QtCore -I. -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o moc_translator.o moc_translator.cpp
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -o ../package/root/bin/hvac main.o translator.o qrc_hvac.o qrc_images.o moc_translator.o   -lhomescreen -L/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -lqtWindowmanagerWrapper -lwindowmanager -ljson-c -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/app'
+cd binding/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/binding/binding.pro ) && make -f Makefile 
+Project MESSAGE: PKG_CONFIG_LIBDIR automatically set to /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/pkgconfig:/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/share/pkgconfig
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/binding'
+x86_64-agl-linux-gcc  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -c -pipe  -O2 -pipe --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wextra -Wconversion -Wno-unused-parameter -Werror=maybe-uninitialized -Werror=implicit-function-declaration -ffunction-sections -fdata-sections -Wl,--as-needed -Wl,--gc-sections -O2 -Wall -W -fPIC  -I. -isystem /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/include/json-c -I/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux/usr/lib/qt5/mkspecs/linux-oe-g++ -o hvac-demo-binding.o hvac-demo-binding.c
+hvac-demo-binding.c: In function ‘onEvent’:
+hvac-demo-binding.c:426:15: warning: unused variable ‘args’ [-Wunused-variable]
+  json_object *args, *language = json_object_new_object();
+               ^~~~
+At top level:
+hvac-demo-binding.c:43:44: warning: ‘interface’ defined but not used [-Wunused-variable]
+ static const struct afb_binding_interface *interface;
+                                            ^~~~~~~~~
+rm -f libhvac-demo-binding.so
+x86_64-agl-linux-g++  -march=corei7 -mtune=corei7 -mfpmath=sse -msse4.2 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 --sysroot=/xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/corei7-64-agl-linux -Wl,-O1 -shared -o libhvac-demo-binding.so hvac-demo-binding.o  -Wl,--version-script=/home/jenkins/xds-workspace/hvac/binding/export.map -ljson-c  
+mv -f libhvac-demo-binding.so ../package/root/lib/ 
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/binding'
+cd package/ && ( test -e Makefile || /xdt/sdk/poky-agl/5.0.0/corei7-64/sysroots/x86_64-aglsdk-linux/usr/bin/qt5/qmake -o Makefile /home/jenkins/xds-workspace/hvac/package/package.pro ) && make -f Makefile 
+Makefile:607: warning: overriding recipe for target 'package'
+Makefile:231: warning: ignoring old recipe for target 'package'
+make[1]: Entering directory '/home/jenkins/xds-workspace/hvac/package'
+cp -f "/home/jenkins/xds-workspace/hvac/package/icon.svg" "/home/jenkins/xds-workspace/hvac/package/root/icon.svg"
+cp -f "/home/jenkins/xds-workspace/hvac/package/config.xml" "/home/jenkins/xds-workspace/hvac/package/root/config.xml"
+wgtpkg-pack -f -o hvac.wgt root
+<5> NOTICE: -- PACKING widget hvac.wgt from directory root [/w/workspace/release-jjb-eel-snapshot/MACHINE/qemux86-64/label/agl-test-slave/repoclone/output/tmp/work/x86_64-nativesdk-aglsdk-linux/nativesdk-af-main/eel+gitAUTOINC+35c33f24d3-r0/git/src/wgtpkg-pack.c:151]
+make[1]: Leaving directory '/home/jenkins/xds-workspace/hvac/package'
++ cp /home/jenkins/xds-workspace/hvac/package/hvac.wgt .
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Publish)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Publish
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+ERROR: No artifacts found that match the file pattern "~/xds_workspace/hvac/hvac.wgt". Configuration error?
+ERROR: ‘~’ is only supported in a Unix shell and nowhere else.
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] deleteDir
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4M5INlJklVanSvQp5nHSYY8PIGs3L55OMmqJXjsnH+zdAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+Finished: FAILURE

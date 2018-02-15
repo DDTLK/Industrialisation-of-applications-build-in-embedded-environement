@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowStartNode" plugin="workflow-api@2.24">
+    <parentIds/>
+    <id>2</id>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.WorkspaceActionImpl>
+      <node></node>
+      <path>/var/lib/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ@script</path>
+      <labels class="sorted-set"/>
+    </org.jenkinsci.plugins.workflow.support.actions.WorkspaceActionImpl>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

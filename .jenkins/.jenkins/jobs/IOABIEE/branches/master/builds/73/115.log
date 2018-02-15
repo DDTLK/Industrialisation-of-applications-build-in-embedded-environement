@@ -1,0 +1,4 @@
+Trying to acquire lock on [server]
+Found 0 available resource(s). Waiting for correct amount: 1.
+[server] is locked, waiting...
+Lock acquired on [server]
