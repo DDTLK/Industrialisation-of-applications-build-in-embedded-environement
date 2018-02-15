@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slave>
+  <name>xds-tools</name>
+  <description></description>
+  <remoteFS>/home/jenkins</remoteFS>
+  <numExecutors>4</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.slaves.CommandLauncher" plugin="command-launcher@1.2">
+    <agentCommand>ssh xds-tools java -jar /home/jenkins/slave.jar</agentCommand>
+  </launcher>
+  <label>xds</label>
+  <nodeProperties/>
+</slave>

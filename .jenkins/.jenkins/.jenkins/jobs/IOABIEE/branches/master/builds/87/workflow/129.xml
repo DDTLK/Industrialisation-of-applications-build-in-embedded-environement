@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@2.42">
+    <parentIds>
+      <string>128</string>
+    </parentIds>
+    <id>129</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>UTF-8</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl plugin="workflow-cps@2.42">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>script</string>
+          <string>
+#unstash ID
+ID_1=$(cat env_ID_1.txt)
+ID_2=$(cat env_ID_2.txt)
+ID_3=$(cat env_ID_3.txt)
+
+#remove project
+echo &quot;yes&quot; | xds-cli prj rm --id=&quot;${ID_1}&quot;
+echo &quot;yes&quot; | xds-cli prj rm --id=&quot;${ID_2}&quot;
+echo &quot;yes&quot; | xds-cli prj rm --id=&quot;${ID_3}&quot;
+
+#remove building directory
+rm -rf $HOME/xds-workspace/hvac*</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.24">
+      <startTime>1517521277252</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

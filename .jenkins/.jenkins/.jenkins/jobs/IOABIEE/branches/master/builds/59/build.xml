@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.16">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.0.18"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.2.6">
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@3.7.0">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.2">
+          <name>master</name>
+        </head>
+        <hash>d8278c849da711cac9528ab0302ac4e906ee2c80</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.2.6">
+      <stagesUUID>7a0b17d0-bea5-4dfe-8c50-fc236c9ba351</stagesUUID>
+      <stagesList>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.2.6">
+          <stages>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Setup</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">Setup project</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>git</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>url</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">https://gerrit.automotivelinux.org/gerrit/apps/hvac</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">
+#list sdks id install
+SDKS_LIST=$( xds-cli sdks ls | cut -d&apos; &apos; -f1 | tail -n1 )
+
+#list sdks name install
+SDKS_LIST_NAME=$(xds-cli sdks ls | grep $SDK_ID_1 | cut -d&apos; &apos; -f5)
+
+#set the ID variables
+SDK_ID_1=$( echo $SDKS_LIST | cut -d &apos; &apos; -f3)
+SDK_ID_2=$( echo $SDKS_LIST | cut -d &apos; &apos; -f4)
+SDK_ID_3=$( echo $SDKS_LIST | cut -d &apos; &apos; -f5)
+SDK_ID_4=$( echo $SDKS_LIST | cut -d &apos; &apos; -f6)
+
+#set the name for the ID corespondance
+SDK_ID_1_NAME=$(xds-cli sdks ls | grep $SDK_ID_1 | cut -d&apos; &apos; -f5)
+SDK_ID_2_NAME=$(xds-cli sdks ls | grep $SDK_ID_2 | cut -d&apos; &apos; -f5)
+SDK_ID_3_NAME=$(xds-cli sdks ls | grep $SDK_ID_3 | cut -d&apos; &apos; -f5)
+SDK_ID_4_NAME=$(xds-cli sdks ls | grep $SDK_ID_4 | cut -d&apos; &apos; -f5)
+
+
+#create building repository
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot;/
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_2_NAME}&quot;/
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_3_NAME}&quot;/
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_4_NAME}&quot;/
+
+#copy sources into build directory
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot;/
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_2_NAME}&quot;/
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_3_NAME}&quot;/
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_4_NAME}&quot;/
+
+#Create project and set id project
+ID_1=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_1_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d&apos;)&apos; -f1 | cut -d&apos; &apos; -f5)
+ID_2=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_2_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d&apos;)&apos; -f1 | cut -d&apos; &apos; -f5)
+ID_3=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_3_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d&apos;)&apos; -f1 | cut -d&apos; &apos; -f5)
+ID_4=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_4_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d&apos;)&apos; -f1 | cut -d&apos; &apos; -f5)
+
+#save ID for futur stage
+echo &quot;${ID_1}&quot; &gt; env_ID_1.txt
+echo &quot;${ID_2}&quot; &gt; env_ID_1.txt
+echo &quot;${ID_3}&quot; &gt; env_ID_1.txt
+echo &quot;${ID_4}&quot; &gt; env_ID_1.txt
+
+#save SDK_ID for futur stage
+echo &quot;${SDK_ID_1_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+echo &quot;${SDK_ID_2_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+echo &quot;${SDK_ID_3_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+echo &quot;${SDK_ID_4_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+
+#save SDK_ID_NAME for futur stage
+echo &quot;${SDK_ID_1}&quot; &gt; env_SDK_ID_1.txt
+echo &quot;${SDK_ID_2}&quot; &gt; env_SDK_ID_1.txt
+echo &quot;${SDK_ID_3}&quot; &gt; env_SDK_ID_1.txt
+echo &quot;${SDK_ID_4}&quot; &gt; env_SDK_ID_1.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_1</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_ID_1.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_2</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_ID_2.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_3</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_ID_3.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_4</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_ID_4.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_1.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_1</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_2.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_2</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_3.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_3</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_4.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_4</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_1_NAME.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_1_NAME</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_2_NAME.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_2_NAME</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_3_NAME.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_3_NAME</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>stash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>includes</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">env_SDK_ID_4_NAME.txt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_4_NAME</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Build</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">Build ....</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>unstash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_1</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>unstash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_1_NAME</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>unstash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_1</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_1=$(cat env_ID_1.txt)
+SDK_ID_1=$(cat env_SDK_ID_1.txt)
+SDK_ID_1_NAME=$(cat env_SDK_ID_1_NAME.txt)
+
+
+xds-cli exec --id=&quot;$ID_1&quot; --sdkid=&quot;$SDK_ID_1&quot; -- &quot;qmake&quot;
+
+xds-cli exec --id=&quot;$ID_1&quot; --sdkid=&quot;$SDK_ID_1&quot; -- &quot;make&quot;
+
+cp ~/xds-workspace/hvac_&quot;$SDK_ID_1_NAME&quot;/package/hvac.wgt hvac_&quot;$SDK_ID_1_NAME&quot;.wgt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Publish</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">Publish</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>unstash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_1_NAME</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">SDK_ID_1_NAME=$(cat env_SDK_ID_1_NAME.txt)</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>archiveArtifacts</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>artifacts</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">hvac_*.wgt</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>onlyIfSuccessful</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="boolean">true</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>deleteDir</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map"/>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Clean</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>unstash</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>name</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_1</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">ID_1=$(cat env_ID_1.txt)
+
+
+echo &quot;yes&quot; | xds-cli prj rm --id=&quot;${ID_1}&quot;
+rm -rf $HOME/xds-workspace/hvac*</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+          </stages>
+          <uuid>7a0b17d0-bea5-4dfe-8c50-fc236c9ba351</uuid>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+      </stagesList>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.7.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.0">
+              <sha1>e52ea3680a0db02de405e723862268e64114337b</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@2.7.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>28</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.0">
+              <sha1>d8278c849da711cac9528ab0302ac4e906ee2c80</sha1>
+              <branches class="singleton-set">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>59</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/DDTLK/IOABIEE.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.7.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.6">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/DDTLK/IOABIEE.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+        <entry>
+          <string>git https://gerrit.automotivelinux.org/gerrit/apps/hvac</string>
+          <hudson.scm.SCMRevisionState_-None reference="../../entry/hudson.scm.SCMRevisionState_-None"/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.git.util.BuildData plugin="git@3.7.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.0">
+              <sha1>afee2b7f2409d0394d9254c96dd30fd4c35f73e7</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>59</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://gerrit.automotivelinux.org/gerrit/apps/hvac</string>
+      </remoteUrls>
+      <index>2</index>
+    </hudson.plugins.git.util.BuildData>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.27"/>
+  </actions>
+  <queueId>150</queueId>
+  <timestamp>1517507539175</timestamp>
+  <startTime>1517507539179</startTime>
+  <result>FAILURE</result>
+  <duration>16885</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>pipeline {
+  agent {
+    node {
+      label &apos;xds-tools&apos;
+    }
+    
+  }
+  stages {
+    stage(&apos;Setup&apos;) {
+      steps {
+        echo &apos;Setup project&apos;
+        git &apos;https://gerrit.automotivelinux.org/gerrit/apps/hvac&apos;
+        sh &apos;&apos;&apos;
+#list sdks id install
+SDKS_LIST=$( xds-cli sdks ls | cut -d\&apos; \&apos; -f1 | tail -n1 )
+
+#list sdks name install
+SDKS_LIST_NAME=$(xds-cli sdks ls | grep $SDK_ID_1 | cut -d\&apos; \&apos; -f5)
+
+#set the ID variables
+SDK_ID_1=$( echo $SDKS_LIST | cut -d \&apos; \&apos; -f3)
+SDK_ID_2=$( echo $SDKS_LIST | cut -d \&apos; \&apos; -f4)
+SDK_ID_3=$( echo $SDKS_LIST | cut -d \&apos; \&apos; -f5)
+SDK_ID_4=$( echo $SDKS_LIST | cut -d \&apos; \&apos; -f6)
+
+#set the name for the ID corespondance
+SDK_ID_1_NAME=$(xds-cli sdks ls | grep $SDK_ID_1 | cut -d\&apos; \&apos; -f5)
+SDK_ID_2_NAME=$(xds-cli sdks ls | grep $SDK_ID_2 | cut -d\&apos; \&apos; -f5)
+SDK_ID_3_NAME=$(xds-cli sdks ls | grep $SDK_ID_3 | cut -d\&apos; \&apos; -f5)
+SDK_ID_4_NAME=$(xds-cli sdks ls | grep $SDK_ID_4 | cut -d\&apos; \&apos; -f5)
+
+
+#create building repository
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot;/
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_2_NAME}&quot;/
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_3_NAME}&quot;/
+mkdir -p $HOME/xds-workspace/hvac_&quot;${SDK_ID_4_NAME}&quot;/
+
+#copy sources into build directory
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot;/
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_2_NAME}&quot;/
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_3_NAME}&quot;/
+cp -r * $HOME/xds-workspace/hvac_&quot;${SDK_ID_4_NAME}&quot;/
+
+#Create project and set id project
+ID_1=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_1_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d\&apos;)\&apos; -f1 | cut -d\&apos; \&apos; -f5)
+ID_2=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_2_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d\&apos;)\&apos; -f1 | cut -d\&apos; \&apos; -f5)
+ID_3=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_3_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d\&apos;)\&apos; -f1 | cut -d\&apos; \&apos; -f5)
+ID_4=$(xds-cli prj add --label=&quot;Project_hvac_&quot;${SDK_ID_4_NAME}&quot;&quot; --type=pm --path=/home/jenkins/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; --server-path=/home/devel/xds-workspace/hvac_&quot;${SDK_ID_1_NAME}&quot; | cut -d\&apos;)\&apos; -f1 | cut -d\&apos; \&apos; -f5)
+
+#save ID for futur stage
+echo &quot;${ID_1}&quot; &gt; env_ID_1.txt
+echo &quot;${ID_2}&quot; &gt; env_ID_1.txt
+echo &quot;${ID_3}&quot; &gt; env_ID_1.txt
+echo &quot;${ID_4}&quot; &gt; env_ID_1.txt
+
+#save SDK_ID for futur stage
+echo &quot;${SDK_ID_1_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+echo &quot;${SDK_ID_2_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+echo &quot;${SDK_ID_3_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+echo &quot;${SDK_ID_4_NAME}&quot; &gt; env_SDK_ID_1_NAME.txt
+
+#save SDK_ID_NAME for futur stage
+echo &quot;${SDK_ID_1}&quot; &gt; env_SDK_ID_1.txt
+echo &quot;${SDK_ID_2}&quot; &gt; env_SDK_ID_1.txt
+echo &quot;${SDK_ID_3}&quot; &gt; env_SDK_ID_1.txt
+echo &quot;${SDK_ID_4}&quot; &gt; env_SDK_ID_1.txt&apos;&apos;&apos;
+        stash(name: &apos;ID_1&apos;, includes: &apos;env_ID_1.txt&apos;)
+        stash(name: &apos;ID_2&apos;, includes: &apos;env_ID_2.txt&apos;)
+        stash(name: &apos;ID_3&apos;, includes: &apos;env_ID_3.txt&apos;)
+        stash(name: &apos;ID_4&apos;, includes: &apos;env_ID_4.txt&apos;)
+        stash(includes: &apos;env_SDK_ID_1.txt&apos;, name: &apos;SDK_ID_1&apos;)
+        stash(includes: &apos;env_SDK_ID_2.txt&apos;, name: &apos;SDK_ID_2&apos;)
+        stash(includes: &apos;env_SDK_ID_3.txt&apos;, name: &apos;SDK_ID_3&apos;)
+        stash(includes: &apos;env_SDK_ID_4.txt&apos;, name: &apos;SDK_ID_4&apos;)
+        stash(includes: &apos;env_SDK_ID_1_NAME.txt&apos;, name: &apos;SDK_ID_1_NAME&apos;)
+        stash(includes: &apos;env_SDK_ID_2_NAME.txt&apos;, name: &apos;SDK_ID_2_NAME&apos;)
+        stash(includes: &apos;env_SDK_ID_3_NAME.txt&apos;, name: &apos;SDK_ID_3_NAME&apos;)
+        stash(includes: &apos;env_SDK_ID_4_NAME.txt&apos;, name: &apos;SDK_ID_4_NAME&apos;)
+      }
+    }
+    stage(&apos;Build&apos;) {
+      steps {
+        echo &apos;Build ....&apos;
+        unstash &apos;SDK_ID_1&apos;
+        unstash &apos;SDK_ID_1_NAME&apos;
+        unstash &apos;ID_1&apos;
+        sh &apos;&apos;&apos;ID_1=$(cat env_ID_1.txt)
+SDK_ID_1=$(cat env_SDK_ID_1.txt)
+SDK_ID_1_NAME=$(cat env_SDK_ID_1_NAME.txt)
+
+
+xds-cli exec --id=&quot;$ID_1&quot; --sdkid=&quot;$SDK_ID_1&quot; -- &quot;qmake&quot;
+
+xds-cli exec --id=&quot;$ID_1&quot; --sdkid=&quot;$SDK_ID_1&quot; -- &quot;make&quot;
+
+cp ~/xds-workspace/hvac_&quot;$SDK_ID_1_NAME&quot;/package/hvac.wgt hvac_&quot;$SDK_ID_1_NAME&quot;.wgt&apos;&apos;&apos;
+      }
+    }
+    stage(&apos;Publish&apos;) {
+      steps {
+        echo &apos;Publish&apos;
+        unstash &apos;SDK_ID_1_NAME&apos;
+        sh &apos;SDK_ID_1_NAME=$(cat env_SDK_ID_1_NAME.txt)&apos;
+        archiveArtifacts(artifacts: &apos;hvac_*.wgt&apos;, onlyIfSuccessful: true)
+        deleteDir()
+      }
+    }
+    stage(&apos;Clean&apos;) {
+      steps {
+        unstash &apos;ID_1&apos;
+        sh &apos;&apos;&apos;ID_1=$(cat env_ID_1.txt)
+
+
+echo &quot;yes&quot; | xds-cli prj rm --id=&quot;${ID_1}&quot;
+rm -rf $HOME/xds-workspace/hvac*&apos;&apos;&apos;
+      }
+    }
+  }
+  environment {
+    PATH = &apos;$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin&apos;
+  }
+  post {
+    always {
+      deleteDir()
+      
+    }
+    
+  }
+}</script>
+    <loadedScripts class="map"/>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>424264061</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>665142875</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1248138986</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>112554266</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>100440044</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>46</iota>
+    <head>1:46</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.7.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/master:refs/remotes/origin/master</refspec>
+            <url>https://github.com/DDTLK/IOABIEE.git</url>
+            <credentialsId>github</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <browser class="hudson.plugins.git.browser.GithubWeb">
+          <url>https://github.com/DDTLK/IOABIEE</url>
+        </browser>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
+          <hudson.plugins.git.extensions.impl.CleanCheckout/>
+          <jenkins.plugins.git.GitSCMSourceDefaults>
+            <includeTags>false</includeTags>
+          </jenkins.plugins.git.GitSCMSourceDefaults>
+          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
+              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData/buildsByBranchName/entry[2]/hudson.plugins.git.util.Build/marked"/>
+            </buildChooser>
+          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+        </extensions>
+      </scm>
+      <node>xds-tools</node>
+      <workspace>/home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/IOABIEE/branches/master/builds/59/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.7.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://gerrit.automotivelinux.org/gerrit/apps/hvac</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node>xds-tools</node>
+      <workspace>/home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/IOABIEE/branches/master/builds/59/changelog1.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

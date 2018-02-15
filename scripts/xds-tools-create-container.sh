@@ -39,7 +39,7 @@ VERSION=latest
 # ---------------------------------------------------
 # --- computed - don't touch !
 # ---------------------------------------------------
-DOCKER_USER=slave
+DOCKER_USER=jenkins
 
 DEFIMAGE=$REGISTRY/$REPO/$NAME-$FLAVOUR:$VERSION
 
@@ -157,6 +157,7 @@ cleanExit ()
 ### Create the new container
 mkdir -p "$XDS_WKS" "$XDTDIR"  || exit 1
 if ! docker run \
+    --network=Jenkins-XDS \
 	--publish=${SSH_PORT}:22 \
 	--publish=${WWW_PORT}:8800 \
 	--detach=true \

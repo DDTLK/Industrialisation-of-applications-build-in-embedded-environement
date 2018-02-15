@@ -1,0 +1,27 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.18">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.45">
+    <parentIds>
+      <string>34</string>
+    </parentIds>
+    <id>39</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.25">
+      <startTime>1518695032690</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogActionImpl>
+      <charset>UTF-8</charset>
+    </s.a.LogActionImpl>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.45">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>name</string>
+          <string>Create project 3</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+  </actions>
+</Tag>

@@ -1,0 +1,50 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
++ printenv
+BRANCH_NAME=master
+LC_ALL=en_US.UTF-8
+GIT_COMMIT=9d3d9a92f13ed622ff05bc3e457b7dec91010fcc
+RUN_DISPLAY_URL=http://localhost:8080/job/IOABIEE/job/master/48/display/redirect
+JENKINS_URL=http://localhost:8080/
+EXECUTOR_NUMBER=1
+SSH_CONNECTION=172.17.0.4 53406 172.17.0.3 22
+_=/usr/bin/printenv
+LANG=en_US.UTF-8
+BUILD_ID=48
+RUN_CHANGES_DISPLAY_URL=http://localhost:8080/job/IOABIEE/job/master/48/display/redirect?page=changes
+JENKINS_NODE_COOKIE=c2571fb8-1486-4c1f-881d-43c6ae087910
+JOB_BASE_NAME=master
+GIT_URL=https://github.com/DDTLK/IOABIEE.git
+HUDSON_COOKIE=f2ca02ac-09da-4b88-9648-b5ba9379a3d5
+XDG_SESSION_ID=18
+USER=jenkins
+BUILD_NUMBER=48
+WORKSPACE=/home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
+PWD=/home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ
+HUDSON_URL=http://localhost:8080/
+HOME=/home/jenkins
+NODE_NAME=xds-tools
+HUDSON_SERVER_COOKIE=0f93ef7ee837a19b
+SSH_CLIENT=172.17.0.4 53406 22
+JENKINS_HOME=/var/lib/jenkins
+JOB_NAME=IOABIEE/master
+GIT_PREVIOUS_COMMIT=cd9298147b554393931203d8db96bd0539141e37
+HUDSON_HOME=/var/lib/jenkins
+JOB_DISPLAY_URL=http://localhost:8080/job/IOABIEE/job/master/display/redirect
+REPOSITORY=https://gerrit.automotivelinux.org/gerrit/apps/hvac
+MAIL=/var/mail/jenkins
+BUILD_URL=http://localhost:8080/job/IOABIEE/job/master/48/
+SHELL=/bin/bash
+STAGE_NAME=Setup
+JOB_URL=http://localhost:8080/job/IOABIEE/job/master/
+BUILD_DISPLAY_NAME=#48
+SHLVL=3
+GIT_BRANCH=master
+BUILD_TAG=jenkins-IOABIEE-master-48
+NODE_LABELS=xds xds-tools
+LOGNAME=jenkins
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+XDG_RUNTIME_DIR=/run/user/1000
+PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin
+GIT_PREVIOUS_SUCCESSFUL_COMMIT=71b644ecabc394156ced2f9bcf6e431b7552c22b
+JENKINS_SERVER_COOKIE=durable-f42ce3fec6649058d31b3551a7a67588

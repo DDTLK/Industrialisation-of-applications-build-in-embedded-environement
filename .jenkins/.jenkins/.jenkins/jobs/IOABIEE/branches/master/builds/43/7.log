@@ -1,0 +1,29 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/DDTLK/IOABIEE.git
+ > git init /home/jenkins/workspace/IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ # timeout=10
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/master:refs/remotes/origin/master # timeout=10
+ > git config remote.origin.url https://github.com/DDTLK/IOABIEE.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/DDTLK/IOABIEE.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/DDTLK/IOABIEE.git +refs/heads/master:refs/remotes/origin/master
+Checking out Revision 1c42272b20d90d25bfcc80472c7469826f394cc4 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1c42272b20d90d25bfcc80472c7469826f394cc4
+Commit message: "Added Jenkinsfile"
+ > git rev-list --no-walk 401e0752bc64aef441f7d1c4eefe77663ade4f0a # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

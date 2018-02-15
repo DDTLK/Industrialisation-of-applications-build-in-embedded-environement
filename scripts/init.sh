@@ -42,7 +42,7 @@ if ! docker ps | grep jenkins
 then
     cp -rf ../.jenkins $HOME/.jenkins
     sudo chmod -R 755 $HOME/.jenkins
-    sudo chown -R jenkins $HOME/.jenkins
+    chmod 700 $HOME/.jenkins/.ssh/id_rsa
     docker run \
         --network=Jenkins-XDS \
         --hostname="jenkins" --name="jenkins" \

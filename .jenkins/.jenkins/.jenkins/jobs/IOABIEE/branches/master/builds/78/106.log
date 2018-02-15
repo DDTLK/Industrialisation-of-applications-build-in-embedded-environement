@@ -1,0 +1,10 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_ID_3.txt
++ ID_3=8c30df33-078f-11e8-b035-0242ac110002
+++ cat env_SDK_ID_3.txt
++ SDK_ID_3=64ad88a1
+++ cat env_SDK_ID_3_NAME.txt
++ SDK_ID_3_NAME=qemux86-64
++ xds-cli exec --id=8c30df33-078f-11e8-b035-0242ac110002 --sdkid=64ad88a1 -- qmake
+Websocket not established

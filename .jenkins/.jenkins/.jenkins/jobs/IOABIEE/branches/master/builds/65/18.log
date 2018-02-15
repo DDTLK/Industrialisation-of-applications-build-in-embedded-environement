@@ -1,0 +1,54 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ xds-cli sdks ls
+++ cut '-d ' -f1
++ SDKS_LIST='List
+ID	
+e54e6333
+64ad88a1
+944d2d5a
+5199b394'
+++ echo List ID e54e6333 64ad88a1 944d2d5a 5199b394
+++ cut -d ' ' -f3
++ SDK_ID_1=e54e6333
+++ echo List ID e54e6333 64ad88a1 944d2d5a 5199b394
+++ cut -d ' ' -f4
++ SDK_ID_2=64ad88a1
+++ echo List ID e54e6333 64ad88a1 944d2d5a 5199b394
+++ cut -d ' ' -f5
++ SDK_ID_3=944d2d5a
+++ echo List ID e54e6333 64ad88a1 944d2d5a 5199b394
+++ cut -d ' ' -f6
++ SDK_ID_4=5199b394
+++ xds-cli sdks ls
+++ grep e54e6333
+++ cut '-d ' -f5
++ SDK_ID_1_NAME=armv7ahf-neon
+++ xds-cli sdks ls
+++ grep 64ad88a1
+++ cut '-d ' -f5
++ SDK_ID_2_NAME=qemux86-64
+++ xds-cli sdks ls
+++ grep 944d2d5a
+++ cut '-d ' -f5
++ SDK_ID_3_NAME=corei7-64
+++ xds-cli sdks ls
+++ cut '-d ' -f5
+++ grep 5199b394
++ SDK_ID_4_NAME=aarch64
++ mkdir -p /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
++ mkdir -p /home/jenkins/xds-workspace/hvac_qemux86-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_corei7-64/
++ mkdir -p /home/jenkins/xds-workspace/hvac_aarch64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_armv7ahf-neon/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_qemux86-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_corei7-64/
++ cp -r app binding hvac.pro LICENSE package /home/jenkins/xds-workspace/hvac_aarch64/
++ echo armv7ahf-neon
++ echo qemux86-64
++ echo corei7-64
++ echo aarch64
++ echo e54e6333
++ echo 64ad88a1
++ echo 944d2d5a
++ echo 5199b394

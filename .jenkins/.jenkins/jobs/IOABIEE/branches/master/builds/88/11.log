@@ -1,0 +1,44 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
++ xds-cli sdks ls
++ cut -d  -f1
++ SDKS_LIST=
++ echo
++ cut -d   -f3
++ SDK_ID_1=
++ echo
++ cut -d   -f4
++ SDK_ID_2=
++ echo
++ cut -d   -f5
++ SDK_ID_3=
++ grep
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
++ xds-cli sdks ls
++ cut -d  -f5
++ SDK_ID_1_NAME=
++ grep
++ cut -d  -f5
+Usage: grep [OPTION]... PATTERN [FILE]...
++ Try 'grep --help' for more information.
+xds-cli sdks ls
++ SDK_ID_2_NAME=
++ xds-cli sdks ls
++ + cut -d  -f5
+grep
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
++ SDK_ID_3_NAME=
++ mkdir -p /home/jenkins/xds-workspace/hvac_/
++ mkdir -p /home/jenkins/xds-workspace/hvac_/
++ mkdir -p /home/jenkins/xds-workspace/hvac_/
++ cp -r LICENSE app binding hvac.pro package /home/jenkins/xds-workspace/hvac_/
++ cp -r LICENSE app binding hvac.pro package /home/jenkins/xds-workspace/hvac_/
++ cp -r LICENSE app binding hvac.pro package /home/jenkins/xds-workspace/hvac_/
++ echo 
++ echo 
++ echo 
++ echo 
++ echo 
++ echo 

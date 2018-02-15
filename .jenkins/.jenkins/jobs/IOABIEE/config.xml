@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.16">
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.17">
+  <actions/>
+  <description></description>
   <properties>
-    <io.jenkins.blueocean.rest.impl.pipeline.credential.BlueOceanCredentialsProvider_-FolderPropertyImpl plugin="blueocean-pipeline-scm-api@1.4.0">
+    <io.jenkins.blueocean.rest.impl.pipeline.credential.BlueOceanCredentialsProvider_-FolderPropertyImpl plugin="blueocean-pipeline-scm-api@1.4.1">
       <domain plugin="credentials@2.1.16">
         <name>blueocean-folder-credential-domain</name>
         <description>Blue Ocean Folder Credentials domain</description>
@@ -10,6 +12,10 @@
       <user>jenkins</user>
       <id>github</id>
     </io.jenkins.blueocean.rest.impl.pipeline.credential.BlueOceanCredentialsProvider_-FolderPropertyImpl>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig plugin="pipeline-model-definition@1.2.7">
+      <dockerLabel></dockerLabel>
+      <registry plugin="docker-commons@1.11"/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.config.FolderConfig>
   </properties>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.0.18">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
@@ -24,8 +30,8 @@
   </icon>
   <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.3">
     <pruneDeadBranches>true</pruneDeadBranches>
-    <daysToKeep>-1</daysToKeep>
-    <numToKeep>-1</numToKeep>
+    <daysToKeep>3</daysToKeep>
+    <numToKeep>3</numToKeep>
   </orphanedItemStrategy>
   <triggers/>
   <disabled>false</disabled>
@@ -33,7 +39,7 @@
     <data>
       <jenkins.branch.BranchSource>
         <source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.3.2">
-          <apiUri>https://api.github.com</apiUri>
+          <id>8a01ac35-a434-4ea1-8a4a-afab890b5edb</id>
           <credentialsId>github</credentialsId>
           <repoOwner>DDTLK</repoOwner>
           <repository>IOABIEE</repository>
@@ -56,6 +62,9 @@
             </jenkins.plugins.git.traits.CleanAfterCheckoutTrait>
           </traits>
         </source>
+        <strategy class="jenkins.branch.DefaultBranchPropertyStrategy">
+          <properties class="empty-list"/>
+        </strategy>
       </jenkins.branch.BranchSource>
     </data>
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>

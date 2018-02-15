@@ -158,6 +158,7 @@ cleanExit ()
 ### Create the new container
 mkdir -p $XDS_WKS $XDTDIR  || exit 1
 if ! docker run \
+    --network=Jenkins-XDS \
 	--publish=${SSH_PORT}:22 \
 	--publish=${WWW_PORT}:8000 \
 	--publish=${BOOT_PORT}:69/udp \

@@ -113,3 +113,51 @@ vi .ssh/config
 ssh-copy-id xds-tools
 ssh 'xds-tools'
 exit
+ssh xds-tools
+ls -al /var/lib/jenkins/.ssh/config
+ls -al /var/lib/jenkins/.ssh/config
+chown -R jenkins /var/lib/jenkins/
+ls -al /var/lib/jenkins/.ssh/config
+sudo chown -R jenkins /var/lib/jenkins/
+ssh xds-tools
+ls -al /var/lib/jenkins/.ssh/config
+sudo service ssh status
+sudo service ssh start
+ssh xds-tools
+id
+sudo chown  jenkins /var/lib/jenkins/
+ls -al /var/lib/jenkins/.ssh/config
+ssh xds-tools
+chmod 775 /var/lib/jenkins/.ssh/config
+ssh xds-tools
+chmod 755 /var/lib/jenkins/.ssh/config
+ssh xds-tools
+ssh-keygen -f "/var/lib/jenkins/.ssh/known_hosts" -R 172.42.0.4
+ssh-copy-id xds-tools
+ssh 'xds-tools'
+exit
+ssh-keygen -f "/var/lib/jenkins/.ssh/known_hosts" -R 172.42.0.4
+cd /var/lib/jenkins/.ssh/
+ls
+cat known_hosts
+cat known_hosts.old 
+mv known_hosts.old known_hosts
+ls
+ssh-keygen -f "/var/lib/jenkins/.ssh/known_hosts" -R 172.42.0.4
+ls
+rm known_hosts*
+ls
+ssh-copy-id xds-tools
+ssh 'xds-tools'
+ls
+ls -al
+chmod 755 id_rsa
+ls -al
+chmod 750 id_rsa
+ls -al
+ssh 'xds-tools'
+chmod 760 id_rsa
+ssh 'xds-tools'
+chmod 700 id_rsa
+ssh 'xds-tools'
+exit

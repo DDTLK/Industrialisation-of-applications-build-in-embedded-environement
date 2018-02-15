@@ -1,0 +1,9 @@
+Warning: JENKINS-41339 probably bogus PATH=$PATH:/opt/AGL/xds/cli/:/opt/AGL/xds/agent/:/opt/AGL/xds/agent/gdb/:/usr/bin/:/usr/local/bin; perhaps you meant to use ‘PATH+EXTRA=/something/bin’?
+[IOABIEE_master-3ZR2BW3VW35JPZTWGMVW37N7UT7U2AQ3C2B4OENYIE3VAI7W57HQ] Running shell script
+++ cat env_SDK_ID_1_NAME.txt
++ SDK_ID_1_NAME=corei7-64
+++ xds-cli prj add --label=Project_hvac_corei7-64 --type=pm --path=/home/jenkins/xds-workspace/hvac_corei7-64 --server-path=/home/devel/xds-workspace/hvac_corei7-64
+++ cut '-d)' -f1
+++ cut '-d ' -f5
++ ID_1=8efaa035-0798-11e8-b035-0242ac110002
++ echo 8efaa035-0798-11e8-b035-0242ac110002
