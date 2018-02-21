@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # add backports and testing repositories
-echo "deb http://http.debian.net/debian stable-backports main contrib" >> /etc/apt/sources.list
+echo "deb http://http.debian.net/debian stretch-backports main contrib" >> /etc/apt/sources.list
 
 # setup network retries for apt
 echo "Acquire::Retries 5;" >/etc/apt/apt.conf.d/99NetRetries

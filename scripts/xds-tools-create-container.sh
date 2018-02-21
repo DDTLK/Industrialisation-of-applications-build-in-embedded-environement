@@ -193,6 +193,7 @@ docker exec ${NAME} bash -c "mkdir -p /home/$DOCKER_USER/.ssh" || exit 1
 docker cp -L ~/.ssh/id_rsa.pub ${NAME}:/home/$DOCKER_USER/.ssh/authorized_keys || exit 1
 docker exec ${NAME} bash -c "chown $DOCKER_USER:$DOCKER_USER -R /home/$DOCKER_USER/.ssh ;chmod 0700 /home/$DOCKER_USER/.ssh; chmod 0600 /home/$DOCKER_USER/.ssh/*" || exit 1
 ssh -n -o StrictHostKeyChecking=no -p $SSH_PORT $DOCKER_USER@localhost exit || exit 1
+docker cp -L ~/.jenkins/.ssh/id_rsa.pub ${NAME}:/home/$DOCKER_USER/.ssh/tmp.pub || exit 1
 
 echo "You can now login using:"
 echo "   ssh -p $SSH_PORT $DOCKER_USER@localhost"
@@ -233,8 +234,6 @@ if ($UPDATE_UID); then
     echo -n "."
 
     docker exec -t ${NAME} bash -c "chown -R $DOCKER_USER:$DOCKER_USER /home/$DOCKER_USER" || exit 1
-    echo -n "."
-    docker exec -t ${NAME} bash -c "chown -R $DOCKER_USER:$DOCKER_USER /tmp/xds*"
     echo -n "."
     docker exec -t ${NAME} bash -c "systemctl start autologin"
     echo -n "."

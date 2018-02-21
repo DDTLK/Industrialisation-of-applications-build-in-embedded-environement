@@ -43,7 +43,6 @@ then
     sudo cp -rf ../.jenkins "$HOME"
     sudo chmod -R 777 "$HOME"/.jenkins
     sudo chmod 600 "$HOME"/.jenkins/.ssh/config
-    sudo chown jenkins "$HOME"/.jenkins/.ssh/config
     docker run \
         --network=Jenkins-XDS \
         --hostname="jenkins" --name="jenkins" \
@@ -77,9 +76,18 @@ else
     echo "XDS-tools container already started" 
 fi
 
-#stat xds-agent & list sdk & instruction to install sdk
+#Waiting for xds-tools up
 sleep 10
+
+#Copy jenkins key to xds-slave
+echo "cat /home/jenkins/.ssh/tmp.pub >> /home/jenkins/.ssh/authorized_keys" | ssh -p 2224 jenkins@localhost || exit 1
+docker exec jenkins ssh-keygen -f "/var/lib/jenkins/.ssh/known_hosts" -R 172.42.0.4
+docker exec -it jenkins ssh-copy-id -f jenkins@172.42.0.4
+
+#stat xds-agent & list sdk & instruction to install sdk
 echo "systemctl --user start xds-agent; sleep 5; xds-cli sdks ls -a; echo -e '-------------------\n\n\nTo install sdk Run -> xds-cli sdks install sdk_id\n\n\n-------------------' " | ssh -p 2224 jenkins@localhost
+
+
 
 #enter in xds-tools
 ssh -p 2224 jenkins@localhost

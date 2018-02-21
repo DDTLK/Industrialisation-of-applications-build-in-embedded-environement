@@ -1,8 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<scriptApproval plugin="script-security@1.40">
+<?xml version='1.1' encoding='UTF-8'?>
+<scriptApproval plugin="script-security@1.41">
   <approvedScriptHashes>
     <string>00e7684888bb95299ee1512bae9339655d735515</string>
     <string>017d0db438428731cd600b6ebda805065433520f</string>
+    <string>93a8f18a82660370107a4ef32857e169fc792e73</string>
   </approvedScriptHashes>
   <approvedSignatures/>
   <aclApprovedSignatures/>
